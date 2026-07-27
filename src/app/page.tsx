@@ -4,6 +4,9 @@ import AboutUs from "../components/AboutUs";
 import Mission from "../components/Mission";
 import OurServices from "../components/OurServices";
 import Industries from "../components/Industries";
+import Solutions from "../components/Solutions";
+import Partners from "../components/Partners";
+import Footer from "../components/Footer";
 import LenisProvider from "../components/LenisProvider";
 
 export default function Home() {
@@ -16,6 +19,9 @@ export default function Home() {
         <Mission />
         <OurServices />
         <Industries />
+        <Solutions />
+        <Partners />
+        <Footer />
       </div>
     </LenisProvider>
   );
