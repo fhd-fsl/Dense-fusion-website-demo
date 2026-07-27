@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype-variations");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype-variations");
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-plus-jakarta-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-plus-jakarta-sans);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-darkGreen: #1C9659;
+  --color-lightGreen2: #9CFCB0;
+  --color-gradientGreen1: #006D40;
+  --color-gradientGreen2: #147D4C;
+  --color-lightGreen: #6DC27F;
+  --color-secondaryBlack: #090909;
+  --color-lightGray: #828282;
+  --color-borderGray: #E5E5EA;
+  --color-borderGray2: #DADADA;
+  --color-greyBg: #F5F5F5;
+  --color-textGray: #545F73;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
