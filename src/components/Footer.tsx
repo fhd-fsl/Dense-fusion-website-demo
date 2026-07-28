@@ -8,13 +8,20 @@ import ScrollReveal from "./ScrollReveal";
 export default function Footer() {
   return (
     <footer className="bg-white relative z-10">
-      <div className="container mx-auto px-6 max-w-[1400px]">
+      <div className="mx-auto max-w-[1300px] px-6 md:px-12">
         
         {/* Connect CTA (Green Banner) */}
         <ScrollReveal>
-          <div className="bg-[#1b8e44] rounded-t-[24px] md:rounded-t-[32px] rounded-b-none p-12 md:p-20 flex flex-col items-center justify-center text-center relative z-20 mx-auto w-full">
-            <button className="bg-[#080808] text-white text-xs font-bold px-6 py-2.5 uppercase tracking-widest rounded-lg mb-8 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer active:scale-95">
-              Connect Now
+          <div className="bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 rounded-t-[4px] rounded-b-none p-12 md:p-20 flex flex-col items-center justify-center text-center relative z-20 mx-auto w-full">
+            <button className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-secondaryBlack px-5 text-md font-bold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen mb-8">
+              <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
+                <span className="flex h-11 shrink-0 items-center justify-center text-white">
+                  Connect Now
+                </span>
+                <span className="flex h-11 shrink-0 items-center justify-center text-white">
+                  Connect Now
+                </span>
+              </span>
             </button>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white tracking-tight">
@@ -32,7 +39,7 @@ export default function Footer() {
 
       {/* Main Footer (Black Section) */}
       <div className="bg-[#080808] text-white pt-12 pb-12 px-6 mt-[-1px]">
-        <div className="container mx-auto max-w-[1400px]">
+        <div className="mx-auto max-w-[1300px] px-6 md:px-12">
           <ScrollReveal delay={0.2}>
             {/* Top Grid - Links */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16">

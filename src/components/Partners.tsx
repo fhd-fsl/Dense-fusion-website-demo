@@ -16,7 +16,7 @@ const PARTNERS = [
 export default function Partners() {
   return (
     <section className="bg-white py-24 border-y border-gray-100 overflow-hidden relative">
-      <div className="container mx-auto px-6 max-w-[1400px] mb-12">
+      <div className="mx-auto max-w-[1300px] px-6 md:px-12 mb-12">
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">
