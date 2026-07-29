@@ -72,3 +72,12 @@ html.lenis, html.lenis body {
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+.expertise-card {
+  border: 0.83px solid #ffffff0d;
+  background: #ffffff;
+}
+
+.expertise-card:hover {
+  background: linear-gradient(135deg, #6dc27f 0%, #006d40 100%);
+}

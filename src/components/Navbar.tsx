@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  "About",
-  "Services",
-  "Industries",
-  "Solutions",
-  "MarketPlace",
-  "Contact",
+  { label: "About", href: "/about" },
+  { label: "Services", href: "#" },
+  { label: "Industries", href: "#" },
+  { label: "Solutions", href: "#" },
+  { label: "MarketPlace", href: "#" },
+  { label: "Contact", href: "#" },
 ];
 
 export default function Navbar() {
@@ -24,8 +24,8 @@ export default function Navbar() {
             />
 
         <div className="hidden items-center gap-7 text-md font-medium text-secondaryBlack md:flex md:ml-auto ">
-          {navLinks.map((label) => (
-            <Link key={label} href="#" className="transition hover:text-darkGreen">
+          {navLinks.map(({ label, href }) => (
+            <Link key={label} href={href} className="transition hover:text-darkGreen">
               {label}
             </Link>
           ))}

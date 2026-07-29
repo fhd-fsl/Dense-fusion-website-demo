@@ -5,9 +5,10 @@ import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
-export default function Footer() {
+export default function Footer({ hideConnectCta = false }: { hideConnectCta?: boolean }) {
   return (
     <footer className="bg-white relative z-10">
+      {!hideConnectCta && (
       <div className="mx-auto max-w-[1300px] px-6 md:px-12">
         
         {/* Connect CTA (Green Banner) */}
@@ -36,6 +37,7 @@ export default function Footer() {
         </ScrollReveal>
 
       </div>
+      )}
 
       {/* Main Footer (Black Section) */}
       <div className="bg-[#080808] text-white pt-12 pb-12 px-6 mt-[-1px]">
