@@ -14,15 +14,15 @@ export default function Navbar() {
   return (
     <header className="w-full border-b border-borderGray bg-white font-sans">
       <nav className="mx-auto flex max-w-[1300px] flex-wrap items-center justify-between gap-4 px-6 py-4">
-         
-            <Image
-              src="/dense-fusion-logo.svg"
-              alt="Dense Fusion logo"
-              width={118}
-              height={54}
-              className="h-auto w-24 object-contain"
-            />
-
+        <Link href="/">
+          <Image
+            src="/dense-fusion-logo.svg"
+            alt="Dense Fusion logo"
+            width={118}
+            height={54}
+            className="h-auto w-24 object-contain"
+          />
+        </Link>
         <div className="hidden items-center gap-7 text-md font-medium text-secondaryBlack md:flex md:ml-auto ">
           {navLinks.map(({ label, href }) => (
             <Link key={label} href={href} className="transition hover:text-darkGreen">
