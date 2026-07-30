@@ -49,7 +49,9 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               {/* Brand Logo & Contact */}
               <div className="lg:col-span-1 flex flex-col gap-8">
                 <div className="flex items-center gap-3">
-                  <Image src="/assets/home-page/footer/logo.svg" alt="Dense Fusion" width={128} height={128} />
+                  <Link href="/">
+                    <Image src="/assets/home-page/footer/logo.svg" alt="Dense Fusion" width={128} height={128} />
+                  </Link>
                 </div>
                 
                 <div className="flex flex-col gap-3">
@@ -68,7 +70,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               {/* Quick Links */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Quick Links</h4>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">About</Link>
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">About</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Services</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Industries</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Products</Link>
