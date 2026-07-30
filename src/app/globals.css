@@ -81,3 +81,20 @@ html.lenis, html.lenis body {
 .expertise-card:hover {
   background: linear-gradient(135deg, #6dc27f 0%, #006d40 100%);
 }
+
+
+/* Custom scrollbar for horizontal services track */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #1b8e44;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #146b33;
+}
