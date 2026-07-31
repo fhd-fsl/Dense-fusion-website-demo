@@ -34,18 +34,28 @@ export default function CTA() {
               DenseFusion has the expertise to help you succeed.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 items-start">
               <Link 
                 href="#"
-                className="inline-flex h-12 md:h-14 items-center justify-center rounded-[4px] bg-[#0a0a0a] px-8 text-base font-semibold text-white transition-all duration-300 hover:bg-black/80 hover:shadow-lg"
+                className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-[#0a0a0a] px-5 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
               >
-                Explore Our Solutions
+                <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
+                  <span className="flex h-11 shrink-0 items-center justify-center text-white">
+                    Explore Our Solutions
+                  </span>
+                  <span className="flex h-11 shrink-0 items-center justify-center text-white">
+                    Explore Our Solutions
+                  </span>
+                </span>
               </Link>
               <Link 
                 href="#"
-                className="inline-flex h-12 md:h-14 items-center justify-center rounded-[4px] border border-white bg-transparent px-8 text-base font-semibold text-white transition-all duration-300 hover:bg-white/10"
+                className="group relative inline-flex items-center rounded px-4 py-3 text-lg font-bold text-white"
               >
-                Talk to an Expert
+                <span className="relative">
+                  Talk to an Expert
+                  <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                </span>
               </Link>
             </div>
           </ScrollReveal>

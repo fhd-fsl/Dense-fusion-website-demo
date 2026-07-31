@@ -74,7 +74,7 @@ export default function OurApproach() {
                     
                     {/* Text content */}
                     <div>
-                      <h4 className="text-lg md:text-xl font-semibold text-black mb-3">
+                      <h4 className="text-2xl md:text-3xl font-medium text-black mb-3 tracking-tight">
                         {step.title}
                       </h4>
                       <p className="text-gray-500 text-sm md:text-base leading-relaxed">

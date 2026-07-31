@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import ScrollReveal from "../ScrollReveal";
 
 const servicesData = [
@@ -82,6 +83,14 @@ export default function HorizontalServices() {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+
+  const handlePrev = () => {
+    setActiveIndex((prev) => Math.max(0, prev - 1));
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prev) => Math.min(servicesData.length - 1, prev + 1));
+  };
   
   // Wheel state
   const scrollAccumulator = useRef(0);
@@ -174,76 +183,111 @@ export default function HorizontalServices() {
         </ScrollReveal>
         
         <ScrollReveal delay={0.2}>
-          {/* Discrete Slider Card Container */}
-          <div 
-            ref={containerRef}
-            className="w-full bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 overflow-hidden relative cursor-grab active:cursor-grabbing touch-pan-y"
-            onMouseDown={handleDragStart}
-            onMouseUp={handleDragEnd}
-            onMouseLeave={(e) => {
-              setIsHovered(false);
-              handleDragEnd(e);
-            }}
-            onMouseEnter={() => setIsHovered(true)}
-            onTouchStart={handleDragStart}
-            onTouchEnd={handleDragEnd}
-          >
-            {/* Grid stack used so parent height perfectly fits the tallest child */}
-            <div className="grid">
-              {servicesData.map((service, index) => (
-                <div 
-                  key={service.id}
-                  className={`col-start-1 row-start-1 flex flex-col md:flex-row transition-all duration-500 ease-in-out ${
-                    activeIndex === index 
-                      ? 'opacity-100 translate-x-0 z-10 pointer-events-auto' 
-                      : activeIndex > index 
-                        ? 'opacity-0 -translate-x-12 z-0 pointer-events-none'
-                        : 'opacity-0 translate-x-12 z-0 pointer-events-none'
-                  }`}
-                >
-                  {/* Left Content (Text) */}
-                  <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-white pointer-events-none md:pointer-events-auto">
-                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-gradientGreen1 from-15% via-gradientGreen2 via-55% to-lightGreen">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm md:text-base mb-8 leading-relaxed">
-                      {service.description}
-                    </p>
+          {/* Main Card Wrapper */}
+          <div className="relative w-full group">
+            
+            {/* Left Nav Button */}
+            <button 
+              onClick={handlePrev}
+              disabled={activeIndex === 0}
+              className="absolute left-2 md:left-4 lg:-left-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-100 text-gray-600 hover:text-black hover:scale-110 transition-all disabled:opacity-0 disabled:pointer-events-none"
+              aria-label="Previous slide"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+
+            {/* Main Card Container */}
+            <div 
+              ref={containerRef}
+              className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100 w-full bg-white relative select-none"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={(e) => {
+                setIsHovered(false);
+                if (isDragging) {
+                  handleDragEnd(e);
+                } else {
+                  setIsDragging(false);
+                }
+              }}
+              onMouseDown={handleDragStart}
+              onMouseUp={handleDragEnd}
+              onMouseMove={(e) => {
+                if (isDragging) {
+                  // Prevent text selection while dragging
+                  e.preventDefault();
+                }
+              }}
+              onTouchStart={handleDragStart}
+              onTouchEnd={handleDragEnd}
+            >
+              {/* Grid stack used so parent height perfectly fits the tallest child */}
+              <div className="grid">
+                {servicesData.map((service, index) => (
+                  <div 
+                    key={service.id}
+                    className={`col-start-1 row-start-1 flex flex-col md:flex-row transition-all duration-500 ease-in-out ${
+                      activeIndex === index 
+                        ? 'opacity-100 translate-x-0 z-10 pointer-events-auto' 
+                        : activeIndex > index 
+                          ? 'opacity-0 -translate-x-12 z-0 pointer-events-none'
+                          : 'opacity-0 translate-x-12 z-0 pointer-events-none'
+                    }`}
+                  >
+                    {/* Left Content (Text) */}
+                    <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-white pointer-events-none md:pointer-events-auto">
+                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-gradientGreen1 from-15% via-gradientGreen2 via-55% to-lightGreen">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm md:text-base mb-8 leading-relaxed">
+                        {service.description}
+                      </p>
+                      
+                      <ul className="flex flex-col gap-4 mb-10">
+                        {service.bullets.map((bullet, i) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <div className="mt-1 shrink-0">
+                              <Image src="/assets/services/tick.svg" alt="Check" width={20} height={20} />
+                            </div>
+                            <span className="text-gray-800 text-sm md:text-base font-medium">{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      
+                      <div className="mt-auto">
+                        <Link href="#" className="inline-flex items-center text-gray-600 hover:text-[#1b8e44] text-sm font-semibold transition-colors duration-300">
+                          Explore Service 
+                          <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
                     
-                    <ul className="flex flex-col gap-4 mb-10">
-                      {service.bullets.map((bullet, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <div className="mt-1 shrink-0">
-                            <Image src="/assets/services/tick.svg" alt="Check" width={20} height={20} />
-                          </div>
-                          <span className="text-gray-800 text-sm md:text-base font-medium">{bullet}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    
-                    <div className="mt-auto">
-                      <Link href="#" className="inline-flex items-center text-gray-600 hover:text-[#1b8e44] text-sm font-semibold transition-colors duration-300">
-                        Explore Service 
-                        <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                      </Link>
+                    {/* Right Content (Image) */}
+                    <div className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-gray-50 pointer-events-none">
+                      <Image 
+                        src={service.image} 
+                        alt={service.title}
+                        fill
+                        className="object-cover"
+                        priority={index === 0}
+                      />
                     </div>
                   </div>
-                  
-                  {/* Right Content (Image) */}
-                  <div className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-gray-50 pointer-events-none">
-                    <Image 
-                      src={service.image} 
-                      alt={service.title}
-                      fill
-                      className="object-cover"
-                      priority={index === 0}
-                    />
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
+
+            {/* Right Nav Button */}
+            <button 
+              onClick={handleNext}
+              disabled={activeIndex === servicesData.length - 1}
+              className="absolute right-2 md:right-4 lg:-right-6 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-gray-100 text-gray-600 hover:text-black hover:scale-110 transition-all disabled:opacity-0 disabled:pointer-events-none"
+              aria-label="Next slide"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+            
           </div>
           
           {/* Custom Separated Progress Bar */}

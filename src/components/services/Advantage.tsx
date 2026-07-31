@@ -29,7 +29,7 @@ const advantages = [
 
 export default function Advantage() {
   return (
-    <section className="bg-[#187C45] py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-[#006D40] to-[#6DC27F] py-16 md:py-24 relative overflow-hidden">
       <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12">
         
         <ScrollReveal>
