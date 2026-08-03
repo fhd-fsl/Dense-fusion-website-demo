@@ -49,7 +49,7 @@ export default function Hero() {
             </Link>
 
             <Link
-              href="#"
+              href="/services"
               className="group relative inline-flex items-center rounded px-4 py-3 text-lg font-bold text-lightGray"
             >
               <span className="relative">

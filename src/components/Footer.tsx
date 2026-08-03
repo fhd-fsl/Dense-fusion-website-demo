@@ -71,7 +71,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Quick Links</h4>
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">About</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Services</Link>
+                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Services</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Industries</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Products</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Solutions</Link>
@@ -82,7 +82,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               {/* Our Services */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Our Services</h4>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Supercomputing Consulting</Link>
+                <Link href="/services/supercomputing-consulting" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Supercomputing Consulting</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">HPC Infrastructure Design & Deployment</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">AI + HPC Integration</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Software Stack Installation & Optimization</Link>

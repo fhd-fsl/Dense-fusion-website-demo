@@ -4,9 +4,9 @@ import ScrollReveal from "../ScrollReveal";
 
 export default function CTA() {
   return (
-    <section className="relative overflow-hidden bg-[#187C45]">
+    <section className="relative overflow-hidden bg-[#006D40]">
       {/* Background Gradient & Pattern Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#2ba455] to-[#126838] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#6DC27F] via-[#006D40] via-[30%] to-[#006D40] pointer-events-none" />
       
       {/* Background SVG - Right Aligned */}
       <div className="absolute top-0 right-0 w-full md:w-3/5 lg:w-1/2 h-full pointer-events-none flex items-center justify-end">

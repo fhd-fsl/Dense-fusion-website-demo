@@ -12,6 +12,7 @@ interface ServiceItem {
   iconPath?: string;
   isTargetIcon?: boolean;
   description: string;
+  href: string;
 }
 
 const services: ServiceItem[] = [
@@ -21,6 +22,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/supercomputer.svg",
     description:
       "HPC Needs Assessment & Feasibility Studies Industry-specific Workflow Analysis (e.g.,CFD, genomics, geospatial AI) ROI & TCO Calculations for HPC Investments Green HPC & Energy-Efficient Cluster Design.",
+    href: "/services/supercomputing-consulting",
   },
   {
     id: "hpc-infrastructure-design",
@@ -28,6 +30,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/HPC.svg",
     description:
       "Custom architectural designs for high-performance computing clusters, liquid cooling setups, low-latency interconnects, and scalable high-speed parallel storage systems.",
+    href: "#",
   },
   {
     id: "ai-hpc-integration",
@@ -35,6 +38,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/AI+HPC.svg",
     description:
       "Seamless blending of AI deep learning workloads with traditional HPC environments, enabling distributed GPU model training and high-throughput inference.",
+    href: "#",
   },
   {
     id: "software-stack-optimization",
@@ -42,6 +46,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/stack-optimization.svg",
     description:
       "Fine-tuning compilers, MPI libraries, CUDA kernels, and job schedulers to squeeze maximum performance out of hardware investments.",
+    href: "#",
   },
   {
     id: "domain-specific-solutions",
@@ -49,12 +54,14 @@ const services: ServiceItem[] = [
     isTargetIcon: true,
     description:
       "Tailored computational platforms engineered for specialized industries including finance, life sciences, energy, aerospace, and autonomous systems.",
+    href: "#",
   },
   {
     id: "training-enablement",
     title: "Training & Enablement",
     description:
       "Comprehensive hands-on training and capacity building for engineering and research teams to master modern supercomputing tools and AI frameworks.",
+    href: "#",
   },
 ];
 
@@ -165,7 +172,7 @@ export default function OurServices() {
 
                 <div className="mt-4 pt-2">
                   <Link
-                    href="#"
+                    href={activeService.href}
                     className="group inline-flex items-center gap-2 text-lg font-bold transition-opacity hover:opacity-80"
                   >
                     <span className="bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 bg-clip-text text-transparent">

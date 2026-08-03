@@ -31,7 +31,7 @@ export default function HeroAbout() {
 
               <div className="flex flex-wrap items-center gap-4">
                 <Link
-                  href="#"
+                  href="/services"
                   className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] px-6 text-sm font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
                   style={{
                     background: "linear-gradient(135deg, #6DC27F 0%, #006D40 100%)",

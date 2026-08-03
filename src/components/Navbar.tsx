@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -11,6 +14,8 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
     <header className="w-full border-b border-borderGray bg-white font-sans">
       <nav className="mx-auto flex max-w-[1300px] flex-wrap items-center justify-between gap-4 px-6 py-4">
@@ -24,11 +29,18 @@ export default function Navbar() {
           />
         </Link>
         <div className="hidden items-center gap-7 text-md font-medium text-secondaryBlack md:flex md:ml-auto ">
-          {navLinks.map(({ label, href }) => (
-            <Link key={label} href={href} className="transition hover:text-darkGreen">
-              {label}
-            </Link>
-          ))}
+          {navLinks.map(({ label, href }) => {
+            const isActive = pathname !== "/" && href !== "#" && pathname.startsWith(href);
+            return (
+              <Link 
+                key={label} 
+                href={href} 
+                className={`transition hover:text-darkGreen ${isActive ? "text-darkGreen font-bold" : ""}`}
+              >
+                {label}
+              </Link>
+            );
+          })}
         </div>
 
         <Link

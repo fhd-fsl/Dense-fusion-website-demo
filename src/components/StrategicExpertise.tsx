@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
 
 const expertiseItems = [
@@ -7,6 +8,7 @@ const expertiseItems = [
     description:
       "Custom transformer architectures and reinforcement learning models tailored for specific domain workflows.",
     icon: "/About-us_page/Icon.svg",
+    href: "/services/supercomputing-consulting",
   },
   {
     title: "HPC Infrastructure Design",
@@ -71,7 +73,7 @@ export default function StrategicExpertise() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {expertiseItems.map((item, index) => (
             <ScrollReveal key={item.title} delay={0.15 + index * 0.08}>
-              <div className="expertise-card group flex flex-col gap-5 rounded-xl bg-white p-7 transition-all duration-300 cursor-pointer h-full">
+              <Link href={item.href || "#"} className="expertise-card group flex flex-col gap-5 rounded-xl bg-white p-7 transition-all duration-300 cursor-pointer h-full">
                 <div
                   className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full transition-colors duration-300 group-hover:border-white/25"
                   style={{ border: "1px solid #9E9E9E1A" }}
@@ -93,7 +95,7 @@ export default function StrategicExpertise() {
                     {item.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             </ScrollReveal>
           ))}
         </div>

@@ -2,6 +2,7 @@
 
 import ScrollReveal from "./ScrollReveal";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function Solutions() {
@@ -19,9 +20,19 @@ export default function Solutions() {
               insights. By integrating satellite imagery with robust analytics, they enable long-
               term monitoring of environmental and urban transformations.
             </p>
-            <button className="group inline-flex items-center justify-center overflow-hidden rounded-[4px] bg-gradient-to-r from-lightGreen to-gradientGreen1 px-6 py-2.5 text-sm md:text-base font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90">
-              View All Solutions
-            </button>
+            <Link 
+              href="#"
+              className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-5 text-sm md:text-base font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
+            >
+              <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
+                <span className="flex h-11 shrink-0 items-center justify-center text-white">
+                  View All Solutions
+                </span>
+                <span className="flex h-11 shrink-0 items-center justify-center text-white">
+                  View All Solutions
+                </span>
+              </span>
+            </Link>
           </div>
         </ScrollReveal>
 
