@@ -16,7 +16,8 @@ const servicesData = [
       "Advanced Infrastructure Planning",
       "Network Fabric Optimization"
     ],
-    image: "/assets/services/services-card-1.svg"
+    image: "/assets/services/services-card-1.svg",
+    link: "/services/supercomputing-consulting"
   },
   {
     id: 2,
@@ -254,7 +255,7 @@ export default function HorizontalServices() {
                       </ul>
                       
                       <div className="mt-auto">
-                        <Link href="#" className="inline-flex items-center text-gray-600 hover:text-[#1b8e44] text-sm font-semibold transition-colors duration-300">
+                        <Link href={service.link || "#"} className="inline-flex items-center text-gray-600 hover:text-[#1b8e44] text-sm font-semibold transition-colors duration-300">
                           Explore Service 
                           <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
