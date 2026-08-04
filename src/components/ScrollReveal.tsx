@@ -10,6 +10,7 @@ interface ScrollRevealProps {
   yOffset?: number;
   className?: string;
   once?: boolean;
+  direction?: string;
 }
 
 export default function ScrollReveal({

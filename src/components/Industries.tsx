@@ -56,15 +56,13 @@ export default function Industries() {
 
                 {/* Center Icon */}
                 <div className="my-10 flex items-center justify-center">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-lightGreen to-gradientGreen1 shadow-md">
-                    <Image
-                      src="/assets/home-page/industries/security.svg"
-                      alt="Defense"
-                      width={36}
-                      height={36}
-                      className="h-9 w-9 object-contain"
-                    />
-                  </div>
+                  <Image
+                    src="/assets/home-page/industries/security.svg"
+                    alt="Defense"
+                    width={56}
+                    height={56}
+                    className="h-14 w-14 object-contain"
+                  />
                 </div>
 
                 <div>

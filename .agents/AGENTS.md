@@ -41,6 +41,10 @@ Use this for main CTAs. It uses a green gradient background and a vertical text 
 ```
 *(Note: If placed on a white background, you can use `bg-[#1b8e44]` or the gradient. For black/dark themes, you can use `bg-[#0a0a0a]`.)*
 
+### Black Button (Turns Green on Hover)
+All solid black buttons (e.g., `bg-[#050505]` or `bg-secondaryBlack`) MUST use `hover:bg-lightGreen` to turn green when hovered upon, matching the primary brand interaction seen on the home page and navbar.
+
+
 ### Secondary Button (Sliding Underline on Hover)
 Use this for secondary links (like "Explore Services").
 ```tsx

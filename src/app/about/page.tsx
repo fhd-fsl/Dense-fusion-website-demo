@@ -1,18 +1,31 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import HeroAbout from "@/components/HeroAbout";
-import WhoWeAre from "@/components/WhoWeAre";
-import StrategicExpertise from "@/components/StrategicExpertise";
+import Hero from "@/components/about/Hero";
+import WhoWeAre from "@/components/about/WhoWeAre";
+import StrategicExpertise from "@/components/about/StrategicExpertise";
+import IndustriesWeServe from "@/components/about/IndustriesWeServe";
+import Impact from "@/components/about/Impact";
+import OurValues from "@/components/about/OurValues";
+import WhyChooseUs from "@/components/about/WhyChooseUs";
+import AboutCta from "@/components/about/AboutCta";
 import AboutUs from "@/components/AboutUs";
+import LenisProvider from "@/components/LenisProvider";
 
 export default function AboutPage() {
   return (
     <>
       <Navbar />
       <main>
-        <HeroAbout />
-        <WhoWeAre />
-        <StrategicExpertise />
+        <LenisProvider>
+          <Hero />
+          <WhoWeAre />
+          <StrategicExpertise />
+          <IndustriesWeServe />
+          <Impact />
+          <OurValues />
+          <WhyChooseUs />
+          <AboutCta />
+        </LenisProvider>
       </main>
       <Footer hideConnectCta />
     </>

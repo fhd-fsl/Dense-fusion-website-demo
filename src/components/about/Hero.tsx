@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ScrollReveal from "./ScrollReveal";
+import ScrollReveal from "../ScrollReveal";
 
 export default function HeroAbout() {
   return (
@@ -62,7 +62,7 @@ export default function HeroAbout() {
         <ScrollReveal delay={0.4}>
           <div className="w-full rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/About-us_page/527bf2cce55756b91a8fda3b44f8a7462f3e0dea.jpg"
+              src="/assets/about/hero.svg"
               alt="AI and Supercomputing visualization"
               width={1300}
               height={600}

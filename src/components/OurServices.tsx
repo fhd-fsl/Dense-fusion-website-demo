@@ -51,7 +51,7 @@ const services: ServiceItem[] = [
   {
     id: "domain-specific-solutions",
     title: "Domain-Specific Solutions",
-    isTargetIcon: true,
+    iconPath: "/assets/home-page/services/domain-specific.svg",
     description:
       "Tailored computational platforms engineered for specialized industries including finance, life sciences, energy, aerospace, and autonomous systems.",
     href: "#",
@@ -59,6 +59,7 @@ const services: ServiceItem[] = [
   {
     id: "training-enablement",
     title: "Training & Enablement",
+    iconPath: "/assets/home-page/services/training-enablement.svg",
     description:
       "Comprehensive hands-on training and capacity building for engineering and research teams to master modern supercomputing tools and AI frameworks.",
     href: "#",

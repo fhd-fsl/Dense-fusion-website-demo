@@ -1,44 +1,44 @@
 import Image from "next/image";
 import Link from "next/link";
-import ScrollReveal from "./ScrollReveal";
+import ScrollReveal from "../ScrollReveal";
 
 const expertiseItems = [
   {
     title: "Supercomputing Consulting",
     description:
-      "Custom transformer architectures and reinforcement learning models tailored for specific domain workflows.",
-    icon: "/About-us_page/Icon.svg",
+      "Assess HPC requirements, optimize workflows, evaluate ROI, and design energy-efficient HPC infrastructure.",
+    icon: "/assets/about/supercomputing-consulting-logo.svg",
     href: "/services/supercomputing-consulting",
   },
   {
     title: "HPC Infrastructure Design",
     description:
-      "Seamless workload distribution across heterogeneous GPU and NPU clusters with zero latency overhead.",
-    icon: "/About-us_page/Container%20(2).svg",
+      "Custom HPC infrastructure, hybrid cloud integration, GPU acceleration, and high-speed networking solutions.",
+    icon: "/assets/about/HPC-Infra_Design-logo.svg",
   },
   {
     title: "AI + HPC Integration",
     description:
-      "Real-time planetary-scale analysis combining satellite telemetry with predictive atmospheric modeling.",
-    icon: "/About-us_page/Vector.svg",
+      "Deliver high-performance AI with distributed training, generative AI, and multimodal data processing on HPC.",
+    icon: "/assets/about/AI+HPC-integration-logo.svg",
   },
   {
     title: "Software Stack Optimization",
     description:
-      "Industrial edge vision systems for defect detection, spatial mapping, and autonomous navigation.",
-    icon: "/About-us_page/Container%20(3).svg",
+      "Deliver high-performance AI with distributed training, generative AI, and multimodal data processing on HPC.",
+    icon: "/assets/about/software-stack-optimization-logo.svg",
   },
   {
     title: "Domain-Specific Solutions",
     description:
-      "Robust full-stack platforms that integrate legacy systems with modern AI-driven decision engines.",
-    icon: "/About-us_page/Vector%20(1).svg",
+      "Build intelligent solutions for geospatial analytics, AI-powered surveillance, climate modeling, and bioinformatics.",
+    icon: "/assets/about/Domain-Specific%20Solutions-logo.svg",
   },
   {
     title: "Training & Enablement",
     description:
-      "Bare-metal optimization and containerization strategies for secure, private cloud deployments.",
-    icon: "/About-us_page/Subtract.svg",
+      "Empower teams with HPC bootcamps, AI workshops, certification programs, and expert knowledge transfer.",
+    icon: "/assets/about/Training%20&%20Enablement-logo.svg",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function StrategicExpertise() {
       <div className="relative mx-auto max-w-[1300px] px-6 md:px-12 flex flex-col gap-12">
         <ScrollReveal delay={0.1}>
           <div className="flex flex-col items-center text-center gap-4 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl lg:text-[44px] font-bold tracking-tight text-white">
+            <h2 className="text-4xl md:text-[50px] font-bold tracking-tight text-white">
               Our Strategic Expertise
             </h2>
             <p className="text-base md:text-lg leading-relaxed" style={{ color: "#A0A0A0" }}>
@@ -73,25 +73,23 @@ export default function StrategicExpertise() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {expertiseItems.map((item, index) => (
             <ScrollReveal key={item.title} delay={0.15 + index * 0.08}>
-              <Link href={item.href || "#"} className="expertise-card group flex flex-col gap-5 rounded-xl bg-white p-7 transition-all duration-300 cursor-pointer h-full">
-                <div
-                  className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full transition-colors duration-300 group-hover:border-white/25"
-                  style={{ border: "1px solid #9E9E9E1A" }}
-                >
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={28}
-                    height={28}
-                    className="h-7 w-7 object-contain transition duration-300 group-hover:brightness-0 group-hover:invert"
-                  />
-                </div>
+              <Link 
+                href={item.href || "#"} 
+                className="group flex flex-col gap-6 rounded-xl border border-white/5 p-8 transition-all duration-300 cursor-pointer h-full bg-[#1E1E1E] hover:bg-gradient-to-br hover:from-[#6DC27F] hover:to-[#006D40]"
+              >
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
 
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-lg font-bold text-[#090909] transition-colors duration-300 group-hover:text-[#FDFFFF]">
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-xl font-bold text-white transition-colors duration-300">
                     {item.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-[#5D5D5D] transition-colors duration-300 group-hover:text-[#FDFFFF]">
+                  <p className="text-sm leading-relaxed text-[#A0A0A0] group-hover:text-white/90 transition-colors duration-300">
                     {item.description}
                   </p>
                 </div>
