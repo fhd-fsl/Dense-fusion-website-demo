@@ -22,7 +22,7 @@ export default function SupercomputingCTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="#"
-              className="group inline-flex h-12 items-start justify-center overflow-hidden rounded-[4px] bg-black px-8 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
+              className="group inline-flex h-12 items-start justify-center overflow-hidden rounded-[4px] bg-secondaryBlack px-8 text-lg font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen"
             >
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
                 <span className="flex h-12 shrink-0 items-center justify-center text-white">

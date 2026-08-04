@@ -15,30 +15,35 @@ const expertiseItems = [
     description:
       "Custom HPC infrastructure, hybrid cloud integration, GPU acceleration, and high-speed networking solutions.",
     icon: "/assets/about/HPC-Infra_Design-logo.svg",
+    href: "/services/hpc-infrastructure-design",
   },
   {
     title: "AI + HPC Integration",
     description:
       "Deliver high-performance AI with distributed training, generative AI, and multimodal data processing on HPC.",
     icon: "/assets/about/AI+HPC-integration-logo.svg",
+    href: "/services/ai-hpc-integration",
   },
   {
     title: "Software Stack Optimization",
     description:
       "Deliver high-performance AI with distributed training, generative AI, and multimodal data processing on HPC.",
     icon: "/assets/about/software-stack-optimization-logo.svg",
+    href: "/services/software-stack-optimization",
   },
   {
     title: "Domain-Specific Solutions",
     description:
       "Build intelligent solutions for geospatial analytics, AI-powered surveillance, climate modeling, and bioinformatics.",
     icon: "/assets/about/Domain-Specific%20Solutions-logo.svg",
+    href: "/services/domain-specific-solutions",
   },
   {
     title: "Training & Enablement",
     description:
       "Empower teams with HPC bootcamps, AI workshops, certification programs, and expert knowledge transfer.",
     icon: "/assets/about/Training%20&%20Enablement-logo.svg",
+    href: "/services/training-and-enablement",
   },
 ];
 

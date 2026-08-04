@@ -11,19 +11,16 @@ export default function Hero() {
           <ScrollReveal>
             <div className="inline-flex items-center px-5 py-2.5 rounded-full border border-gray-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.04)] mb-8 bg-white">
               <span className="text-black font-semibold text-sm md:text-base">
-                Supercomputing Consulting
+                HPC Infrastructure Design
               </span>
             </div>
 
             <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-              Strategic HPC Consulting for
-              <br className="hidden md:block" /> High-Performance Innovation
+              HPC Infrastructure Design
             </h1>
 
             <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Design, optimize, and scale your high-performance computing
-              environment with expert guidance tailored to your research,
-              engineering, and business objectives.
+              Design and deploy reliable HPC infrastructure tailored for AI, research, simulation, and data-intensive workloads.
             </p>
 
             <Link
@@ -57,8 +54,8 @@ export default function Hero() {
             }}
           >
             <img
-              src="/assets/services/supercomputing/hero-bg.jpg"
-              alt="Strategic HPC Consulting"
+              src="/assets/services/hpc-infrastructure-design/hero-bg.jpg"
+              alt="HPC Infrastructure Design"
               className="w-full h-full object-cover object-top"
             />
           </div>

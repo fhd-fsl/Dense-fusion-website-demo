@@ -83,11 +83,11 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Our Services</h4>
                 <Link href="/services/supercomputing-consulting" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Supercomputing Consulting</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">HPC Infrastructure Design & Deployment</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">AI + HPC Integration</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Software Stack Installation & Optimization</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Domain Specific Solution</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Training & Enablement</Link>
+                <Link href="/services/hpc-infrastructure-design" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">HPC Infrastructure Design & Deployment</Link>
+                <Link href="/services/ai-hpc-integration" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">AI + HPC Integration</Link>
+                <Link href="/services/software-stack-optimization" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Software Stack Installation & Optimization</Link>
+                <Link href="/services/domain-specific-solutions" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Domain Specific Solution</Link>
+                <Link href="/services/training-and-enablement" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Training & Enablement</Link>
               </div>
 
               {/* Industries */}

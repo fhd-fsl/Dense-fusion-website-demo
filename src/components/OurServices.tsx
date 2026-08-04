@@ -30,7 +30,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/HPC.svg",
     description:
       "Custom architectural designs for high-performance computing clusters, liquid cooling setups, low-latency interconnects, and scalable high-speed parallel storage systems.",
-    href: "#",
+    href: "/services/hpc-infrastructure-design",
   },
   {
     id: "ai-hpc-integration",
@@ -38,7 +38,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/AI+HPC.svg",
     description:
       "Seamless blending of AI deep learning workloads with traditional HPC environments, enabling distributed GPU model training and high-throughput inference.",
-    href: "#",
+    href: "/services/ai-hpc-integration",
   },
   {
     id: "software-stack-optimization",
@@ -46,7 +46,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/stack-optimization.svg",
     description:
       "Fine-tuning compilers, MPI libraries, CUDA kernels, and job schedulers to squeeze maximum performance out of hardware investments.",
-    href: "#",
+    href: "/services/software-stack-optimization",
   },
   {
     id: "domain-specific-solutions",
@@ -54,7 +54,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/domain-specific.svg",
     description:
       "Tailored computational platforms engineered for specialized industries including finance, life sciences, energy, aerospace, and autonomous systems.",
-    href: "#",
+    href: "/services/domain-specific-solutions",
   },
   {
     id: "training-enablement",
@@ -62,7 +62,7 @@ const services: ServiceItem[] = [
     iconPath: "/assets/home-page/services/training-enablement.svg",
     description:
       "Comprehensive hands-on training and capacity building for engineering and research teams to master modern supercomputing tools and AI frameworks.",
-    href: "#",
+    href: "/services/training-and-enablement",
   },
 ];
 

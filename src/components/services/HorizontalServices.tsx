@@ -28,7 +28,8 @@ const servicesData = [
       "GPU & CPU architecture",
       "High-speed networking"
     ],
-    image: "/assets/services/services-card-2.svg"
+    image: "/assets/services/services-card-2.svg",
+    link: "/services/hpc-infrastructure-design"
   },
   {
     id: 3,
@@ -39,7 +40,8 @@ const servicesData = [
       "Generative AI deployment",
       "Large language models (LLMs)"
     ],
-    image: "/assets/services/services-card-3.svg"
+    image: "/assets/services/services-card-3.svg",
+    link: "/services/ai-hpc-integration"
   },
   {
     id: 4,
@@ -50,7 +52,8 @@ const servicesData = [
       "AI framework tuning",
       "Compiler & library optimization"
     ],
-    image: "/assets/services/services-card-4.svg"
+    image: "/assets/services/services-card-4.svg",
+    link: "/services/software-stack-optimization"
   },
   {
     id: 5,
@@ -61,7 +64,8 @@ const servicesData = [
       "Climate & environmental modeling",
       "Bioinformatics pipelines"
     ],
-    image: "/assets/services/services-card-5.svg"
+    image: "/assets/services/services-card-5.svg",
+    link: "/services/domain-specific-solutions"
   },
   {
     id: 6,
@@ -72,7 +76,8 @@ const servicesData = [
       "Cluster administration training",
       "Certification programs"
     ],
-    image: "/assets/services/services-card-6.svg"
+    image: "/assets/services/services-card-6.svg",
+    link: "/services/training-and-enablement"
   }
 ];
 
