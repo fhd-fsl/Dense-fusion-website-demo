@@ -1,11 +1,38 @@
 "use client";
 
+import { useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+const solutionsData = [
+  {
+    id: 'plantx',
+    title: 'PlantX',
+    icon: '/assets/home-page/solutions/earth-refresh.svg',
+    description: 'PlantX is an advanced geospatial platform that analyzes high-resolution satellite imagery to track and visualize urban land cover changes. Using Islamabad as a case study, it uncovers a 20-year increase in built-up areas and loss of green spaces, providing critical insights for sustainable urban planning.',
+    link: '#'
+  },
+  {
+    id: 'serena-green',
+    title: 'Serena Green',
+    icon: '/assets/home-page/solutions/farm-spout.svg',
+    description: 'Serena Green is a digital platform developed by Serena Hotels in partnership with WWF and AKRSP to monitor, visualize, and verify large-scale afforestation for carbon offsetting and environmental restoration. Its pilot initiative plants over 600,000 trees across Gilgit-Baltistan, Balochistan, Chitral, Punjab, and Khyber Pakhtunkhwa, advancing the hospitality industry toward net-zero emissions.',
+    link: '#'
+  },
+  {
+    id: 'carbon-eye',
+    title: 'Carbon Eye',
+    icon: '/assets/home-page/solutions/eye-streamline.svg',
+    description: "Carbon Eye is a web-based platform that leverages remote sensing, GIS, GeoServer, and advanced deep learning to analyze a decade of NDVI and carbon emission trends in six of the world's most climate-vulnerable cities, delivering critical insights for sustainable urban planning and environmental management.",
+    link: '#'
+  }
+];
+
 export default function Solutions() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <section className="bg-[#080808] py-24 text-white">
       <div className="mx-auto max-w-[1300px] px-6 md:px-12">
@@ -37,70 +64,111 @@ export default function Solutions() {
         </ScrollReveal>
 
         {/* Content Layout */}
-        <div className="flex flex-col md:flex-row gap-6 h-auto md:h-[500px]">
-          {/* Main Case Study (PlantX) */}
-          <div className="flex-1 bg-gradient-to-br from-gradientGreen1 from-15% via-gradientGreen2 via-55% to-lightGreen rounded-[4px] p-8 md:p-12 flex flex-col justify-between relative overflow-hidden group">
-            <ScrollReveal direction="up" delay={0.2} className="h-full flex flex-col justify-between">
-              <div>
-                <div className="mb-6">
-                  <Image src="/assets/home-page/solutions/earth-refresh.svg" alt="Earth" width={48} height={48} />
-                </div>
-                <h3 className="text-4xl md:text-5xl font-bold mb-6">PlantX</h3>
-              </div>
-              
-              <div className="mt-8 md:mt-0 max-w-[90%]">
-                <p className="text-white/90 text-sm md:text-base leading-relaxed mb-8">
-                  PlantX is an advanced geospatial platform that analyzes high-
-                  resolution satellite imagery to track and visualize urban land
-                  cover changes. Using Islamabad as a case study, it uncovers a
-                  20-year increase in built-up areas and loss of green spaces,
-                  providing critical insights for sustainable urban planning.
-                </p>
-                
-                <button className="inline-flex items-center gap-2 text-sm font-semibold hover:gap-3 transition-all duration-300">
-                  View Case Study
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-            </ScrollReveal>
-          </div>
+        <ScrollReveal delay={0.2}>
+          <div className="flex flex-col md:flex-row gap-6 h-auto md:h-[500px]">
+            {solutionsData.map((solution, index) => {
+              const isActive = activeIndex === index;
 
-          {/* Sidebar Nav 1 (Serena Green) */}
-          <div className="w-full md:w-24 lg:w-32 bg-white rounded-[4px] py-8 px-4 flex flex-col items-center justify-between cursor-pointer hover:bg-gray-100 transition-colors shadow-lg">
-            <ScrollReveal direction="up" delay={0.3} className="h-full flex flex-col items-center justify-between">
-              <div className="text-[#1b8e44] mb-8 mt-4">
-                <Image src="/assets/home-page/solutions/farm-spout.svg" alt="Leaf" width={32} height={32} />
-              </div>
-              
-              <div className="flex-1 flex items-end justify-center pb-8">
-                <span 
-                  className="text-black font-bold text-xl md:text-2xl whitespace-nowrap"
-                  style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
+              return (
+                <div
+                  key={solution.id}
+                  onClick={() => setActiveIndex(index)}
+                  className={`group relative flex overflow-hidden rounded-[4px] cursor-pointer transition-all duration-500 ease-out shadow-lg bg-white ${
+                    isActive
+                      ? "md:flex-[3] lg:flex-[4] flex-1 min-h-[350px] md:min-h-0"
+                      : "md:flex-[0_0_96px] lg:flex-[0_0_128px] flex-[0_0_auto] min-h-[80px] md:min-h-0"
+                  }`}
                 >
-                  Serena Green
-                </span>
-              </div>
-            </ScrollReveal>
+                  {/* Background Gradient Layer for active state */}
+                  <div 
+                    className={`absolute inset-0 bg-gradient-to-br from-gradientGreen1 from-15% via-gradientGreen2 via-55% to-lightGreen transition-opacity duration-500 ${isActive ? "opacity-100" : "opacity-0"}`} 
+                  />
+
+                  {/* Hover overlay for inactive state */}
+                  <div 
+                    className={`absolute inset-0 bg-gray-100 transition-opacity duration-300 ${!isActive ? "opacity-0 group-hover:opacity-100" : "opacity-0"}`} 
+                  />
+
+                  <div className="relative z-10 w-full h-full">
+                    {/* Expanded Content */}
+                    <div 
+                      className={`absolute inset-0 flex flex-col h-full justify-between p-8 lg:p-12 transition-opacity duration-500 w-[260px] sm:w-[350px] md:w-[400px] lg:w-[600px] xl:w-[750px] shrink-0 ${
+                        isActive ? "opacity-100 pointer-events-auto delay-100" : "opacity-0 pointer-events-none"
+                      }`}
+                    >
+                      <div>
+                        <div className="mb-6">
+                          <span
+                            className="inline-block bg-white w-12 h-12"
+                            style={{
+                              maskImage: `url(${solution.icon})`,
+                              WebkitMaskImage: `url(${solution.icon})`,
+                              maskSize: "contain",
+                              WebkitMaskSize: "contain",
+                              maskRepeat: "no-repeat",
+                              WebkitMaskRepeat: "no-repeat",
+                              maskPosition: "center",
+                              WebkitMaskPosition: "center",
+                            }}
+                          />
+                        </div>
+                        <h3 className="text-4xl md:text-5xl font-bold mb-6 text-white whitespace-nowrap">{solution.title}</h3>
+                      </div>
+                      
+                      <div className="mt-8 md:mt-0">
+                        <p className="text-white/90 text-sm md:text-base leading-relaxed mb-8">
+                          {solution.description}
+                        </p>
+                        
+                        <button className="inline-flex items-center gap-2 text-sm font-semibold hover:gap-3 transition-all duration-300 text-white">
+                          View Case Study
+                          <ArrowRight className="w-4 h-4" />
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Collapsed Content */}
+                    <div 
+                      className={`absolute inset-0 flex h-full flex-row md:flex-col items-center md:items-start justify-between p-8 lg:p-12 transition-opacity duration-500 ${
+                        isActive ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto delay-100"
+                      }`}
+                    >
+                      {/* Icon */}
+                      <div className="flex-shrink-0">
+                        <span
+                          className="inline-block bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 w-8 h-8 md:w-10 md:h-10"
+                          style={{
+                            maskImage: `url(${solution.icon})`,
+                            WebkitMaskImage: `url(${solution.icon})`,
+                            maskSize: "contain",
+                            WebkitMaskSize: "contain",
+                            maskRepeat: "no-repeat",
+                            WebkitMaskRepeat: "no-repeat",
+                            maskPosition: "center",
+                            WebkitMaskPosition: "center",
+                          }}
+                        />
+                      </div>
+                      
+                      {/* Title (Mobile: Horizontal, Desktop: Vertical) */}
+                      <div className="flex-1 flex items-center md:items-end justify-start md:justify-start md:pb-8 ml-6 md:ml-0">
+                        <span 
+                          className="text-black font-bold text-xl md:text-2xl whitespace-nowrap hidden md:block"
+                          style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
+                        >
+                          {solution.title}
+                        </span>
+                        <span className="text-black font-bold text-xl whitespace-nowrap md:hidden">
+                          {solution.title}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-          
-          {/* Sidebar Nav 2 (Carbon Eye) */}
-          <div className="w-full md:w-24 lg:w-32 bg-white rounded-[4px] py-8 px-4 flex flex-col items-center justify-between cursor-pointer hover:bg-gray-100 transition-colors shadow-lg">
-            <ScrollReveal direction="up" delay={0.4} className="h-full flex flex-col items-center justify-between">
-              <div className="text-[#1b8e44] mb-8 mt-4">
-                <Image src="/assets/home-page/solutions/eye-streamline.svg" alt="Eye" width={32} height={32} />
-              </div>
-              
-              <div className="flex-1 flex items-end justify-center pb-8">
-                <span 
-                  className="text-black font-bold text-xl md:text-2xl whitespace-nowrap"
-                  style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
-                >
-                  Carbon Eye
-                </span>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

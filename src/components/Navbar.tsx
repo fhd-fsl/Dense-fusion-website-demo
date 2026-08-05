@@ -35,9 +35,15 @@ export default function Navbar() {
               <Link 
                 key={label} 
                 href={href} 
-                className={`transition hover:text-darkGreen ${isActive ? "text-darkGreen font-bold" : ""}`}
+                className={`relative group transition-colors duration-300 hover:text-darkGreen ${isActive ? "text-darkGreen font-bold" : "text-secondaryBlack"}`}
               >
                 {label}
+                {/* Active indicator */}
+                <span 
+                  className={`absolute -bottom-2 left-0 h-[2px] bg-darkGreen rounded-full transition-all duration-300 ease-out ${
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  }`} 
+                />
               </Link>
             );
           })}

@@ -32,16 +32,13 @@ export default function HeroAbout() {
               <div className="flex flex-wrap items-center gap-4">
                 <Link
                   href="/services"
-                  className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] px-6 text-sm font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
-                  style={{
-                    background: "linear-gradient(135deg, #6DC27F 0%, #006D40 100%)",
-                  }}
+                  className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-5 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
                 >
                   <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
-                    <span className="flex h-11 shrink-0 items-center justify-center">
+                    <span className="flex h-11 shrink-0 items-center justify-center text-white">
                       Explore Our Expertise
                     </span>
-                    <span className="flex h-11 shrink-0 items-center justify-center">
+                    <span className="flex h-11 shrink-0 items-center justify-center text-white">
                       Explore Our Expertise
                     </span>
                   </span>
@@ -49,10 +46,12 @@ export default function HeroAbout() {
 
                 <Link
                   href="#"
-                  className="text-sm font-semibold transition hover:opacity-70 ml-4"
-                  style={{ color: "#5D5D5D" }}
+                  className="group relative inline-flex items-center rounded px-4 py-3 text-lg font-bold text-lightGray"
                 >
-                  Get in Touch
+                  <span className="relative">
+                    Get in Touch
+                    <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-lightGray transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                  </span>
                 </Link>
               </div>
             </div>
