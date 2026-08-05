@@ -6,6 +6,14 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ScrollReveal from "../ScrollReveal";
 
+// Import all service animations
+import SupercomputingAnimation from "@/components/animations/SupercomputingAnimation";
+import HpcInfrastructureAnimation from "@/components/animations/HpcInfrastructureAnimation";
+import AiHpcAnimation from "@/components/animations/AiHpcAnimation";
+import SoftwareStackAnimation from "@/components/animations/SoftwareStackAnimation";
+import DomainSpecificAnimation from "@/components/animations/DomainSpecificAnimation";
+import TrainingAnimation from "@/components/animations/TrainingAnimation";
+
 const servicesData = [
   {
     id: 1,
@@ -16,7 +24,7 @@ const servicesData = [
       "Advanced Infrastructure Planning",
       "Network Fabric Optimization"
     ],
-    image: "/assets/services/services-card-1.svg",
+    AnimationComponent: SupercomputingAnimation,
     link: "/services/supercomputing-consulting"
   },
   {
@@ -28,7 +36,7 @@ const servicesData = [
       "GPU & CPU architecture",
       "High-speed networking"
     ],
-    image: "/assets/services/services-card-2.svg",
+    AnimationComponent: HpcInfrastructureAnimation,
     link: "/services/hpc-infrastructure-design"
   },
   {
@@ -40,7 +48,7 @@ const servicesData = [
       "Generative AI deployment",
       "Large language models (LLMs)"
     ],
-    image: "/assets/services/services-card-3.svg",
+    AnimationComponent: AiHpcAnimation,
     link: "/services/ai-hpc-integration"
   },
   {
@@ -52,7 +60,7 @@ const servicesData = [
       "AI framework tuning",
       "Compiler & library optimization"
     ],
-    image: "/assets/services/services-card-4.svg",
+    AnimationComponent: SoftwareStackAnimation,
     link: "/services/software-stack-optimization"
   },
   {
@@ -64,7 +72,7 @@ const servicesData = [
       "Climate & environmental modeling",
       "Bioinformatics pipelines"
     ],
-    image: "/assets/services/services-card-5.svg",
+    AnimationComponent: DomainSpecificAnimation,
     link: "/services/domain-specific-solutions"
   },
   {
@@ -76,7 +84,7 @@ const servicesData = [
       "Cluster administration training",
       "Certification programs"
     ],
-    image: "/assets/services/services-card-6.svg",
+    AnimationComponent: TrainingAnimation,
     link: "/services/training-and-enablement"
   }
 ];
@@ -123,16 +131,7 @@ export default function HorizontalServices() {
     }
   };
 
-  // Auto-rotate slides
-  useEffect(() => {
-    if (isHovered || isDragging) return;
-    
-    const timer = setInterval(() => {
-      setActiveIndex((current) => (current + 1) % servicesData.length);
-    }, 5000);
 
-    return () => clearInterval(timer);
-  }, [isHovered, isDragging]);
 
   useEffect(() => {
     const handleWheel = (e: WheelEvent) => {
@@ -269,15 +268,9 @@ export default function HorizontalServices() {
                       </div>
                     </div>
                     
-                    {/* Right Content (Image) */}
-                    <div className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-gray-50 pointer-events-none">
-                      <Image 
-                        src={service.image} 
-                        alt={service.title}
-                        fill
-                        className="object-cover"
-                        priority={index === 0}
-                      />
+                    {/* Right Content (Animation) */}
+                    <div className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-white pointer-events-none overflow-hidden rounded-r-2xl">
+                      {activeIndex === index && <service.AnimationComponent />}
                     </div>
                   </div>
                 ))}

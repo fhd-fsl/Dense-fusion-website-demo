@@ -6,12 +6,19 @@ import Link from "next/link";
 import { ArrowRight, Target } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
+import SupercomputingAnimation from "@/components/animations/SupercomputingAnimation";
+import HpcInfrastructureAnimation from "@/components/animations/HpcInfrastructureAnimation";
+import AiHpcAnimation from "@/components/animations/AiHpcAnimation";
+import SoftwareStackAnimation from "@/components/animations/SoftwareStackAnimation";
+import DomainSpecificAnimation from "@/components/animations/DomainSpecificAnimation";
+import TrainingAnimation from "@/components/animations/TrainingAnimation";
+
 interface ServiceItem {
   id: string;
   title: string;
   iconPath?: string;
   isTargetIcon?: boolean;
-  imagePath: string;
+  AnimationComponent: React.ComponentType;
   description: string;
   href: string;
 }
@@ -21,7 +28,7 @@ const services: ServiceItem[] = [
     id: "supercomputing-consulting",
     title: "Supercomputing Consulting",
     iconPath: "/assets/home-page/services/supercomputer.svg",
-    imagePath: "/assets/services/supercomputing/hero-bg.jpg",
+    AnimationComponent: SupercomputingAnimation,
     description:
       "HPC Needs Assessment & Feasibility Studies Industry-specific Workflow Analysis (e.g.,CFD, genomics, geospatial AI) ROI & TCO Calculations for HPC Investments Green HPC & Energy-Efficient Cluster Design.",
     href: "/services/supercomputing-consulting",
@@ -30,7 +37,7 @@ const services: ServiceItem[] = [
     id: "hpc-infrastructure-design",
     title: "HPC Infrastructure Design",
     iconPath: "/assets/home-page/services/HPC.svg",
-    imagePath: "/assets/services/hpc-infrastructure-design/hero-bg.jpg",
+    AnimationComponent: HpcInfrastructureAnimation,
     description:
       "Custom architectural designs for high-performance computing clusters, liquid cooling setups, low-latency interconnects, and scalable high-speed parallel storage systems.",
     href: "/services/hpc-infrastructure-design",
@@ -39,7 +46,7 @@ const services: ServiceItem[] = [
     id: "ai-hpc-integration",
     title: "AI + HPC Integration",
     iconPath: "/assets/home-page/services/AI+HPC.svg",
-    imagePath: "/assets/services/ai-hpc-integration/hero-bg.jpg",
+    AnimationComponent: AiHpcAnimation,
     description:
       "Seamless blending of AI deep learning workloads with traditional HPC environments, enabling distributed GPU model training and high-throughput inference.",
     href: "/services/ai-hpc-integration",
@@ -48,7 +55,7 @@ const services: ServiceItem[] = [
     id: "software-stack-optimization",
     title: "Software Stack Optimization",
     iconPath: "/assets/home-page/services/stack-optimization.svg",
-    imagePath: "/assets/services/software-stack-optimization/hero-bg.jpg",
+    AnimationComponent: SoftwareStackAnimation,
     description:
       "Fine-tuning compilers, MPI libraries, CUDA kernels, and job schedulers to squeeze maximum performance out of hardware investments.",
     href: "/services/software-stack-optimization",
@@ -57,7 +64,7 @@ const services: ServiceItem[] = [
     id: "domain-specific-solutions",
     title: "Domain-Specific Solutions",
     iconPath: "/assets/home-page/services/domain-specific.svg",
-    imagePath: "/assets/services/domain-specific-solutions/hero-bg.jpg",
+    AnimationComponent: DomainSpecificAnimation,
     description:
       "Tailored computational platforms engineered for specialized industries including finance, life sciences, energy, aerospace, and autonomous systems.",
     href: "/services/domain-specific-solutions",
@@ -66,7 +73,7 @@ const services: ServiceItem[] = [
     id: "training-enablement",
     title: "Training & Enablement",
     iconPath: "/assets/home-page/services/training-enablement.svg",
-    imagePath: "/assets/services/training-and-enablement/hero-bg.jpg",
+    AnimationComponent: TrainingAnimation,
     description:
       "Comprehensive hands-on training and capacity building for engineering and research teams to master modern supercomputing tools and AI frameworks.",
     href: "/services/training-and-enablement",
@@ -163,15 +170,8 @@ export default function OurServices() {
             <ScrollReveal delay={0.35}>
               <div className="h-[500px] md:h-[520px] flex flex-col justify-between rounded-2xl bg-white p-6 md:p-8 shadow-xl border border-borderGray2/50">
                 <div>
-                  <div className="relative h-[220px] md:h-[250px] w-full overflow-hidden rounded-xl">
-                    <Image
-                      src={activeService.imagePath}
-                      alt={activeService.title}
-                      fill
-                      className="object-cover object-top transition-opacity duration-300"
-                      key={activeService.imagePath}
-                      priority
-                    />
+                  <div className="relative h-[220px] md:h-[250px] w-full overflow-hidden rounded-xl bg-gray-50 border border-gray-100">
+                    <activeService.AnimationComponent key={activeService.id} />
                   </div>
 
                   <p className="mt-5 text-base md:text-lg text-textGray font-medium leading-relaxed">

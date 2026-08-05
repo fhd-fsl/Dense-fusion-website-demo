@@ -2,12 +2,16 @@
 
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import SupercomputingAnimation from "@/components/animations/SupercomputingAnimation";
 
 export default function Hero() {
   return (
     <section className="bg-white pt-20 md:pt-28 pb-16 md:pb-24 relative overflow-hidden">
-      <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12">
-        <div className="max-w-4xl mb-12 md:mb-16">
+      <div className="mx-auto max-w-[1400px] w-full px-6 md:px-12">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-center justify-between">
+          
+          {/* Left: Text Content */}
+          <div className="w-full lg:w-1/2 max-w-2xl">
           <ScrollReveal>
             <div className="inline-flex items-center px-5 py-2.5 rounded-full border border-gray-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.04)] mb-8 bg-white">
               <span className="text-black font-semibold text-sm md:text-base">
@@ -40,31 +44,20 @@ export default function Hero() {
               </span>
             </Link>
           </ScrollReveal>
-        </div>
-
-        <ScrollReveal delay={0.2}>
-          <div 
-            className="relative w-full aspect-[1221/552]" 
-            style={{ 
-              WebkitMaskImage: "url('/assets/hero-mask.svg')", 
-              maskImage: "url('/assets/hero-mask.svg')",
-              WebkitMaskSize: "100% 100%",
-              maskSize: "100% 100%",
-              WebkitMaskRepeat: "no-repeat",
-              maskRepeat: "no-repeat",
-              WebkitMaskPosition: "center",
-              maskPosition: "center"
-            }}
-          >
-            <img
-              src="/assets/services/supercomputing/hero-bg.jpg"
-              alt="Strategic HPC Consulting"
-              className="w-full h-full object-cover object-top"
-            />
           </div>
-        </ScrollReveal>
+
+          {/* Right: Animation/Image */}
+          <div className="w-full lg:w-1/2">
+            <ScrollReveal delay={0.2}>
+              <div className="relative w-full aspect-square md:aspect-[4/3]">
+                <SupercomputingAnimation />
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
+
 
