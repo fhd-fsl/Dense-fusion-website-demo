@@ -5,7 +5,7 @@ const reasons = [
   "Specialized HPC expertise",
   "Scalable architecture design",
   "AI-ready infrastructure planning",
-  "Scalable architecture design",
+  "End-to-end solution engineering",
   "Vendor-neutral recommendations",
   "Long-term technical partnership",
 ];
