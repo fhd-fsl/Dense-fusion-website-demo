@@ -20,11 +20,11 @@ export default function Hero() {
             </div>
 
             <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-              Domain-Specific Solutions
+              AI & HPC Solutions Built for Your Industry
             </h1>
 
             <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Develop intelligent solutions designed to address complex challenges across specialized industries and research domains.
+              Deliver intelligent, industry-focused solutions that solve complex scientific, engineering, and enterprise challenges.
             </p>
 
             <Link

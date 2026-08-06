@@ -2,12 +2,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
 import Hero from "@/components/services/domain-specific-solutions/Hero";
-import ValueProp from "@/components/services/supercomputing/ValueProp";
-import ConsultingServices from "@/components/services/supercomputing/ConsultingServices";
-import ConsultingProcess from "@/components/services/supercomputing/ConsultingProcess";
-import WhyChoose from "@/components/services/supercomputing/WhyChoose";
+import ValueProp from "@/components/services/domain-specific-solutions/ValueProp";
+import DomainServices from "@/components/services/domain-specific-solutions/DomainServices";
+import DomainProcess from "@/components/services/domain-specific-solutions/DomainProcess";
+import WhyChoose from "@/components/services/domain-specific-solutions/WhyChoose";
 import Technologies from "@/components/services/supercomputing/Technologies";
-import SupercomputingCTA from "@/components/services/supercomputing/SupercomputingCTA";
+import CTA from "@/components/services/domain-specific-solutions/CTA";
 
 export default function DomainSpecificSolutionsPage() {
   return (
@@ -16,11 +16,11 @@ export default function DomainSpecificSolutionsPage() {
         <Navbar />
         <Hero />
         <ValueProp />
-        <ConsultingServices />
-        <ConsultingProcess />
+        <DomainServices />
+        <DomainProcess />
         <WhyChoose />
         <Technologies />
-        <SupercomputingCTA />
+        <CTA />
         <Footer hideConnectCta />
       </main>
     </LenisProvider>
