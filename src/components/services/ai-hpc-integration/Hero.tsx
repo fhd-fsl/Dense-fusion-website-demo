@@ -20,11 +20,11 @@ export default function Hero() {
             </div>
 
             <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-              AI + HPC Integration
+              Accelerate Artificial Intelligence with High-Performance Computing
             </h1>
 
             <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Combine AI and HPC to train larger models faster, process massive datasets, and scale intelligent applications with confidence.
+              Combine AI and HPC to train larger models, process massive datasets, and deploy intelligent solutions at enterprise scale.
             </p>
 
             <Link

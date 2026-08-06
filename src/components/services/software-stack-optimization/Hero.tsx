@@ -20,11 +20,11 @@ export default function Hero() {
             </div>
 
             <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-              Software Stack Optimization
+              Maximize Performance with an Optimized HPC Software Stack
             </h1>
 
             <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Optimize your software ecosystem to improve speed, scalability, and resource utilization across HPC workloads.
+              Improve application performance, resource efficiency, and system reliability with a software stack optimized for demanding HPC and AI workloads.
             </p>
 
             <Link
