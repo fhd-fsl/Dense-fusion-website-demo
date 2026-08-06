@@ -20,11 +20,11 @@ export default function Hero() {
             </div>
 
             <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-              Training & Enablement
+              Empower Your Team with HPC & AI Expertise
             </h1>
 
             <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Equip your teams with the knowledge and skills needed to successfully deploy, manage, and optimize AI and HPC environments.
+              Comprehensive training programs designed to upskill your workforce, accelerate onboarding, and drive adoption of high-performance computing and AI technologies.
             </p>
 
             <Link

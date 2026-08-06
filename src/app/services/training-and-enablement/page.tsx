@@ -2,12 +2,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
 import Hero from "@/components/services/training-and-enablement/Hero";
-import ValueProp from "@/components/services/supercomputing/ValueProp";
-import ConsultingServices from "@/components/services/supercomputing/ConsultingServices";
-import ConsultingProcess from "@/components/services/supercomputing/ConsultingProcess";
-import WhyChoose from "@/components/services/supercomputing/WhyChoose";
+import ValueProp from "@/components/services/training-and-enablement/ValueProp";
+import TrainingServices from "@/components/services/training-and-enablement/TrainingServices";
+import TrainingProcess from "@/components/services/training-and-enablement/TrainingProcess";
+import WhyChoose from "@/components/services/training-and-enablement/WhyChoose";
 import Technologies from "@/components/services/supercomputing/Technologies";
-import SupercomputingCTA from "@/components/services/supercomputing/SupercomputingCTA";
+import CTA from "@/components/services/training-and-enablement/CTA";
 
 export default function TrainingAndEnablementPage() {
   return (
@@ -16,11 +16,11 @@ export default function TrainingAndEnablementPage() {
         <Navbar />
         <Hero />
         <ValueProp />
-        <ConsultingServices />
-        <ConsultingProcess />
+        <TrainingServices />
+        <TrainingProcess />
         <WhyChoose />
         <Technologies />
-        <SupercomputingCTA />
+        <CTA />
         <Footer hideConnectCta />
       </main>
     </LenisProvider>
