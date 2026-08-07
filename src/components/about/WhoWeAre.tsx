@@ -36,7 +36,7 @@ export default function WhoWeAre() {
           <ScrollReveal delay={0.4} className="h-full">
             <div className="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-sm">
                <Image 
-                 src="/assets/about/527bf2cce55756b91a8fda3b44f8a7462f3e0dea.jpg" 
+                 src="/assets/about/who-we-are.jpg" 
                  alt="Who We Are"
                  fill
                  className="object-cover"
