@@ -5,28 +5,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const steps = [
   {
-    title: "Assess",
+    title: "Discover",
     label: "STEP 01",
-    desc: "Evaluate your team's current skill levels and identify knowledge gaps.",
+    desc: "Analyze your industry challenges, business goals, and technical requirements.",
   },
   {
     title: "Design",
     label: "STEP 02",
-    desc: "Create a customized curriculum focused on your specific technologies and use cases.",
+    desc: "Develop a customized AI and HPC solution tailored to your specific needs.",
   },
   {
-    title: "Deliver",
+    title: "Deploy",
     label: "STEP 03",
-    desc: "Conduct engaging, hands-on training sessions led by industry experts.",
+    desc: "Implement and integrate production-ready solutions into your existing environment.",
   },
   {
-    title: "Support",
+    title: "Optimize",
     label: "STEP 04",
-    desc: "Provide ongoing resources, documentation, and mentorship to reinforce learning.",
+    desc: "Continuously monitor, refine, and optimize performance for lasting business impact.",
   },
 ];
 
-export default function ConsultingProcess() {
+export default function TrainingProcess() {
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -60,7 +60,7 @@ export default function ConsultingProcess() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl">
-              A proven methodology to deliver impactful learning experiences tailored to your organizational needs.
+              A structured, collaborative process that transforms complex industry challenges into scalable AI and HPC solutions built for long-term success.
             </p>
           </div>
         </ScrollReveal>

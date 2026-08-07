@@ -1,16 +1,17 @@
 import ScrollReveal from "@/components/ScrollReveal";
 
-export default function ConsultingServices() {
+export default function TrainingServices() {
   return (
     <section className="bg-[#f9f9f9] py-20 md:py-32">
       <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12">
         <ScrollReveal>
           <div className="text-center mb-16 md:mb-24">
             <h2 className="text-[36px] md:text-[48px] font-bold text-black mb-4">
-              Our Training Programs
+              Our Domain Expertise
             </h2>
             <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
-              Tailored educational experiences to equip your organization with the knowledge required for next-generation computing.
+              Industry-focused solutions designed to accelerate innovation, improve
+              efficiency, and deliver measurable business outcomes.
             </p>
           </div>
         </ScrollReveal>
@@ -21,20 +22,20 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.1}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  HPC Fundamentals
+                  Geospatial Intelligence
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Core concepts of high-performance computing, architecture, and resource management.
+                  Advanced GIS, satellite imagery, and spatial analytics.
                 </p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  AI & Deep Learning
+                  Bioinformatics
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Hands-on training for PyTorch, TensorFlow, and scalable model deployment.
+                  Accelerate genomics, life sciences, and biomedical research.
                 </p>
               </div>
             </ScrollReveal>
@@ -45,10 +46,10 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.3} className="h-full">
               <div className="bg-gradient-to-br from-[#006D40] to-[#6DC27F] p-8 md:p-10 rounded-xl shadow-lg h-full flex flex-col justify-between min-h-[220px] md:min-h-[464px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-white leading-tight">
-                  Slurm & Workload Management
+                  AI-Powered Surveillance
                 </h3>
                 <p className="text-green-50 text-base md:text-lg mt-8">
-                  Mastering scheduling, resource allocation, and job optimization with Slurm.
+                  Real-time monitoring and intelligent threat detection.
                 </p>
               </div>
             </ScrollReveal>
@@ -59,20 +60,20 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.4}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  GPU Programming
+                  Climate Modeling
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Learn CUDA and advanced techniques for optimizing GPU-accelerated applications.
+                  High-performance simulations for climate and environmental research.
                 </p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.5}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  Infrastructure Administration
+                  Precision Agriculture
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Best practices for managing, monitoring, and securing HPC clusters.
+                  AI-driven insights for crop monitoring and resource optimization.
                 </p>
               </div>
             </ScrollReveal>

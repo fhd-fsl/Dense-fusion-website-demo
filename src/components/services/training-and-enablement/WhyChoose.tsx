@@ -2,12 +2,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const reasons = [
-  "Practitioner-led instruction",
-  "Hands-on lab environments",
-  "Tailored learning paths",
-  "Practical, real-world examples",
-  "Flexible delivery options",
-  "Post-training support",
+  "Customized industry solutions",
+  "Scalable architecture",
+  "AI & HPC specialists",
+  "Secure deployments",
+  "Research-driven innovation",
+  "Long-term technology partnership",
 ];
 
 export default function WhyChoose() {
@@ -30,10 +30,10 @@ export default function WhyChoose() {
               Why Choose DenseFusion?
             </h2>
             <h3 className="text-[#40A865] text-lg md:text-xl font-medium mb-6">
-              Expert Instructors with Real-World Experience
+              Industry Expertise Meets Advanced Computing
             </h3>
             <p className="text-gray-500 text-base md:text-[17px] leading-relaxed mb-12 max-w-4xl">
-              Our training programs are designed and delivered by active practitioners who bring practical insights and deep technical expertise to the classroom.
+              By combining industry expertise with advanced computing, we help organizations solve complex problems faster, smarter, and more efficiently.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-16 lg:gap-x-24">
