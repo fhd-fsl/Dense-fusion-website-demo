@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import ScrollReveal from "./ScrollReveal";
+import HeroParticleAnimation from "./animations/HeroParticleAnimation";
 
 export default function Hero() {
   return (
-    <section className="bg-white">
-      <div className="mx-auto max-w-[1300px] px-6 py-20 text-center">
+    <section className="relative overflow-hidden bg-white">
+      <HeroParticleAnimation />
+      <div className="relative z-10 mx-auto max-w-[1300px] px-6 py-20 text-center">
         <ScrollReveal delay={0.1}>
           <p className="inline-block rounded-full px-4 py-2 text-md font-semibold text-secondaryBlack border border-borderGray shadow-sm">
             Applied Supercomputing For Industry Transformation
