@@ -72,7 +72,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Quick Links</h4>
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">About</Link>
                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Services</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Industries</Link>
+                <Link href="/industries" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Industries</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Products</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Solutions</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Marketplace</Link>
