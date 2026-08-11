@@ -31,8 +31,8 @@ function ArrowBtn({
 
 export default function Industries() {
   return (
-    <section className="bg-white py-20 md:py-28">
-      <div className="mx-auto max-w-[1300px] px-6 md:px-12">
+    <section className="bg-white py-16 md:py-24">
+      <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12">
         {/* Section Header */}
         <ScrollReveal delay={0.1}>
           <h2 className="text-4xl md:text-[50px] font-bold text-secondaryBlack tracking-tight">

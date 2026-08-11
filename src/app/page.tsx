@@ -1,17 +1,17 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import AboutUs from "../components/AboutUs";
-import OurServices from "../components/OurServices";
-import Industries from "../components/Industries";
-import Solutions from "../components/Solutions";
-import Partners from "../components/Partners";
-import Footer from "../components/Footer";
-import LenisProvider from "../components/LenisProvider";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import AboutUs from "@/components/AboutUs";
+import OurServices from "@/components/OurServices";
+import Industries from "@/components/Industries";
+import Solutions from "@/components/Solutions";
+import Partners from "@/components/Partners";
+import Footer from "@/components/Footer";
+import LenisProvider from "@/components/LenisProvider";
 
 export default function Home() {
   return (
     <LenisProvider>
-      <div className="min-h-screen bg-white font-sans text-secondaryBlack">
+      <main className="min-h-screen bg-white font-sans text-secondaryBlack">
         <Navbar />
         <Hero />
         <AboutUs />
@@ -20,7 +20,7 @@ export default function Home() {
         <Solutions />
         <Partners />
         <Footer />
-      </div>
+      </main>
     </LenisProvider>
   );
 }

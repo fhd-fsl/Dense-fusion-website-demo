@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
       <HeroParticleAnimation />
-      <div className="relative z-10 mx-auto max-w-[1300px] px-6 py-20 text-center">
+      <div className="relative z-10 mx-auto max-w-[1300px] w-full px-6 py-20 text-center">
         <ScrollReveal delay={0.1}>
           <p className="inline-block rounded-full px-4 py-2 text-md font-semibold text-secondaryBlack border border-borderGray shadow-sm">
             Applied Supercomputing For Industry Transformation
@@ -16,7 +16,7 @@ export default function Hero() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.2}>
-          <h2 className="mt-5 text-6xl font-bold leading-tight">
+          <h2 className="mt-5 text-6xl font-bold leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-darkGreen to-lightGreen bg-clip-text text-transparent">
               Supercomputing
             </span>
@@ -28,7 +28,7 @@ export default function Hero() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.3}>
-          <p className="mx-auto mt-6 max-w-2xl text-xl text-textGray font-medium">
+          <p className="mx-auto mt-6 max-w-2xl text-xl text-textGray font-medium leading-relaxed">
             DenseFusion delivers high-performance computing solutions, on-premise or in the cloud,
             tailored to your business needs.
           </p>

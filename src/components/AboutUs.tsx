@@ -4,8 +4,8 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function AboutUs() {
   return (
-    <section className="bg-secondaryBlack py-20 md:py-28 text-white">
-      <div className="mx-auto max-w-[1300px] px-6 md:px-12">
+    <section className="bg-secondaryBlack py-16 md:py-24 text-white">
+      <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12">
         <ScrollReveal delay={0.1}>
           <h2 className="text-xl md:text-2xl font-semibold text-lightGray tracking-tight">
             About Us

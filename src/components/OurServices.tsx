@@ -85,7 +85,7 @@ export default function OurServices() {
   const activeService = services[activeIndex];
 
   return (
-    <section className="bg-greyBg/60 py-20 md:py-28">
+    <section className="bg-greyBg/60 py-16 md:py-24">
       {/* SVG Gradient definition for Lucide icons */}
       <svg width="0" height="0" className="absolute pointer-events-none">
         <defs>
@@ -97,7 +97,7 @@ export default function OurServices() {
         </defs>
       </svg>
 
-      <div className="mx-auto max-w-[1300px] px-6 md:px-12">
+      <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12">
         <ScrollReveal delay={0.1}>
           <h2 className="text-4xl md:text-[50px] font-bold text-secondaryBlack tracking-tight">
             Our Services

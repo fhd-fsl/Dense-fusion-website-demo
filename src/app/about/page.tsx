@@ -13,21 +13,19 @@ import LenisProvider from "@/components/LenisProvider";
 
 export default function AboutPage() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <LenisProvider>
-          <Hero />
-          <WhoWeAre />
-          <StrategicExpertise />
-          <IndustriesWeServe />
-          <Impact />
-          <OurValues />
-          <WhyChooseUs />
-          <AboutCta />
-        </LenisProvider>
+    <LenisProvider>
+      <main className="min-h-screen bg-white font-sans text-secondaryBlack">
+        <Navbar />
+        <Hero />
+        <WhoWeAre />
+        <StrategicExpertise />
+        <IndustriesWeServe />
+        <Impact />
+        <OurValues />
+        <WhyChooseUs />
+        <AboutCta />
+        <Footer hideConnectCta />
       </main>
-      <Footer hideConnectCta />
-    </>
+    </LenisProvider>
   );
 }
