@@ -4,7 +4,7 @@ import ScrollReveal from "../ScrollReveal";
 
 const industries = [
   { name: "Defense", icon: "/assets/home-page/industries/security.svg", link: "/industries/defense" },
-  { name: "Government", icon: "/assets/home-page/industries/government.svg", link: "#" },
+  { name: "Government", icon: "/assets/home-page/industries/government.svg", link: "/industries/government" },
   { name: "Agriculture", icon: "/assets/home-page/industries/agriculture.svg", link: "#" },
   { name: "Climate", icon: "/assets/home-page/industries/climate.svg", link: "#" },
   { name: "Education & Research", icon: "/assets/home-page/industries/education.svg", link: "#" },

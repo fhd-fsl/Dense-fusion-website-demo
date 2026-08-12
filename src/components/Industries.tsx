@@ -83,7 +83,7 @@ export default function Industries() {
           <div className="lg:col-span-9 flex flex-col gap-6">
             {/* Card 02: Government */}
             <ScrollReveal delay={0.25}>
-              <div className="group relative flex flex-col justify-between rounded-2xl bg-lightGreen2/30 p-6 md:p-8 border border-lightGreen/30 transition-all duration-300 hover:shadow-lg">
+              <Link href="/industries/government" className="group relative flex flex-col justify-between rounded-2xl bg-lightGreen2/30 p-6 md:p-8 border border-lightGreen/30 transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-center justify-between">
                   <div>
                     <Image
@@ -108,7 +108,7 @@ export default function Industries() {
                   </div>
                   <ArrowBtn delay={1} className="bg-white text-gradientGreen1 shadow-md border border-lightGreen/20" />
                 </div>
-              </div>
+              </Link>
             </ScrollReveal>
 
             {/* Middle Row Cards: 03, 04, 05 */}
