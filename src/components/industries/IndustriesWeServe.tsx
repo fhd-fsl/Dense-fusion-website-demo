@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 
 import DefenseAnimation from "@/components/animations/industries/DefenseAnimation";
@@ -143,7 +144,7 @@ export default function IndustriesWeServe() {
                 {activeContent.description}
               </p>
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 mb-8">
                 {activeContent.points.map((point, index) => (
                   <div key={index} className="flex items-center gap-4">
                     <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[#6DC27F] to-[#006D40] flex items-center justify-center shrink-0">
@@ -154,6 +155,18 @@ export default function IndustriesWeServe() {
                     <span className="text-gray-700 text-lg font-medium">{point}</span>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-auto pt-4">
+                <Link
+                  href={`/industries/${activeContent.id}`}
+                  className="inline-flex items-center text-gray-600 hover:text-[#1b8e44] text-sm font-semibold transition-colors duration-300"
+                >
+                  Explore More
+                  <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
               </div>
             </div>
 
