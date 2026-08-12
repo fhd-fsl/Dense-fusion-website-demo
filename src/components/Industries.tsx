@@ -167,7 +167,7 @@ export default function Industries() {
 
               {/* Card 05: Banking & Finance */}
               <ScrollReveal delay={0.4}>
-                <div className="group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6 border border-borderGray2/60 transition-all duration-300 hover:shadow-lg">
+                <Link href="/industries/finance" className="group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6 border border-borderGray2/60 transition-all duration-300 hover:shadow-lg">
                   <div className="flex items-center justify-between">
                     <Image
                       src="/assets/home-page/industries/banking-finance.svg"
@@ -188,7 +188,7 @@ export default function Industries() {
                       Intelligent, secure, and scalable financial solutions
                     </p>
                   </div>
-                </div>
+                </Link>
               </ScrollReveal>
             </div>
           </div>
