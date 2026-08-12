@@ -196,7 +196,7 @@ export default function Industries() {
           {/* Card 06: Education & Research (Bottom full-width card) */}
           <div className="lg:col-span-12">
             <ScrollReveal delay={1}>
-              <div className="group relative flex flex-col justify-between rounded-2xl bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 p-8 md:p-10 text-white shadow-md transition-all duration-300 hover:shadow-xl">
+              <Link href="/industries/education" className="group relative flex flex-col justify-between rounded-2xl bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 p-8 md:p-10 text-white shadow-md transition-all duration-300 hover:shadow-xl block">
                 <div className="flex items-center justify-between">
                   <Image
                     src="/assets/home-page/industries/education.svg"
@@ -221,7 +221,7 @@ export default function Industries() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Link>
             </ScrollReveal>
           </div>
         </div>
