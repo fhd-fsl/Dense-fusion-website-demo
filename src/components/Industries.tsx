@@ -115,7 +115,7 @@ export default function Industries() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {/* Card 03: Agriculture */}
               <ScrollReveal delay={0.3}>
-                <div className="group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6 border border-borderGray2/60 transition-all duration-300 hover:shadow-lg">
+                <Link href="/industries/agriculture" className="group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6 border border-borderGray2/60 transition-all duration-300 hover:shadow-lg">
                   <div className="flex items-center justify-between">
                     <Image
                       src="/assets/home-page/industries/agriculture.svg"
@@ -136,7 +136,7 @@ export default function Industries() {
                       Smarter farming powered by AI and data
                     </p>
                   </div>
-                </div>
+                </Link>
               </ScrollReveal>
 
               {/* Card 04: Climate */}
