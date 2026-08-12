@@ -29,9 +29,9 @@ export default function DefenseAnimation() {
 
       ctx.clearRect(0, 0, width, height);
 
-      // Light theme grid (Dark green on transparent/white)
-      ctx.strokeStyle = "rgba(0, 109, 64, 0.1)"; // Very faint dark green
-      ctx.lineWidth = 1;
+      // Light theme grid (Dark green on transparent/white) - Increased opacity & thickness for contrast
+      ctx.strokeStyle = "rgba(0, 109, 64, 0.4)"; 
+      ctx.lineWidth = 1.5;
       
       for (let i = 1; i <= 3; i++) {
         ctx.beginPath();
@@ -46,12 +46,12 @@ export default function DefenseAnimation() {
       ctx.lineTo(cx + radius, cy);
       ctx.stroke();
 
-      // Radar Sweep - Slowed down
+      // Radar Sweep
       angle += 0.015; // Slower radar
       
       const sweep = ctx.createConicGradient(angle - 0.5, cx, cy);
       sweep.addColorStop(0, "rgba(0, 109, 64, 0)");
-      sweep.addColorStop(1, "rgba(0, 109, 64, 0.15)");
+      sweep.addColorStop(1, "rgba(0, 109, 64, 0.3)"); // Darker gradient
       
       ctx.beginPath();
       ctx.moveTo(cx, cy);
@@ -64,8 +64,8 @@ export default function DefenseAnimation() {
       ctx.beginPath();
       ctx.moveTo(cx, cy);
       ctx.lineTo(cx + Math.cos(angle) * radius, cy + Math.sin(angle) * radius);
-      ctx.strokeStyle = "rgba(0, 109, 64, 0.5)";
-      ctx.lineWidth = 2;
+      ctx.strokeStyle = "rgba(0, 109, 64, 0.9)"; // Much darker sweep line
+      ctx.lineWidth = 2.5;
       ctx.stroke();
 
       // Targets
@@ -85,13 +85,13 @@ export default function DefenseAnimation() {
 
         if (t.alpha > 0) {
           ctx.beginPath();
-          ctx.arc(tx, ty, 4, 0, Math.PI * 2);
+          ctx.arc(tx, ty, 5, 0, Math.PI * 2); // Slightly larger targets
           ctx.fillStyle = `rgba(0, 109, 64, ${t.alpha})`;
           ctx.fill();
           
           ctx.beginPath();
-          ctx.arc(tx, ty, 8 + (1-t.alpha)*10, 0, Math.PI * 2);
-          ctx.strokeStyle = `rgba(0, 109, 64, ${t.alpha * 0.5})`;
+          ctx.arc(tx, ty, 9 + (1-t.alpha)*10, 0, Math.PI * 2);
+          ctx.strokeStyle = `rgba(0, 109, 64, ${t.alpha * 0.7})`; // More visible ripple
           ctx.stroke();
         }
       });
