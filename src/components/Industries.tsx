@@ -141,7 +141,7 @@ export default function Industries() {
 
               {/* Card 04: Climate */}
               <ScrollReveal delay={0.35}>
-                <div className="group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6 border border-borderGray2/60 transition-all duration-300 hover:shadow-lg">
+                <Link href="/industries/climate" className="group relative flex h-full flex-col justify-between rounded-2xl bg-white p-6 border border-borderGray2/60 transition-all duration-300 hover:shadow-lg">
                   <div className="flex items-center justify-between">
                     <Image
                       src="/assets/home-page/industries/climate.svg"
@@ -162,7 +162,7 @@ export default function Industries() {
                       Advanced computing for climate research and modeling
                     </p>
                   </div>
-                </div>
+                </Link>
               </ScrollReveal>
 
               {/* Card 05: Banking & Finance */}
