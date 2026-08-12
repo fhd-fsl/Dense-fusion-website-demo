@@ -93,7 +93,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               {/* Industries */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Industries</h4>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Defense</Link>
+                <Link href="/industries/defense" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Defense</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Government</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Agriculture</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Climate</Link>

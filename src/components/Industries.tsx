@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
@@ -48,7 +49,7 @@ export default function Industries() {
           {/* Card 01: Defense (Left vertical tall card) */}
           <div className="lg:col-span-3 flex">
             <ScrollReveal delay={0.15} className="w-full flex">
-              <div className="group relative flex w-full flex-col justify-between rounded-2xl bg-greyBg p-6 md:p-8 transition-all duration-300 hover:shadow-lg border border-borderGray2/50">
+              <Link href="/industries/defense" className="group relative flex w-full flex-col justify-between rounded-2xl bg-greyBg p-6 md:p-8 transition-all duration-300 hover:shadow-lg border border-borderGray2/50">
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-semibold text-lightGray">01</span>
                   <ArrowBtn delay={1} className="bg-white text-secondaryBlack border border-borderGray2/60 shadow-sm" />
@@ -74,7 +75,7 @@ export default function Industries() {
                     AI and HPC for mission-critical defense solutions
                   </p>
                 </div>
-              </div>
+              </Link>
             </ScrollReveal>
           </div>
 

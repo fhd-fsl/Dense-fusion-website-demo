@@ -3,12 +3,12 @@ import Link from "next/link";
 import ScrollReveal from "../ScrollReveal";
 
 const industries = [
-  { name: "Defense", icon: "/assets/home-page/industries/security.svg" },
-  { name: "Government", icon: "/assets/home-page/industries/government.svg" },
-  { name: "Agriculture", icon: "/assets/home-page/industries/agriculture.svg" },
-  { name: "Climate", icon: "/assets/home-page/industries/climate.svg" },
-  { name: "Education & Research", icon: "/assets/home-page/industries/education.svg" },
-  { name: "Banking & Finance", icon: "/assets/home-page/industries/banking-finance.svg" },
+  { name: "Defense", icon: "/assets/home-page/industries/security.svg", link: "/industries/defense" },
+  { name: "Government", icon: "/assets/home-page/industries/government.svg", link: "#" },
+  { name: "Agriculture", icon: "/assets/home-page/industries/agriculture.svg", link: "#" },
+  { name: "Climate", icon: "/assets/home-page/industries/climate.svg", link: "#" },
+  { name: "Education & Research", icon: "/assets/home-page/industries/education.svg", link: "#" },
+  { name: "Banking & Finance", icon: "/assets/home-page/industries/banking-finance.svg", link: "#" },
 ];
 
 export default function IndustriesWeServe() {
@@ -30,7 +30,7 @@ export default function IndustriesWeServe() {
           {industries.map((item, index) => (
             <ScrollReveal key={item.name} delay={0.15 + index * 0.08}>
               <Link
-                href="#"
+                href={item.link || "#"}
                 className="group relative overflow-hidden flex flex-col items-center justify-center gap-4 rounded-xl bg-white py-12 px-6 transition-all duration-300 cursor-pointer h-full border border-borderGray/40 shadow-sm hover:shadow-md"
               >
                 {/* Expanding Top Border */}
