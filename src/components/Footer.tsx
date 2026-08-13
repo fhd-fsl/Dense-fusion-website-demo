@@ -75,7 +75,6 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
                 <Link href="/industries" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Industries</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Products</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Solutions</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Marketplace</Link>
                 <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Contact us</Link>
               </div>
 
