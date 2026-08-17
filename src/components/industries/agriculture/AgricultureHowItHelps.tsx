@@ -4,28 +4,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const solutions = [
   {
-    title: "Geospatial Intelligence",
-    desc: "Analyze satellite imagery, mapping data, and spatial information to generate actionable intelligence.",
+    title: "Precision Agriculture",
+    desc: "Use AI and geospatial analytics to support data-driven agricultural decisions.",
   },
   {
-    title: "AI-Powered Surveillance",
-    desc: "Process video, imagery, and sensor data using AI-powered detection and classification.",
+    title: "Crop Monitoring",
+    desc: "Analyze satellite and sensor data to monitor crop health and field conditions.",
   },
   {
-    title: "Computer Vision",
-    desc: "Accelerate image and video analysis for automated identification, monitoring, and intelligence workflows.",
+    title: "Satellite Imagery Analysis",
+    desc: "Process large-scale imagery for agricultural and environmental insights.",
   },
   {
-    title: "Simulation & Modeling",
-    desc: "Run complex simulations to support mission planning, scenario analysis, and operational research.",
+    title: "Yield Prediction",
+    desc: "Apply AI and predictive analytics to identify patterns and estimate potential yields.",
   },
   {
-    title: "Data Analytics",
-    desc: "Process and analyze massive datasets to uncover patterns and support data-driven decisions.",
+    title: "Soil & Resource Analysis",
+    desc: "Analyze soil and environmental data to improve resource utilization.",
   },
   {
-    title: "Predictive Intelligence",
-    desc: "Apply AI and advanced analytics to identify trends, patterns, and potential outcomes.",
+    title: "Environmental Monitoring",
+    desc: "Monitor changing environmental conditions to support sustainable agricultural practices.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function AgricultureHowItHelps() {
               How DenseFusion Helps
             </h2>
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-              We design and optimize computing environments around the unique requirements of agriculture organizations, combining advanced AI capabilities with high-performance infrastructure.
+              DenseFusion delivers scalable computing environments that help agricultural organizations turn complex data into actionable insights.
             </p>
           </div>
         </ScrollReveal>

@@ -5,24 +5,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "How does DenseFusion leverage HPC for government and agriculture agencies?",
-    answer: "We develop accelerated computing pipelines that consolidate massive real-time signals, satellite maps, and multi-sensor feeds to produce visual patterns in seconds rather than hours."
+    question: "How can AI and HPC improve agriculture?",
+    answer: "AI and HPC can process large amounts of satellite, environmental, and crop data to support faster analysis and better agricultural decisions."
   },
   {
-    question: "What security measures are implemented to protect sensitive surveillance data?",
-    answer: "We implement robust encryption, zero-trust architectures, and isolated computing environments that comply with strict government and agriculture security standards."
+    question: "Can DenseFusion process satellite and geospatial data?",
+    answer: "Yes. Our solutions can support large-scale satellite imagery and geospatial analytics workloads."
   },
   {
-    question: "How easily can the computing resources scale during periods of high demand?",
-    answer: "Our architectures are designed for elastic scaling, allowing you to rapidly spin up additional compute nodes for intensive workloads and scale down when demand normalizes."
+    question: "Can AI be used for crop monitoring?",
+    answer: "Yes. AI can analyze imagery and sensor data to identify crop conditions, patterns, and potential issues."
   },
   {
-    question: "Can these solutions integrate with our existing on-premise infrastructure?",
-    answer: "Yes, we specialize in hybrid deployments. Our solutions can seamlessly integrate with your existing on-premise infrastructure while extending capabilities to secure cloud environments as needed."
+    question: "Can your solutions support precision agriculture?",
+    answer: "Yes. We can develop computing environments for precision agriculture, crop monitoring, yield prediction, and resource optimization."
   },
   {
-    question: "Are your AI models capable of handling complex simulation models?",
-    answer: "Absolutely. Our AI models are specifically optimized to run on HPC clusters, enabling them to process massive datasets and run complex, high-fidelity simulations with unprecedented speed."
+    question: "Can agricultural solutions scale for large datasets?",
+    answer: "Yes. Our HPC architectures are designed to handle growing volumes of agricultural and environmental data"
   }
 ];
 

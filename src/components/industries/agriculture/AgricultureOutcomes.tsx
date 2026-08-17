@@ -5,11 +5,11 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const outcomes = [
   "Faster Data Processing",
-  "Accelerated Intelligence",
-  "Improved Situational Awareness",
+  "Better Resource Management",
+  "Accelerated Analytics",
+  "Improved Crop Monitoring",
   "Scalable Computing Capacity",
-  "Faster Simulation & Analysis",
-  "More Efficient AI Workloads",
+  "Optimized Resource Utilization",
 ];
 
 export default function AgricultureOutcomes() {
@@ -22,10 +22,10 @@ export default function AgricultureOutcomes() {
               Key Outcomes
             </h2>
             <h3 className="text-[20px] md:text-[24px] font-medium bg-gradient-to-r from-lightGreen to-[#006D40] text-transparent bg-clip-text mb-4 inline-block">
-              Computing Power That Supports Mission Success
+              Computing That Powers Smarter Agriculture
             </h3>
             <p className="text-gray-500 text-lg max-w-3xl">
-              We help agriculture organizations turn complex computational challenges into measurable operational advantages.
+              We help agricultural organizations turn complex data challenges into measurable productivity gains.
             </p>
           </div>
         </ScrollReveal>

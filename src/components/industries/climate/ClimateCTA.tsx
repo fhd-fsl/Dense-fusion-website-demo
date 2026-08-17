@@ -16,10 +16,10 @@ export default function ClimateCTA() {
       <div className="mx-auto max-w-[900px] w-full px-6 md:px-12 relative z-10 text-center">
         <ScrollReveal>
           <h2 className="text-[36px] md:text-[54px] font-bold text-white mb-6 leading-tight tracking-tight">
-            Ready to Advance Your Climate Computing Capabilities?
+            Ready to Accelerate Climate Computing?
           </h2>
           <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-            Harness AI and high-performance computing to accelerate intelligence, process complex workloads, and support mission-critical climate operations.
+            Harness AI and HPC to process complex environmental data, accelerate modeling, and unlock deeper insights into our changing climate.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

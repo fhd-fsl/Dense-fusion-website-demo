@@ -5,28 +5,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const useCases = [
   {
-    title: "Intelligence & Analysis",
-    desc: "Accelerate the processing of complex intelligence data to support faster analysis and informed decisions.",
+    title: "Climate Simulation",
+    desc: "Run complex models to analyze climate patterns and potential scenarios",
   },
   {
-    title: "Surveillance & Monitoring",
-    desc: "Analyze imagery, video, and sensor feeds to enhance monitoring and situational awareness.",
+    title: "Environmental Monitoring",
+    desc: "Process large datasets to monitor environmental changes over time.",
   },
   {
-    title: "Geospatial Analysis",
-    desc: "Process large-scale geographic and satellite datasets for intelligence and operational planning.",
+    title: "Weather Analytics",
+    desc: "Analyze weather data to support forecasting and planning.",
   },
   {
-    title: "Mission Simulation",
-    desc: "Use HPC-powered simulations to evaluate scenarios, test strategies, and support mission planning.",
+    title: "Carbon Analysis",
+    desc: "Track carbon-related trends using AI, geospatial data, and advanced analytics.",
   },
   {
-    title: "Threat Detection",
-    desc: "Leverage AI and computer vision to identify patterns and potential threats across large datasets.",
+    title: "Satellite Intelligence",
+    desc: "Extract insights from large-scale satellite and remote sensing datasets.",
   },
   {
-    title: "Operational Analytics",
-    desc: "Combine AI and HPC to transform complex operational data into actionable insights.",
+    title: "Sustainability Planning",
+    desc: "Use computational insights to support environmental and sustainability decisions.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function ClimateUseCases() {
               Climate Use Cases
             </h2>
             <p className="text-gray-400 text-lg md:text-xl">
-              Computing Power That Supports Mission Success
+              Turning Environmental Data into Actionable Intelligence
             </p>
           </div>
         </ScrollReveal>

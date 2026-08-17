@@ -7,17 +7,17 @@ const steps = [
   {
     title: "Discover",
     label: "STEP 01",
-    desc: "Understand your workloads, operational challenges, and technical requirements.",
+    desc: "Understand your workloads, objectives, and technical requirements.",
   },
   {
     title: "Design",
     label: "STEP 02",
-    desc: "Develop an AI and HPC solution tailored to your specific government use cases.",
+    desc: "Develop a scalable AI and HPC architecture tailored to your needs.",
   },
   {
     title: "Deploy",
     label: "STEP 03",
-    desc: "Implement and integrate scalable, production-ready computing environments.",
+    desc: "Implement and integrate production-ready solutions.",
   },
   {
     title: "Optimize",
@@ -60,7 +60,7 @@ export default function GovernmentApproach() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              From Government Challenges to High-Performance Solutions
+              From Government Challenges to Intelligent Solutions
             </p>
           </div>
         </ScrollReveal>

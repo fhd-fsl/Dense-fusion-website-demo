@@ -4,28 +4,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const solutions = [
   {
-    title: "Geospatial Intelligence",
-    desc: "Analyze satellite imagery, mapping data, and spatial information to generate actionable intelligence.",
-  },
-  {
-    title: "AI-Powered Surveillance",
-    desc: "Process video, imagery, and sensor data using AI-powered detection and classification.",
-  },
-  {
-    title: "Computer Vision",
-    desc: "Accelerate image and video analysis for automated identification, monitoring, and intelligence workflows.",
-  },
-  {
-    title: "Simulation & Modeling",
-    desc: "Run complex simulations to support mission planning, scenario analysis, and operational research.",
-  },
-  {
     title: "Data Analytics",
-    desc: "Process and analyze massive datasets to uncover patterns and support data-driven decisions.",
+    desc: "Process large datasets to uncover insights and support informed decision-making.",
   },
   {
-    title: "Predictive Intelligence",
-    desc: "Apply AI and advanced analytics to identify trends, patterns, and potential outcomes.",
+    title: "AI-Powered Automation",
+    desc: "Apply AI to streamline repetitive processes and improve operational efficiency.",
+  },
+  {
+    title: "Geospatial Analytics",
+    desc: "Analyze mapping, satellite, and spatial datasets for planning and operational intelligence.",
+  },
+  {
+    title: "Computational Modeling",
+    desc: "Run complex models and simulations to support research, planning, and policy analysis.",
+  },
+  {
+    title: "Large-Scale Data Processing",
+    desc: "Accelerate data-intensive workloads with high-performance computing infrastructure.",
+  },
+  {
+    title: "Predictive Analytics",
+    desc: "Identify trends and patterns to support proactive decision-making.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function GovernmentHowItHelps() {
               How DenseFusion Helps
             </h2>
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-              We design and optimize computing environments around the unique requirements of government organizations, combining advanced AI capabilities with high-performance infrastructure.
+              Developing scalable AI and HPC solutions tailored to government requirements, DenseFusion helps organizations process data faster and improve computational efficiency.
             </p>
           </div>
         </ScrollReveal>

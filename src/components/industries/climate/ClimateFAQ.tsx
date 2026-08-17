@@ -5,24 +5,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "How does DenseFusion leverage HPC for government and climate agencies?",
-    answer: "We develop accelerated computing pipelines that consolidate massive real-time signals, satellite maps, and multi-sensor feeds to produce visual patterns in seconds rather than hours."
+    question: "How can HPC support climate research?",
+    answer: "HPC enables researchers to run complex climate models, simulations, and large-scale environmental analyses more efficiently."
   },
   {
-    question: "What security measures are implemented to protect sensitive surveillance data?",
-    answer: "We implement robust encryption, zero-trust architectures, and isolated computing environments that comply with strict government and climate security standards."
+    question: "Can DenseFusion support climate modeling?",
+    answer: "Yes. We provide computing environments optimized for climate modeling, simulation, and data-intensive research."
   },
   {
-    question: "How easily can the computing resources scale during periods of high demand?",
-    answer: "Our architectures are designed for elastic scaling, allowing you to rapidly spin up additional compute nodes for intensive workloads and scale down when demand normalizes."
+    question: "Can you process satellite and environmental datasets?",
+    answer: "Yes. Our solutions can handle large-scale satellite, weather, sensor, and environmental datasets."
   },
   {
-    question: "Can these solutions integrate with our existing on-premise infrastructure?",
-    answer: "Yes, we specialize in hybrid deployments. Our solutions can seamlessly integrate with your existing on-premise infrastructure while extending capabilities to secure cloud environments as needed."
+    question: "How can AI support climate analysis?",
+    answer: "AI can help identify patterns, analyze environmental data, improve predictions, and support sustainability-focused applications."
   },
   {
-    question: "Are your AI models capable of handling complex simulation models?",
-    answer: "Absolutely. Our AI models are specifically optimized to run on HPC clusters, enabling them to process massive datasets and run complex, high-fidelity simulations with unprecedented speed."
+    question: "Can climate workloads scale with growing datasets?",
+    answer: "Yes. We design scalable environments that can accommodate increasing data volumes and computational requirements."
   }
 ];
 

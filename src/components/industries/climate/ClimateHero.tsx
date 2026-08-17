@@ -29,13 +29,13 @@ export default function ClimateHero() {
               </div>
 
               <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-                Computing for a
-                <br className="hidden md:block" /> Changing
-                <br className="hidden md:block" /> Climate
+                Advanced Computing for
+                <br className="hidden md:block" /> Climate & Environmental
+                <br className="hidden md:block" /> Intelligence
               </h1>
 
               <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-                DenseFusion accelerates climate research and environmental analysis with HPC-powered modeling, simulation, and AI-driven data processing.
+                DenseFusion combines AI and high-performance computing to accelerate climate modeling, environmental analysis, and large-scale data processing for a deeper understanding of our changing environment.
               </p>
 
               <Link

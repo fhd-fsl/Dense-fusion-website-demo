@@ -5,24 +5,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "How does DenseFusion leverage HPC for government and defense agencies?",
-    answer: "We develop accelerated computing pipelines that consolidate massive real-time signals, satellite maps, and multi-sensor feeds to produce visual patterns in seconds rather than hours."
+    question: "How can HPC support defense organizations?",
+    answer: "HPC enables defense organizations to process large datasets, run complex simulations, and accelerate compute-intensive intelligence workloads."
   },
   {
-    question: "What security measures are implemented to protect sensitive surveillance data?",
-    answer: "We implement robust encryption, zero-trust architectures, and isolated computing environments that comply with strict government and defense security standards."
+    question: "Can DenseFusion support AI-powered defense applications?",
+    answer: "Yes. We can support AI workloads including computer vision, surveillance analytics, predictive intelligence, and large-scale data processing."
   },
   {
-    question: "How easily can the computing resources scale during periods of high demand?",
-    answer: "Our architectures are designed for elastic scaling, allowing you to rapidly spin up additional compute nodes for intensive workloads and scale down when demand normalizes."
+    question: "Can you optimize existing HPC infrastructure?",
+    answer: "Yes. We can assess existing environments and identify opportunities to improve performance, scalability, and resource utilization."
   },
   {
-    question: "Can these solutions integrate with our existing on-premise infrastructure?",
-    answer: "Yes, we specialize in hybrid deployments. Our solutions can seamlessly integrate with your existing on-premise infrastructure while extending capabilities to secure cloud environments as needed."
+    question: "What types of defense workloads can DenseFusion support?",
+    answer: "We support geospatial analytics, surveillance, simulation, modeling, computer vision, intelligence analysis, and other compute-intensive workloads."
   },
   {
-    question: "Are your AI models capable of handling complex simulation models?",
-    answer: "Absolutely. Our AI models are specifically optimized to run on HPC clusters, enabling them to process massive datasets and run complex, high-fidelity simulations with unprecedented speed."
+    question: "Can defense computing environments scale?",
+    answer: "Yes. We design flexible architectures that can scale with increasing data volumes, computational requirements, and evolving workloads."
   }
 ];
 

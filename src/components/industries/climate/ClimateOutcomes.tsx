@@ -4,12 +4,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const outcomes = [
-  "Faster Data Processing",
-  "Accelerated Intelligence",
-  "Improved Situational Awareness",
-  "Scalable Computing Capacity",
-  "Faster Simulation & Analysis",
-  "More Efficient AI Workloads",
+  "Faster Climate Modeling",
+  "Accelerated Simulations",
+  "Large-Scale Data Processing",
+  "Scalable Computational Capacity",
+  "Improved Environmental Insights",
+  "Faster Research Cycles",
 ];
 
 export default function ClimateOutcomes() {
@@ -22,10 +22,10 @@ export default function ClimateOutcomes() {
               Key Outcomes
             </h2>
             <h3 className="text-[20px] md:text-[24px] font-medium bg-gradient-to-r from-lightGreen to-[#006D40] text-transparent bg-clip-text mb-4 inline-block">
-              Computing Power That Supports Mission Success
+              Computing That Powers Climate Intelligence
             </h3>
             <p className="text-gray-500 text-lg max-w-3xl">
-              We help climate organizations turn complex computational challenges into measurable operational advantages.
+              We help climate and environmental organizations turn complex data challenges into meaningful insights.
             </p>
           </div>
         </ScrollReveal>

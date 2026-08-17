@@ -4,28 +4,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const solutions = [
   {
-    title: "Geospatial Intelligence",
-    desc: "Analyze satellite imagery, mapping data, and spatial information to generate actionable intelligence.",
+    title: "Risk Modeling",
+    desc: "Accelerate complex financial models to support risk assessment and analysis.",
   },
   {
-    title: "AI-Powered Surveillance",
-    desc: "Process video, imagery, and sensor data using AI-powered detection and classification.",
+    title: "Fraud Detection",
+    desc: "Use AI and large-scale data processing to identify suspicious patterns and anomalies.",
   },
   {
-    title: "Computer Vision",
-    desc: "Accelerate image and video analysis for automated identification, monitoring, and intelligence workflows.",
+    title: "Financial Forecasting",
+    desc: "Analyze historical and real-time data to support predictive financial models.",
   },
   {
-    title: "Simulation & Modeling",
-    desc: "Run complex simulations to support mission planning, scenario analysis, and operational research.",
+    title: "Portfolio Optimization",
+    desc: "Run complex analytics to evaluate portfolios and support investment decisions.",
   },
   {
-    title: "Data Analytics",
-    desc: "Process and analyze massive datasets to uncover patterns and support data-driven decisions.",
+    title: "Algorithmic Analytics",
+    desc: "Use high-performance computing to accelerate computational financial workloads.",
   },
   {
-    title: "Predictive Intelligence",
-    desc: "Apply AI and advanced analytics to identify trends, patterns, and potential outcomes.",
+    title: "Large-Scale Data Processing",
+    desc: "Process massive financial datasets efficiently for advanced analytics.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function FinanceHowItHelps() {
               How DenseFusion Helps
             </h2>
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-              We design and optimize computing environments around the unique requirements of finance organizations, combining advanced AI capabilities with high-performance infrastructure.
+              DenseFusion builds scalable computing environments that accelerate financial analytics, modeling, and AI-driven applications.
             </p>
           </div>
         </ScrollReveal>

@@ -5,28 +5,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const useCases = [
   {
-    title: "Intelligence & Analysis",
-    desc: "Accelerate the processing of complex intelligence data to support faster analysis and informed decisions.",
+    title: "Crop Health Monitoring",
+    desc: "Identify crop conditions and changes using AI and remote sensing data.",
   },
   {
-    title: "Surveillance & Monitoring",
-    desc: "Analyze imagery, video, and sensor feeds to enhance monitoring and situational awareness.",
+    title: "Precision Farming",
+    desc: "Use data-driven insights to optimize field-level decisions and resource use",
   },
   {
-    title: "Geospatial Analysis",
-    desc: "Process large-scale geographic and satellite datasets for intelligence and operational planning.",
+    title: "Yield Forecasting",
+    desc: "Analyze historical and environmental data to support production planning.",
   },
   {
-    title: "Mission Simulation",
-    desc: "Use HPC-powered simulations to evaluate scenarios, test strategies, and support mission planning.",
+    title: "Satellite Analysis",
+    desc: "Process large volumes of satellite imagery to monitor agricultural landscapes",
   },
   {
-    title: "Threat Detection",
-    desc: "Leverage AI and computer vision to identify patterns and potential threats across large datasets.",
+    title: "Resource Optimization",
+    desc: "Use analytics to improve water, soil, and resource management",
   },
   {
-    title: "Operational Analytics",
-    desc: "Combine AI and HPC to transform complex operational data into actionable insights.",
+    title: "Environmental Intelligence",
+    desc: "Combine climate and agricultural data for better planning and sustainability",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function AgricultureUseCases() {
               Agriculture Use Cases
             </h2>
             <p className="text-gray-400 text-lg md:text-xl">
-              Computing Power That Supports Mission Success
+              Turning Agricultural Data into Actionable Insights
             </p>
           </div>
         </ScrollReveal>

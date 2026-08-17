@@ -16,10 +16,11 @@ export default function GovernmentCTA() {
       <div className="mx-auto max-w-[900px] w-full px-6 md:px-12 relative z-10 text-center">
         <ScrollReveal>
           <h2 className="text-[36px] md:text-[54px] font-bold text-white mb-6 leading-tight tracking-tight">
-            Ready to Advance Your Government Computing Capabilities?
+            Build Smarter
+            <br className="hidden md:block" /> Government Operations
           </h2>
           <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-            Harness AI and high-performance computing to accelerate intelligence, process complex workloads, and support mission-critical government operations.
+            Transform complex workloads with scalable AI and high-performance computing.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

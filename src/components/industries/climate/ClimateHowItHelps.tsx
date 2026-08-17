@@ -4,28 +4,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const solutions = [
   {
-    title: "Geospatial Intelligence",
-    desc: "Analyze satellite imagery, mapping data, and spatial information to generate actionable intelligence.",
+    title: "Climate Modeling",
+    desc: "Accelerate complex models used to study climate patterns and future scenarios.",
   },
   {
-    title: "AI-Powered Surveillance",
-    desc: "Process video, imagery, and sensor data using AI-powered detection and classification.",
+    title: "Environmental Simulation",
+    desc: "Run computational simulations to analyze environmental systems and conditions.",
   },
   {
-    title: "Computer Vision",
-    desc: "Accelerate image and video analysis for automated identification, monitoring, and intelligence workflows.",
+    title: "Weather Analysis",
+    desc: "Process large-scale weather datasets for advanced analysis and prediction.",
   },
   {
-    title: "Simulation & Modeling",
-    desc: "Run complex simulations to support mission planning, scenario analysis, and operational research.",
+    title: "Carbon Monitoring",
+    desc: "Analyze environmental and geospatial data to monitor carbon-related trends.",
   },
   {
-    title: "Data Analytics",
-    desc: "Process and analyze massive datasets to uncover patterns and support data-driven decisions.",
+    title: "Satellite Data Processing",
+    desc: "Process large volumes of satellite imagery for environmental monitoring.",
   },
   {
-    title: "Predictive Intelligence",
-    desc: "Apply AI and advanced analytics to identify trends, patterns, and potential outcomes.",
+    title: "Sustainability Analytics",
+    desc: "Use AI and advanced analytics to support sustainability initiatives and planning.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function ClimateHowItHelps() {
               How DenseFusion Helps
             </h2>
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-              We design and optimize computing environments around the unique requirements of climate organizations, combining advanced AI capabilities with high-performance infrastructure.
+              DenseFusion provides scalable computing environments for climate modeling, environmental analysis, and AI-driven sustainability applications.
             </p>
           </div>
         </ScrollReveal>

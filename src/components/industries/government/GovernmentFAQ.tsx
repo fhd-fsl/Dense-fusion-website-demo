@@ -5,24 +5,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "How does DenseFusion leverage HPC for government and government agencies?",
-    answer: "We develop accelerated computing pipelines that consolidate massive real-time signals, satellite maps, and multi-sensor feeds to produce visual patterns in seconds rather than hours."
+    question: "How can HPC support government organizations?",
+    answer: "HPC enables government teams to process large datasets, run complex models, and accelerate data-intensive workloads."
   },
   {
-    question: "What security measures are implemented to protect sensitive surveillance data?",
-    answer: "We implement robust encryption, zero-trust architectures, and isolated computing environments that comply with strict government and government security standards."
+    question: "Can DenseFusion optimize existing government infrastructure?",
+    answer: "Yes. We can assess existing infrastructure and identify opportunities to improve performance, scalability, and resource utilization."
   },
   {
-    question: "How easily can the computing resources scale during periods of high demand?",
-    answer: "Our architectures are designed for elastic scaling, allowing you to rapidly spin up additional compute nodes for intensive workloads and scale down when demand normalizes."
+    question: "Can you integrate AI with existing systems?",
+    answer: "Yes. We can integrate AI workloads with existing HPC, cloud, and enterprise environments."
   },
   {
-    question: "Can these solutions integrate with our existing on-premise infrastructure?",
-    answer: "Yes, we specialize in hybrid deployments. Our solutions can seamlessly integrate with your existing on-premise infrastructure while extending capabilities to secure cloud environments as needed."
+    question: "What types of government workloads can you support?",
+    answer: "We support data analytics, geospatial processing, AI, simulation, modeling, and other compute-intensive workloads."
   },
   {
-    question: "Are your AI models capable of handling complex simulation models?",
-    answer: "Absolutely. Our AI models are specifically optimized to run on HPC clusters, enabling them to process massive datasets and run complex, high-fidelity simulations with unprecedented speed."
+    question: "Can government computing environments scale as workloads grow?",
+    answer: "Yes. We design flexible architectures that can scale with increasing data and computational requirements."
   }
 ];
 

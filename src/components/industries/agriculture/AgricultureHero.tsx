@@ -35,7 +35,7 @@ export default function AgricultureHero() {
               </h1>
 
               <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-                DenseFusion uses AI, geospatial data, and high-performance computing to improve agricultural monitoring, resource management, and predictive decision-making for modern farming.
+                DenseFusion combines AI, geospatial data, and high-performance computing to help agricultural organizations analyze complex data, monitor resources, and make faster, more informed decisions.
               </p>
 
               <Link

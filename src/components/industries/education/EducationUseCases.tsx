@@ -5,28 +5,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const useCases = [
   {
-    title: "Intelligence & Analysis",
-    desc: "Accelerate the processing of complex intelligence data to support faster analysis and informed decisions.",
+    title: "Scientific Simulations",
+    desc: "Run complex computational models for research and experimentation.",
   },
   {
-    title: "Surveillance & Monitoring",
-    desc: "Analyze imagery, video, and sensor feeds to enhance monitoring and situational awareness.",
+    title: "AI Research",
+    desc: "Train and evaluate advanced AI and machine learning models at scale.",
   },
   {
-    title: "Geospatial Analysis",
-    desc: "Process large-scale geographic and satellite datasets for intelligence and operational planning.",
+    title: "Genomics & Bioinformatics",
+    desc: "Process large genomic datasets to support biological research.",
   },
   {
-    title: "Mission Simulation",
-    desc: "Use HPC-powered simulations to evaluate scenarios, test strategies, and support mission planning.",
+    title: "Computational Science",
+    desc: "Enable researchers to solve complex scientific and mathematical problems.",
   },
   {
-    title: "Threat Detection",
-    desc: "Leverage AI and computer vision to identify patterns and potential threats across large datasets.",
+    title: "Data-Intensive Research",
+    desc: "Analyze massive datasets generated through experiments and research programs",
   },
   {
-    title: "Operational Analytics",
-    desc: "Combine AI and HPC to transform complex operational data into actionable insights.",
+    title: "Academic HPC",
+    desc: "Provide scalable computing environments for universities, research centers, and academic teams.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function EducationUseCases() {
               Education & Research Use Cases
             </h2>
             <p className="text-gray-400 text-lg md:text-xl">
-              Computing Power That Supports Mission Success
+              Accelerating Discovery Through Advanced Computing
             </p>
           </div>
         </ScrollReveal>

@@ -29,13 +29,13 @@ export default function EducationHero() {
               </div>
 
               <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-                Empowering Academic
-                <br className="hidden md:block" /> & Scientific
+                Accelerating
+                <br className="hidden md:block" /> Research &
                 <br className="hidden md:block" /> Discovery
               </h1>
 
               <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-                DenseFusion empowers universities and research institutions with advanced HPC and AI solutions to accelerate scientific discovery and collaborative research.
+                DenseFusion provides AI and HPC solutions that give universities, research institutions, and scientific teams the computing power needed to process complex datasets, run advanced simulations, and accelerate discovery.
               </p>
 
               <Link

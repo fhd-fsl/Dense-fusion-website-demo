@@ -7,22 +7,22 @@ const steps = [
   {
     title: "Discover",
     label: "STEP 01",
-    desc: "Understand your workloads, operational challenges, and technical requirements.",
+    desc: "Understand your workloads, data, models, and business objectives.",
   },
   {
     title: "Design",
     label: "STEP 02",
-    desc: "Develop an AI and HPC solution tailored to your specific finance use cases.",
+    desc: "Develop an optimized AI and HPC architecture.",
   },
   {
     title: "Deploy",
     label: "STEP 03",
-    desc: "Implement and integrate scalable, production-ready computing environments.",
+    desc: "Implement and integrate scalable computing solutions.",
   },
   {
     title: "Optimize",
     label: "STEP 04",
-    desc: "Continuously improve performance, efficiency, and resource utilization.",
+    desc: "Continuously improve performance, efficiency, and scalability.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function FinanceApproach() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              From Finance Challenges to High-Performance Solutions
+              From Financial Challenges to High-Performance Solutions
             </p>
           </div>
         </ScrollReveal>

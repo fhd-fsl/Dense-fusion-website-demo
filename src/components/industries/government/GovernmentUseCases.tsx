@@ -5,28 +5,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const useCases = [
   {
-    title: "Intelligence & Analysis",
-    desc: "Accelerate the processing of complex intelligence data to support faster analysis and informed decisions.",
+    title: "Data Analytics",
+    desc: "Process complex government datasets to generate actionable insights.",
   },
   {
-    title: "Surveillance & Monitoring",
-    desc: "Analyze imagery, video, and sensor feeds to enhance monitoring and situational awareness.",
+    title: "Geospatial Planning",
+    desc: "Analyze geographic and satellite data to support infrastructure and resource planning.",
   },
   {
-    title: "Geospatial Analysis",
-    desc: "Process large-scale geographic and satellite datasets for intelligence and operational planning.",
+    title: "Process Automation",
+    desc: "Use AI to automate workflows and improve operational efficiency.",
   },
   {
-    title: "Mission Simulation",
-    desc: "Use HPC-powered simulations to evaluate scenarios, test strategies, and support mission planning.",
+    title: "Simulation & Modeling",
+    desc: "Run computational models for planning, forecasting, and scenario analysis.",
   },
   {
-    title: "Threat Detection",
-    desc: "Leverage AI and computer vision to identify patterns and potential threats across large datasets.",
+    title: "Predictive Analytics",
+    desc: "Identify trends and patterns to support proactive decision-making.",
   },
   {
-    title: "Operational Analytics",
-    desc: "Combine AI and HPC to transform complex operational data into actionable insights.",
+    title: "Research & Innovation",
+    desc: "Provide the computing power needed for advanced government research and development.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function GovernmentUseCases() {
               Government Use Cases
             </h2>
             <p className="text-gray-400 text-lg md:text-xl">
-              Computing Power That Supports Mission Success
+              Turning Advanced Computing into Better Public Outcomes
             </p>
           </div>
         </ScrollReveal>

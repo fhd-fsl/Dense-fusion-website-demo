@@ -7,22 +7,22 @@ const steps = [
   {
     title: "Discover",
     label: "STEP 01",
-    desc: "Understand your workloads, operational challenges, and technical requirements.",
+    desc: "Understand your research objectives, datasets, applications, and workloads.",
   },
   {
     title: "Design",
     label: "STEP 02",
-    desc: "Develop an AI and HPC solution tailored to your specific education use cases.",
+    desc: "Develop a computing architecture tailored to your research requirements.",
   },
   {
     title: "Deploy",
     label: "STEP 03",
-    desc: "Implement and integrate scalable, production-ready computing environments.",
+    desc: "Implement and integrate the required HPC and AI environment.",
   },
   {
     title: "Optimize",
     label: "STEP 04",
-    desc: "Continuously improve performance, efficiency, and resource utilization.",
+    desc: "Continuously improve performance, resource utilization, and research efficiency.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function EducationApproach() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              From Education Challenges to High-Performance Solutions
+              From Research Challenges to High-Performance Computing
             </p>
           </div>
         </ScrollReveal>

@@ -7,22 +7,22 @@ const steps = [
   {
     title: "Discover",
     label: "STEP 01",
-    desc: "Understand your workloads, operational challenges, and technical requirements.",
+    desc: "Understand your data, operational goals, and agricultural challenges.",
   },
   {
     title: "Design",
     label: "STEP 02",
-    desc: "Develop an AI and HPC solution tailored to your specific agriculture use cases.",
+    desc: "Develop a tailored AI and HPC solution for your specific requirements.",
   },
   {
     title: "Deploy",
     label: "STEP 03",
-    desc: "Implement and integrate scalable, production-ready computing environments.",
+    desc: "Implement scalable analytics and computing environments.",
   },
   {
     title: "Optimize",
     label: "STEP 04",
-    desc: "Continuously improve performance, efficiency, and resource utilization.",
+    desc: "Continuously improve performance, accuracy, and resource efficiency.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function AgricultureApproach() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              From Agriculture Challenges to High-Performance Solutions
+              From Agricultural Challenges to Intelligent Solutions
             </p>
           </div>
         </ScrollReveal>

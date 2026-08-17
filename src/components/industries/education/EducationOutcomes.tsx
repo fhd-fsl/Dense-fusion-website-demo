@@ -4,12 +4,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const outcomes = [
-  "Faster Data Processing",
-  "Accelerated Intelligence",
-  "Improved Situational Awareness",
-  "Scalable Computing Capacity",
-  "Faster Simulation & Analysis",
-  "More Efficient AI Workloads",
+  "Faster Research Cycles",
+  "Accelerated Scientific Discovery",
+  "Greater Computing Capacity",
+  "Efficient Data Processing",
+  "Faster AI Model Training",
+  "Improved Research Productivity",
 ];
 
 export default function EducationOutcomes() {
@@ -22,10 +22,10 @@ export default function EducationOutcomes() {
               Key Outcomes
             </h2>
             <h3 className="text-[20px] md:text-[24px] font-medium bg-gradient-to-r from-lightGreen to-[#006D40] text-transparent bg-clip-text mb-4 inline-block">
-              Computing Power That Supports Mission Success
+              Computing That Powers Research
             </h3>
             <p className="text-gray-500 text-lg max-w-3xl">
-              We help education organizations turn complex computational challenges into measurable operational advantages.
+              We help academic and research teams accelerate discovery and improve research productivity.
             </p>
           </div>
         </ScrollReveal>

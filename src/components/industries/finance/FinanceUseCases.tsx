@@ -5,28 +5,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const useCases = [
   {
-    title: "Intelligence & Analysis",
-    desc: "Accelerate the processing of complex intelligence data to support faster analysis and informed decisions.",
+    title: "Risk Analysis",
+    desc: "Process complex models to identify and evaluate financial risks.",
   },
   {
-    title: "Surveillance & Monitoring",
-    desc: "Analyze imagery, video, and sensor feeds to enhance monitoring and situational awareness.",
+    title: "Fraud Detection",
+    desc: "Analyze large volumes of transactions to identify unusual patterns..",
   },
   {
-    title: "Geospatial Analysis",
-    desc: "Process large-scale geographic and satellite datasets for intelligence and operational planning.",
+    title: "Financial Forecasting",
+    desc: "Use AI and analytics to identify trends and support forecasting.",
   },
   {
-    title: "Mission Simulation",
-    desc: "Use HPC-powered simulations to evaluate scenarios, test strategies, and support mission planning.",
+    title: "Portfolio Analysis",
+    desc: "Run computationally intensive models for portfolio evaluation and optimization.",
   },
   {
-    title: "Threat Detection",
-    desc: "Leverage AI and computer vision to identify patterns and potential threats across large datasets.",
+    title: "Market Analytics",
+    desc: "Process large datasets to support advanced market analysis.",
   },
   {
-    title: "Operational Analytics",
-    desc: "Combine AI and HPC to transform complex operational data into actionable insights.",
+    title: "AI-Powered Financial Intelligence",
+    desc: "Deploy scalable AI workloads for automation, prediction, and advanced decision support.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function FinanceUseCases() {
               Finance Use Cases
             </h2>
             <p className="text-gray-400 text-lg md:text-xl">
-              Computing Power That Supports Mission Success
+              Turning Financial Data into Faster Decisions
             </p>
           </div>
         </ScrollReveal>

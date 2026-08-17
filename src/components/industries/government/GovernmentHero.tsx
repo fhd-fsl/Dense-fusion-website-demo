@@ -29,13 +29,13 @@ export default function GovernmentHero() {
               </div>
 
               <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-                Modern Computing
-                <br className="hidden md:block" /> for Smarter
+                Modern Computing for
                 <br className="hidden md:block" /> Government
+                <br className="hidden md:block" /> Operations
               </h1>
 
               <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-                DenseFusion combines AI and high-performance computing to help government organizations process complex data, improve operational efficiency, and support data-driven decision-making.
+                Combining AI and high-performance computing, DenseFusion helps government organizations process complex data, modernize computing environments, and support faster, more informed decision-making.
               </p>
 
               <Link

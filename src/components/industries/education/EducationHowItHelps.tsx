@@ -4,28 +4,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const solutions = [
   {
-    title: "Geospatial Intelligence",
-    desc: "Analyze satellite imagery, mapping data, and spatial information to generate actionable intelligence.",
+    title: "Scientific Computing",
+    desc: "Accelerate complex computational workloads across research disciplines.",
   },
   {
-    title: "AI-Powered Surveillance",
-    desc: "Process video, imagery, and sensor data using AI-powered detection and classification.",
+    title: "Research Simulations",
+    desc: "Run large-scale simulations and models with high-performance infrastructure.",
   },
   {
-    title: "Computer Vision",
-    desc: "Accelerate image and video analysis for automated identification, monitoring, and intelligence workflows.",
+    title: "AI & Machine Learning",
+    desc: "Build and train AI models using scalable GPU and HPC resources.",
   },
   {
-    title: "Simulation & Modeling",
-    desc: "Run complex simulations to support mission planning, scenario analysis, and operational research.",
+    title: "Data-Intensive Research",
+    desc: "Process massive research datasets efficiently.",
   },
   {
-    title: "Data Analytics",
-    desc: "Process and analyze massive datasets to uncover patterns and support data-driven decisions.",
+    title: "Computational Modeling",
+    desc: "Support advanced modeling and simulation for scientific discovery.",
   },
   {
-    title: "Predictive Intelligence",
-    desc: "Apply AI and advanced analytics to identify trends, patterns, and potential outcomes.",
+    title: "Genomics & Bioinformatics",
+    desc: "Accelerate the analysis of large-scale biological and genomic datasets.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function EducationHowItHelps() {
               How DenseFusion Helps
             </h2>
             <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-              We design and optimize computing environments around the unique requirements of education organizations, combining advanced AI capabilities with high-performance infrastructure.
+              DenseFusion helps academic and research organizations build and optimize computing environments for advanced scientific and computational workloads.
             </p>
           </div>
         </ScrollReveal>

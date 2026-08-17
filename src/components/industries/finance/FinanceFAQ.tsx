@@ -5,24 +5,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "How does DenseFusion leverage HPC for government and finance agencies?",
-    answer: "We develop accelerated computing pipelines that consolidate massive real-time signals, satellite maps, and multi-sensor feeds to produce visual patterns in seconds rather than hours."
+    question: "How can HPC benefit financial organizations?",
+    answer: "HPC can accelerate complex financial models, large-scale analytics, risk calculations, and other compute-intensive workloads."
   },
   {
-    question: "What security measures are implemented to protect sensitive surveillance data?",
-    answer: "We implement robust encryption, zero-trust architectures, and isolated computing environments that comply with strict government and finance security standards."
+    question: "Can DenseFusion support financial AI workloads?",
+    answer: "Yes. We can build and optimize infrastructure for AI-driven analytics, forecasting, fraud detection, and other financial applications."
   },
   {
-    question: "How easily can the computing resources scale during periods of high demand?",
-    answer: "Our architectures are designed for elastic scaling, allowing you to rapidly spin up additional compute nodes for intensive workloads and scale down when demand normalizes."
+    question: "Can you help optimize existing financial computing environments?",
+    answer: "Yes. We can assess existing infrastructure and optimize workloads, software stacks, and resource utilization."
   },
   {
-    question: "Can these solutions integrate with our existing on-premise infrastructure?",
-    answer: "Yes, we specialize in hybrid deployments. Our solutions can seamlessly integrate with your existing on-premise infrastructure while extending capabilities to secure cloud environments as needed."
+    question: "What financial workloads can benefit from HPC?",
+    answer: "Risk modeling, financial forecasting, fraud detection, portfolio optimization, algorithmic analytics, and large-scale data processing can all benefit from HPC."
   },
   {
-    question: "Are your AI models capable of handling complex simulation models?",
-    answer: "Absolutely. Our AI models are specifically optimized to run on HPC clusters, enabling them to process massive datasets and run complex, high-fidelity simulations with unprecedented speed."
+    question: "Can financial computing environments scale?",
+    answer: "Yes. Our solutions are designed to scale with growing datasets, workloads, and computational requirements."
   }
 ];
 

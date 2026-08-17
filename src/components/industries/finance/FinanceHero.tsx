@@ -29,13 +29,13 @@ export default function FinanceHero() {
               </div>
 
               <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
-                High-Performance Computing
-                <br className="hidden md:block" /> for Financial
+                High-Performance
+                <br className="hidden md:block" /> Computing for Financial
                 <br className="hidden md:block" /> Intelligence
               </h1>
 
               <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-                DenseFusion provides scalable AI and HPC solutions designed to process complex financial models, manage risk, and accelerate algorithmic analytics.
+                DenseFusion combines AI and HPC to help financial organizations process large datasets, accelerate complex models, and support faster, data-driven decision-making.
               </p>
 
               <Link

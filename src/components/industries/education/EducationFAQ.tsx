@@ -5,24 +5,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "How does DenseFusion leverage HPC for government and education agencies?",
-    answer: "We develop accelerated computing pipelines that consolidate massive real-time signals, satellite maps, and multi-sensor feeds to produce visual patterns in seconds rather than hours."
+    question: "How can HPC accelerate research?",
+    answer: "HPC enables researchers to run complex simulations, process large datasets, and train AI models faster."
   },
   {
-    question: "What security measures are implemented to protect sensitive surveillance data?",
-    answer: "We implement robust encryption, zero-trust architectures, and isolated computing environments that comply with strict government and education security standards."
+    question: "Can DenseFusion support university and research environments?",
+    answer: "Yes. We provide HPC and AI solutions for universities, research institutions, laboratories, and academic teams."
   },
   {
-    question: "How easily can the computing resources scale during periods of high demand?",
-    answer: "Our architectures are designed for elastic scaling, allowing you to rapidly spin up additional compute nodes for intensive workloads and scale down when demand normalizes."
+    question: "What research workloads can you support?",
+    answer: "We support scientific simulations, AI research, computational modeling, genomics, bioinformatics, and data-intensive research."
   },
   {
-    question: "Can these solutions integrate with our existing on-premise infrastructure?",
-    answer: "Yes, we specialize in hybrid deployments. Our solutions can seamlessly integrate with your existing on-premise infrastructure while extending capabilities to secure cloud environments as needed."
+    question: "Can you optimize existing research infrastructure?",
+    answer: "Yes. We can assess and optimize existing HPC environments to improve performance and resource utilization."
   },
   {
-    question: "Are your AI models capable of handling complex simulation models?",
-    answer: "Absolutely. Our AI models are specifically optimized to run on HPC clusters, enabling them to process massive datasets and run complex, high-fidelity simulations with unprecedented speed."
+    question: "Can research environments scale as projects grow?",
+    answer: "Yes. We design scalable infrastructure that can adapt to increasing datasets, users, applications, and computational demands."
   }
 ];
 

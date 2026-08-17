@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const useCases = [
   {
-    title: "Intelligence & Analysis",
+    title: "Intelligence Analysis",
     desc: "Accelerate the processing of complex intelligence data to support faster analysis and informed decisions.",
   },
   {
