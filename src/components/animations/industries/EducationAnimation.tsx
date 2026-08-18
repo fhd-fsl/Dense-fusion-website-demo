@@ -12,9 +12,11 @@ export default function EducationAnimation() {
     if (!ctx) return;
 
     let frame: number;
+    let isVisible = false;
     let time = 0;
 
     const render = () => {
+      if (!isVisible) return;
       const width = canvas.width = canvas.offsetWidth;
       const height = canvas.height = canvas.offsetHeight;
       const cx = width / 2;
@@ -66,9 +68,26 @@ export default function EducationAnimation() {
       ctx.shadowBlur = 0;
       frame = requestAnimationFrame(render);
     };
-    render();
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            render();
+          }
+        } else {
+          isVisible = false;
+          if (frame) cancelAnimationFrame(frame);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(canvasRef.current || canvas);
 
-    return () => cancelAnimationFrame(frame);
+    return () => {
+      observer.disconnect();
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, []);
 
   return <canvas ref={canvasRef} className="w-full h-full" />;

@@ -14,6 +14,7 @@ export default function VortexAnimation() {
 
     let animationFrameId: number;
     let time = 0;
+    let isVisible = false;
 
     const init = () => {
       canvas.width = canvas.parentElement?.clientWidth || window.innerWidth;
@@ -21,7 +22,7 @@ export default function VortexAnimation() {
     };
 
     const animate = () => {
-      if (!ctx) return;
+      if (!ctx || !isVisible) return;
       // time moves the spiral inwards/outwards
       time += 0.015;
       
@@ -106,7 +107,22 @@ export default function VortexAnimation() {
     };
 
     init();
-    animate();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            animate();
+          }
+        } else {
+          isVisible = false;
+          if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        }
+      });
+    }, { threshold: 0 });
+    
+    observer.observe(canvas);
 
     const handleResize = () => {
       init();
@@ -116,7 +132,8 @@ export default function VortexAnimation() {
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      cancelAnimationFrame(animationFrameId);
+      observer.disconnect();
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
   }, []);
 

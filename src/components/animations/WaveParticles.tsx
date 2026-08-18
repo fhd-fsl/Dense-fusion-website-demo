@@ -12,12 +12,14 @@ export default function WaveParticles() {
     if (!ctx) return;
     let frame: number;
     let time = 0;
+    let isVisible = false;
 
     const SEPARATION = 30;
     const AMOUNTX = 70;
     const AMOUNTY = 30;
 
     const render = () => {
+      if (!isVisible) return;
       const width = canvas.width = canvas.offsetWidth;
       const height = canvas.height = canvas.offsetHeight;
       
@@ -56,9 +58,27 @@ export default function WaveParticles() {
 
       frame = requestAnimationFrame(render);
     };
-    render();
 
-    return () => cancelAnimationFrame(frame);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            render();
+          }
+        } else {
+          isVisible = false;
+          if (frame) cancelAnimationFrame(frame);
+        }
+      });
+    }, { threshold: 0 });
+    
+    observer.observe(canvas);
+
+    return () => {
+      observer.disconnect();
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, []);
 
   return <canvas ref={canvasRef} className="w-full h-full" />;

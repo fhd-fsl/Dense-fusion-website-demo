@@ -15,6 +15,7 @@ export default function HeroParticleAnimation() {
     if (!ctx) return;
 
     let animationFrameId: number;
+    let isVisible = false;
     let W = wrap.clientWidth || window.innerWidth;
     let H = wrap.clientHeight || window.innerHeight;
 
@@ -82,6 +83,7 @@ export default function HeroParticleAnimation() {
     window.addEventListener("click", handleClick);
 
     const draw = (now: number) => {
+      if (!isVisible) return;
       ctx.clearRect(0, 0, W, H);
 
       const targetForce = hoveredElement ? -120 : 14;
@@ -178,14 +180,30 @@ export default function HeroParticleAnimation() {
 
       animationFrameId = requestAnimationFrame(draw);
     };
-    animationFrameId = requestAnimationFrame(draw);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            animationFrameId = requestAnimationFrame(draw);
+          }
+        } else {
+          isVisible = false;
+          if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        }
+      });
+    }, { threshold: 0 });
+    
+    observer.observe(wrap);
 
     return () => {
+      observer.disconnect();
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseout", handleWindowMouseLeave);
       window.removeEventListener("click", handleClick);
-      cancelAnimationFrame(animationFrameId);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
   }, []);
 

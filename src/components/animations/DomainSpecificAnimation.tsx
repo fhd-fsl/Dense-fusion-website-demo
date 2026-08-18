@@ -12,6 +12,7 @@ export default function DomainSpecificAnimation() {
     if (!ctx) return;
 
     let animationFrameId: number;
+    let isVisible = false;
     let W = 0;
     let H = 0;
     
@@ -163,6 +164,7 @@ export default function DomainSpecificAnimation() {
     let globalRot = 0;
 
     function draw() {
+      if (!isVisible) return;
       const now = Date.now();
       const elapsed = (now - startTime) / 1000;
       const dt = 1/60; // Approximate dt
@@ -320,11 +322,25 @@ export default function DomainSpecificAnimation() {
       animationFrameId = requestAnimationFrame(draw);
     }
 
-    animationFrameId = requestAnimationFrame(draw);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            animationFrameId = requestAnimationFrame(draw);
+          }
+        } else {
+          isVisible = false;
+          if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(canvas);
 
     return () => {
+      observer.disconnect();
       window.removeEventListener("resize", resize);
-      cancelAnimationFrame(animationFrameId);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
   }, []);
 

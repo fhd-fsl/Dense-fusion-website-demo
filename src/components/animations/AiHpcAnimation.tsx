@@ -27,6 +27,7 @@ export default function AiHpcAnimation() {
     };
 
     let W = 0, H = 0, dpr = 1, animId: number;
+    let isVisible = false;
 
     function resize() {
       const rect = wrapper!.getBoundingClientRect();
@@ -360,16 +361,31 @@ export default function AiHpcAnimation() {
 
     let lastTs = 0;
     function animate(ts: number) {
+      if (!isVisible) return;
       if (W === 0 || H === 0) { animId = requestAnimationFrame(animate); return; }
       const time = ts / 1000;
       draw(time);
       animId = requestAnimationFrame(animate);
     }
 
-    animId = requestAnimationFrame(animate);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            animId = requestAnimationFrame(animate);
+          }
+        } else {
+          isVisible = false;
+          if (animId) cancelAnimationFrame(animId);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(wrapper);
 
     return () => {
-      cancelAnimationFrame(animId);
+      observer.disconnect();
+      if (animId) cancelAnimationFrame(animId);
       if (ro) ro.disconnect();
       window.removeEventListener("resize", resize);
     };

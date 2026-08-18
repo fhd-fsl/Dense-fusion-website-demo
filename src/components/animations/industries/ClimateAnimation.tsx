@@ -12,6 +12,7 @@ export default function ClimateAnimation() {
     if (!ctx) return;
 
     let frame: number;
+    let isVisible = false;
     const particles = Array.from({ length: 300 }, () => ({
       angle: Math.random() * Math.PI * 2,
       // Distribute particles with a hole in the middle (eye of storm)
@@ -28,6 +29,7 @@ export default function ClimateAnimation() {
     });
 
     const render = () => {
+      if (!isVisible) return;
       const width = canvas.width = canvas.offsetWidth;
       const height = canvas.height = canvas.offsetHeight;
       const cx = width / 2;
@@ -70,9 +72,26 @@ export default function ClimateAnimation() {
 
       frame = requestAnimationFrame(render);
     };
-    render();
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            render();
+          }
+        } else {
+          isVisible = false;
+          if (frame) cancelAnimationFrame(frame);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(canvasRef.current || canvas);
 
-    return () => cancelAnimationFrame(frame);
+    return () => {
+      observer.disconnect();
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, []);
 
   return <canvas ref={canvasRef} className="w-full h-full" />;

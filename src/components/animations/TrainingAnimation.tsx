@@ -12,6 +12,7 @@ export default function TrainingAnimation() {
     if (!ctx) return;
 
     let animationFrameId: number;
+    let isVisible = false;
     let W = 0;
     let H = 0;
     
@@ -192,6 +193,7 @@ export default function TrainingAnimation() {
     }
 
     function draw() {
+      if (!isVisible) return;
       // Solid background
       ctx!.fillStyle = "#ffffff";
       ctx!.fillRect(0, 0, W, H);
@@ -339,11 +341,25 @@ export default function TrainingAnimation() {
       animationFrameId = requestAnimationFrame(draw);
     }
 
-    animationFrameId = requestAnimationFrame(draw);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            animationFrameId = requestAnimationFrame(draw);
+          }
+        } else {
+          isVisible = false;
+          if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(canvas);
 
     return () => {
+      observer.disconnect();
       window.removeEventListener("resize", resize);
-      cancelAnimationFrame(animationFrameId);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
   }, []);
 

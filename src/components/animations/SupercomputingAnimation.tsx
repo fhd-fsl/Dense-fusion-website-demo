@@ -36,6 +36,7 @@ export default function SupercomputingAnimation() {
     };
 
     let W = 0, H = 0, dpr = 1, animId: number;
+    let isVisible = false;
 
     function rgba(hex: string, a: number) {
       const r = parseInt(hex.slice(1, 3), 16);
@@ -461,6 +462,7 @@ export default function SupercomputingAnimation() {
     // --- Animate ---
     let lastTs = 0;
     function animate(ts: number) {
+      if (!isVisible) return;
       if (W === 0 || H === 0) { animId = requestAnimationFrame(animate); return; }
       const dt = lastTs ? Math.min((ts - lastTs) / 1000, 0.05) : 1/60;
       lastTs = ts;
@@ -488,10 +490,24 @@ export default function SupercomputingAnimation() {
       animId = requestAnimationFrame(animate);
     }
 
-    animId = requestAnimationFrame(animate);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!isVisible) {
+            isVisible = true;
+            animId = requestAnimationFrame(animate);
+          }
+        } else {
+          isVisible = false;
+          if (animId) cancelAnimationFrame(animId);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(wrapper);
 
     return () => {
-      cancelAnimationFrame(animId);
+      observer.disconnect();
+      if (animId) cancelAnimationFrame(animId);
       if (ro) ro.disconnect();
       window.removeEventListener("resize", resize);
     };
