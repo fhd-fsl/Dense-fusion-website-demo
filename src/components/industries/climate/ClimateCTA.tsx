@@ -24,7 +24,7 @@ export default function ClimateCTA() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="#"
+              href="/contact"
               className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-[#050505] px-8 text-lg font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-[#6DC27F]"
             >
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
@@ -37,7 +37,7 @@ export default function ClimateCTA() {
               </span>
             </Link>
             <Link
-              href="#"
+              href="/contact"
               className="group inline-flex h-11 items-center justify-center rounded-[4px] border border-white px-8 text-lg font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-[#006D40]"
             >
               Talk to Our Experts

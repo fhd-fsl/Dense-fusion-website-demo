@@ -36,7 +36,7 @@ export default function CTA() {
             
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <Link 
-                href="#"
+                href="/solutions"
                 className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-[#0a0a0a] px-5 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
               >
                 <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
@@ -49,7 +49,7 @@ export default function CTA() {
                 </span>
               </Link>
               <Link 
-                href="#"
+                href="/contact"
                 className="group relative inline-flex items-center rounded px-4 py-3 text-lg font-bold text-white"
               >
                 <span className="relative">

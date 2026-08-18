@@ -45,7 +45,7 @@ export default function HeroAbout() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/contact"
                   className="group relative inline-flex items-center rounded px-4 py-3 text-lg font-bold text-lightGray"
                 >
                   <span className="relative">

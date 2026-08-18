@@ -8,8 +8,8 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
-  { label: "Solutions", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -49,7 +49,7 @@ export default function Navbar() {
         </div>
 
         <Link
-          href="#"
+          href="/contact"
           className="group ml-8 inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-secondaryBlack px-5 text-md font-bold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen"
         >
           <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">

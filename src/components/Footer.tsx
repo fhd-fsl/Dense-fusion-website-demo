@@ -14,7 +14,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
         {/* Connect CTA (Green Banner) */}
         <ScrollReveal>
           <div className="bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 rounded-t-[4px] rounded-b-none p-12 md:p-20 flex flex-col items-center justify-center text-center relative z-20 mx-auto w-full">
-            <button className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-secondaryBlack px-5 text-md font-bold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen mb-8">
+            <Link href="/contact" className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-secondaryBlack px-5 text-md font-bold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen mb-8">
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
                   Connect Now
@@ -23,7 +23,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
                   Connect Now
                 </span>
               </span>
-            </button>
+            </Link>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white tracking-tight">
               Let's Build The Future Together
@@ -73,9 +73,8 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">About</Link>
                 <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Services</Link>
                 <Link href="/industries" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Industries</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Products</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Solutions</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Contact us</Link>
+                <Link href="/solutions" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Solutions</Link>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Contact us</Link>
               </div>
 
               {/* Our Services */}

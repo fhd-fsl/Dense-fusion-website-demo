@@ -39,7 +39,7 @@ export default function GovernmentHero() {
               </p>
 
               <Link
-                href="#"
+                href="/contact"
                 className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-6 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
               >
                 <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">

@@ -18,25 +18,27 @@ export default function AboutCta() {
 
         <ScrollReveal delay={0.2}>
           <div className="mt-10 md:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Primary Black Button */}
             <Link
-              href="#"
-              className="group inline-flex h-12 md:h-[50px] items-start justify-center overflow-hidden rounded-[4px] bg-[#050505] px-8 text-[15px] md:text-base font-bold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen w-full sm:w-auto"
+              href="/contact"
+              className="group inline-flex h-12 items-start justify-center overflow-hidden rounded-[4px] bg-[#050505] px-8 text-lg font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen"
             >
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
-                <span className="flex h-12 md:h-[50px] shrink-0 items-center justify-center text-white">
-                  Schedule a Consultation
+                <span className="flex h-12 shrink-0 items-center justify-center text-white">
+                  Start a Conversation
                 </span>
-                <span className="flex h-12 md:h-[50px] shrink-0 items-center justify-center text-white">
-                  Schedule a Consultation
+                <span className="flex h-12 shrink-0 items-center justify-center text-white">
+                  Start a Conversation
                 </span>
               </span>
             </Link>
             
+            {/* Secondary Outline Button */}
             <Link
-              href="#"
-              className="group inline-flex h-12 md:h-[50px] items-center justify-center rounded-[4px] border border-white bg-transparent px-8 text-[15px] md:text-base font-bold text-white transition-colors duration-300 hover:bg-white/10 w-full sm:w-auto"
+              href="/contact"
+              className="inline-flex h-12 items-center justify-center rounded-[4px] border-2 border-white px-8 text-lg font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-[#006D40]"
             >
-              Contact Our Team
+              Schedule a Consultation
             </Link>
           </div>
         </ScrollReveal>

@@ -28,15 +28,15 @@ export default function Hero() {
             </p>
 
             <Link
-              href="#"
-              className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-6 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
+              href="/contact"
+              className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-5 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
             >
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                  Explore Training Programs
+                  Schedule a Consultation
                 </span>
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                  Explore Training Programs
+                  Schedule a Consultation
                 </span>
               </span>
             </Link>
