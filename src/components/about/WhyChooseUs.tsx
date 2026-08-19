@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
     <section className="w-full bg-white font-sans py-20 md:py-28">
       <div className="mx-auto max-w-[1300px] px-6 md:px-12">
         <ScrollReveal delay={0.1}>
-          <h2 className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-4xl md:text-[50px] font-bold text-secondaryBlack tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-[50px] font-bold text-secondaryBlack mb-6 leading-tight tracking-tight flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center">
             <span>Why Organizations Choose</span>
             <span className="flex items-center gap-x-2">
               <Image

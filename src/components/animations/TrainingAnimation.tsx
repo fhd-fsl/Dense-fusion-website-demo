@@ -125,7 +125,7 @@ export default function TrainingAnimation() {
 
     function resize() {
       if (!canvas) return;
-      const dpr = window.devicePixelRatio || 1;
+      const dpr = Math.min(window.devicePixelRatio || 1, W < 768 ? 1.5 : 2);
       const rect = canvas.parentElement?.getBoundingClientRect();
       if (rect) {
         W = rect.width;
@@ -136,7 +136,7 @@ export default function TrainingAnimation() {
         canvas.style.width = `${W}px`;
         canvas.style.height = `${H}px`;
         
-        U = Math.min(W, H) / 10.9; // Decreased size by an additional 15%
+        U = Math.min(W, H) / (W < 768 ? 18 : 10.9); // Decreased size for mobile to fit horizontally
       }
     }
 

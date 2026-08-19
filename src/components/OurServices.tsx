@@ -112,27 +112,25 @@ export default function OurServices() {
           {/* Left Column: Services List */}
           <div className="lg:col-span-5 flex flex-col">
             <ScrollReveal delay={0.25}>
-              <div className="flex flex-col">
+              <div className="flex flex-row overflow-x-auto pb-4 md:pb-0 md:flex-col gap-2 md:gap-0 snap-x hide-scrollbar">
                 {services.map((service, index) => {
                   const isSelected = activeIndex === index;
                   return (
                     <button
                       key={service.id}
                       onClick={() => setActiveIndex(index)}
-                      className={`group w-full text-left transition-all duration-300 px-5 py-4 flex items-center gap-4 ${
-                        isSelected
-                          ? "rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 text-white shadow-md font-bold"
-                          : "border-b border-borderGray2/70 text-secondaryBlack font-bold hover:bg-white/60 bg-transparent"
-                      }`}
+                      className={`group shrink-0 md:w-full text-left transition-all duration-300 px-5 py-4 flex items-center gap-4 snap-start rounded-full md:rounded-none md:border-b md:border-borderGray2/70 ${isSelected
+                        ? "bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 text-white shadow-md font-bold md:rounded-[4px] md:border-none"
+                        : "text-secondaryBlack font-bold hover:bg-white/60 bg-white/50 md:bg-transparent border border-gray-200 md:border-none"
+                        }`}
                     >
                       {/* Icon rendering */}
                       {service.iconPath ? (
                         <span
-                          className={`h-5 w-5 shrink-0 inline-block transition-colors duration-300 ${
-                            isSelected
-                              ? "bg-white"
-                              : "bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1"
-                          }`}
+                          className={`h-5 w-5 shrink-0 inline-block transition-colors duration-300 ${isSelected
+                            ? "bg-white"
+                            : "bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1"
+                            }`}
                           style={{
                             maskImage: `url(${service.iconPath})`,
                             WebkitMaskImage: `url(${service.iconPath})`,
@@ -155,7 +153,7 @@ export default function OurServices() {
                         <span className="w-5 shrink-0" />
                       )}
 
-                      <span className="text-lg tracking-tight">
+                      <span className="text-sm md:text-lg tracking-tight whitespace-nowrap">
                         {service.title}
                       </span>
                     </button>
@@ -168,18 +166,12 @@ export default function OurServices() {
           {/* Right Column: Service Card Details */}
           <div className="lg:col-span-7">
             <ScrollReveal delay={0.35}>
-              <div className="h-[500px] md:h-[520px] flex flex-col justify-between rounded-2xl bg-white p-6 md:p-8 shadow-xl border border-borderGray2/50">
-                <div>
-                  <div className="relative h-[220px] md:h-[250px] w-full overflow-hidden rounded-xl bg-gray-50 border border-gray-100">
-                    <activeService.AnimationComponent key={activeService.id} />
-                  </div>
-
-                  <p className="mt-5 text-base md:text-lg text-textGray font-medium leading-relaxed">
-                    {activeService.description}
-                  </p>
+              <div className="h-[400px] md:h-[520px] flex flex-col rounded-2xl bg-white p-6 md:p-8 shadow-xl border border-borderGray2/50">
+                <div className="relative flex-1 w-full overflow-hidden rounded-xl bg-gray-50 border border-gray-100">
+                  <activeService.AnimationComponent key={activeService.id} />
                 </div>
 
-                <div className="mt-4 pt-2">
+                <div className="mt-6 shrink-0">
                   <Link
                     href={activeService.href}
                     className="group inline-flex items-center gap-2 text-lg font-bold transition-opacity hover:opacity-80"
@@ -200,4 +192,4 @@ export default function OurServices() {
       </div>
     </section>
   );
-}
+} 

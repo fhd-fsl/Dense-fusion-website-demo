@@ -18,7 +18,7 @@ export default function ServicesHero() {
       
       <div className="relative z-10 mx-auto max-w-[1300px] w-full px-6 md:px-12 flex flex-col items-start text-left">
         <ScrollReveal delay={0.1}>
-          <h1 className="text-4xl md:text-5xl lg:text-[64px] font-bold leading-[1.1] tracking-tight mb-6">
+            <h1 className="text-4xl sm:text-[42px] md:text-5xl lg:text-[64px] font-bold text-white mb-6 tracking-tight leading-[1.1]">
             AI & High-Performance <br className="hidden sm:block" />
             Computing Services
           </h1>

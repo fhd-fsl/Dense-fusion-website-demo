@@ -119,7 +119,7 @@ export default function IndustriesWeServe() {
               <button
                 key={industry.id}
                 onClick={() => setActiveTab(industry.id)}
-                className={`px-5 py-2.5 rounded text-[15px] font-semibold transition-colors duration-300 border ${
+                className={`px-5 py-3 md:py-2.5 rounded text-[15px] font-semibold transition-colors duration-300 border ${
                   activeTab === industry.id
                     ? "bg-black text-white border-black"
                     : "bg-white text-gray-700 border-gray-200 hover:border-gray-300"

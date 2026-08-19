@@ -269,7 +269,7 @@ export default function HorizontalServices() {
                     </div>
                     
                     {/* Right Content (Animation) */}
-                    <div className="w-full md:w-1/2 min-h-[300px] md:min-h-full relative bg-white pointer-events-none overflow-hidden rounded-r-2xl">
+                    <div className="w-full md:w-1/2 min-h-[200px] md:min-h-full relative bg-white pointer-events-none overflow-hidden rounded-r-2xl">
                       {activeIndex === index && <service.AnimationComponent />}
                     </div>
                   </div>

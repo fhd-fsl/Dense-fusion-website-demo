@@ -36,6 +36,7 @@ export default function AgricultureAnimation() {
           const y = r * hexHeight * 0.75;
           
           // distance from center
+          const dpr = Math.min(window.devicePixelRatio || 1, width < 768 ? 1.5 : 2);
           const dx = x - width / 2;
           const dy = y - height / 2;
           const dist = Math.sqrt(dx * dx + dy * dy);

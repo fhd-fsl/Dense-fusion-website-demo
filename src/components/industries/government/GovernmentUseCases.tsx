@@ -60,18 +60,22 @@ export default function GovernmentUseCases() {
           {useCases.map((useCase, index) => {
             return (
               <ScrollReveal key={index} delay={0.1 * index}>
-                <div className="relative w-full h-[180px] md:h-[200px] cursor-pointer group [perspective:1000px]">
-                  <div className="w-full h-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div className="relative w-full h-auto lg:h-[200px] cursor-pointer group lg:[perspective:1000px]">
+                  <div className="w-full h-full transition-transform duration-500 lg:[transform-style:preserve-3d] lg:group-hover:[transform:rotateY(180deg)]">
                     
-                    {/* Front Face */}
-                    <div className="absolute inset-0 [backface-visibility:hidden] bg-[#141414] flex items-center justify-center p-6 rounded-[4px] border border-gray-800 transition-colors group-hover:bg-[#1a1a1a]">
-                      <h3 className="text-[#6DC27F] text-[22px] md:text-[24px] font-medium text-center tracking-tight">
+                    {/* Front Face (Always visible on mobile, front of card on desktop) */}
+                    <div className="lg:absolute lg:inset-0 lg:[backface-visibility:hidden] bg-[#141414] flex flex-col items-center justify-center p-6 lg:p-6 rounded-[4px] border border-gray-800 transition-colors group-hover:bg-[#1a1a1a]">
+                      <h3 className="text-[#6DC27F] text-[22px] md:text-[24px] font-medium text-center tracking-tight lg:mb-0">
                         {useCase.title}
                       </h3>
+                      {/* Mobile Description */}
+                      <p className="text-gray-300 text-[15px] md:text-[17px] text-center leading-relaxed mt-4 block lg:hidden">
+                        {useCase.desc}
+                      </p>
                     </div>
 
-                    {/* Back Face */}
-                    <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#1c1c1c] flex items-center justify-center p-8 rounded-[4px] border border-[#2a2a2a] shadow-inner shadow-black/50">
+                    {/* Back Face (Desktop only hover state) */}
+                    <div className="hidden lg:flex absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#1c1c1c] items-center justify-center p-8 rounded-[4px] border border-[#2a2a2a] shadow-inner shadow-black/50">
                       <p className="text-gray-300 text-[15px] md:text-[17px] text-center leading-relaxed">
                         {useCase.desc}
                       </p>

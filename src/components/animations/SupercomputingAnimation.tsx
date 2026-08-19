@@ -48,7 +48,7 @@ export default function SupercomputingAnimation() {
     function resize() {
       const rect = wrapper!.getBoundingClientRect();
       if (rect.width === 0 || rect.height === 0) return;
-      dpr = window.devicePixelRatio || 1;
+      dpr = Math.min(window.devicePixelRatio || 1, rect.width < 768 ? 1.5 : 2);
       W = rect.width;
       H = rect.height;
       canvas!.width = W * dpr;
@@ -473,19 +473,33 @@ export default function SupercomputingAnimation() {
       drawSubtleGrid();
       drawDataDots(time, dt);
       
-      // Fixed Layout Configuration (proportional to canvas)
-      const gap = W * 0.03;
-      const leftX = W * 0.05;
-      const leftW = W * 0.48;
+      // Layout Configuration (proportional to canvas)
+      const isMobile = W < 768;
       
-      const rightX = leftX + leftW + gap;
-      const rightW = W * 0.39; // Leaves W * 0.05 padding on right
+      if (isMobile) {
+        // Single column layout on mobile to prevent text overlap
+        const cx = W * 0.05;
+        const cw = W * 0.9;
+        const ch = H * 0.42;
+        const gapY = H * 0.06;
+        
+        drawLineChart(time, cx, H * 0.05, cw, ch);
+        drawGauges(time, cx, H * 0.05 + ch + gapY, cw, ch);
+      } else {
+        // Desktop 2x2 layout
+        const gap = W * 0.03;
+        const leftX = W * 0.05;
+        const leftW = W * 0.48;
+        
+        const rightX = leftX + leftW + gap;
+        const rightW = W * 0.39; // Leaves W * 0.05 padding on right
 
-      drawLineChart(time, leftX, H * 0.08, leftW, H * 0.45);
-      drawBarChart(time, leftX, H * 0.56, leftW, H * 0.36);
-      
-      drawGauges(time, rightX, H * 0.08, rightW, H * 0.40);
-      drawKPIs(time, rightX, H * 0.51, rightW, H * 0.41);
+        drawLineChart(time, leftX, H * 0.08, leftW, H * 0.45);
+        drawBarChart(time, leftX, H * 0.56, leftW, H * 0.36);
+        
+        drawGauges(time, rightX, H * 0.08, rightW, H * 0.40);
+        drawKPIs(time, rightX, H * 0.51, rightW, H * 0.41);
+      }
 
       animId = requestAnimationFrame(animate);
     }

@@ -17,8 +17,16 @@ export default function VortexAnimation() {
     let isVisible = false;
 
     const init = () => {
-      canvas.width = canvas.parentElement?.clientWidth || window.innerWidth;
-      canvas.height = canvas.parentElement?.clientHeight || window.innerHeight;
+      const w = canvas.parentElement?.clientWidth || window.innerWidth;
+      const h = canvas.parentElement?.clientHeight || window.innerHeight;
+      const isMob = w < 768;
+      const dpr = Math.min(window.devicePixelRatio || 1, isMob ? 1.5 : 2);
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      canvas.style.width = w + "px";
+      canvas.style.height = h + "px";
+      const ctx2 = canvas.getContext("2d");
+      if (ctx2) ctx2.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
     const animate = () => {
@@ -26,14 +34,18 @@ export default function VortexAnimation() {
       // time moves the spiral inwards/outwards
       time += 0.015;
       
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const cw = canvas.parentElement?.clientWidth || canvas.width;
+      const ch = canvas.parentElement?.clientHeight || canvas.height;
 
-      const cx = canvas.width * 0.75;
-      const cy = canvas.height * 0.65;
+      ctx.clearRect(0, 0, cw, ch);
+
+      const cx = cw * 0.75;
+      const cy = ch * 0.65;
       
-      const N = 65; // Reduced to make the center hole bigger
+      const isMob = cw < 768;
+      const N = isMob ? 40 : 65; // Reduced on mobile
       const sides = 6; // Hexagon
-      const maxRadius = canvas.width * 0.8;
+      const maxRadius = cw * (isMob ? 0.6 : 0.8);
       
       // The fraction along the edge for the next vertex. 
       // Controls how tight the spiral is.

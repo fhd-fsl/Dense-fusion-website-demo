@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import useIsMobile from "@/components/hooks/useIsMobile";
 
 export default function HeroParticleAnimation() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const isMobileState = useIsMobile();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -22,15 +24,20 @@ export default function HeroParticleAnimation() {
     const resize = () => {
       W = wrap.clientWidth || window.innerWidth;
       H = wrap.clientHeight || window.innerHeight;
-      canvas.width = W;
-      canvas.height = H;
+      const dpr = Math.min(window.devicePixelRatio || 1, W < 768 ? 1.5 : 2);
+      canvas.width = W * dpr;
+      canvas.height = H * dpr;
+      canvas.style.width = W + "px";
+      canvas.style.height = H + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
     window.addEventListener("resize", resize);
     resize();
 
-    const spacing = 40;
+    const isMobile = W < 768;
+    const spacing = isMobile ? 56 : 40;
     const spacingBase = spacing;
-    const radius = 220;
+    const radius = isMobile ? 140 : 220;
     // Base color for dots (light gray)
     const baseColor = [207, 207, 207];
     // Glow color (matching your DenseFusion green vibe)
@@ -318,9 +325,9 @@ export default function HeroParticleAnimation() {
           }}
         >
           <svg 
-            className="absolute inset-0 w-full h-full pointer-events-none opacity-40" 
+            className="absolute inset-0 pointer-events-none opacity-20 md:opacity-40 h-full w-full" 
             viewBox="0 0 800 600" 
-            preserveAspectRatio="xMidYMid slice"
+            preserveAspectRatio={isMobileState ? "none" : "xMidYMid slice"}
           >
             {/* Base Paths */}
             <g stroke="#b3b3b3" strokeWidth="1" fill="none" opacity="0.6">

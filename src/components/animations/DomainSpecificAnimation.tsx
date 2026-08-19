@@ -63,7 +63,8 @@ export default function DomainSpecificAnimation() {
     }
 
     // --- Particles & Shapes ---
-    const NUM_PARTICLES = 400;
+    const isMobile = (canvas.parentElement?.getBoundingClientRect()?.width || window.innerWidth) < 768;
+    const NUM_PARTICLES = isMobile ? 200 : 400;
     const particles: any[] = [];
     
     // Initialize particles at random positions
@@ -141,7 +142,7 @@ export default function DomainSpecificAnimation() {
 
     function resize() {
       if (!canvas) return;
-      const dpr = window.devicePixelRatio || 1;
+      const dpr = Math.min(window.devicePixelRatio || 1, W < 768 ? 1.5 : 2);
       const rect = canvas.parentElement?.getBoundingClientRect();
       if (rect) {
         W = rect.width;

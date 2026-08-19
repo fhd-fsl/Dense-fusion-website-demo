@@ -20,7 +20,7 @@ export default function SolutionsWorkedOn() {
 
         {/* Full-width Image */}
         <ScrollReveal delay={0.2}>
-          <div className="w-full relative h-[400px] md:h-[600px] rounded-xl overflow-hidden mb-24 shadow-lg">
+          <div className="w-full relative h-[250px] sm:h-[350px] md:h-[600px] rounded-xl overflow-hidden mb-24 shadow-lg">
             <Image 
               src="/assets/solutions/solutions we worked on.svg" 
               alt="Solutions We Worked On" 
@@ -73,7 +73,7 @@ export default function SolutionsWorkedOn() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-xl mb-6">
                   <Image src="/assets/solutions/PlantX Map Graphic.svg" alt="PlantX Graphic" fill className="object-cover" />
                 </div>
-                <Link href="#" className="group relative inline-flex items-center gap-1 rounded text-sm font-bold text-[#006D40]">
+                <Link href="/solutions/plantx" className="group relative inline-flex items-center gap-1 rounded text-sm font-bold text-[#006D40]">
                   <span className="relative">
                     View PlantX Case study <span aria-hidden="true">&rarr;</span>
                     <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-[#006D40] transition-transform duration-300 ease-out group-hover:scale-x-100" />
@@ -95,7 +95,7 @@ export default function SolutionsWorkedOn() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-xl mb-6">
                   <Image src="/assets/solutions/Serena Green Map Graphic.svg" alt="Serena Green Graphic" fill className="object-cover" />
                 </div>
-                <Link href="#" className="group relative inline-flex items-center gap-1 rounded text-sm font-bold text-secondaryBlack">
+                <Link href="/solutions/serenagreen" className="group relative inline-flex items-center gap-1 rounded text-sm font-bold text-secondaryBlack">
                   <span className="relative">
                     View Serena Green Case study <span aria-hidden="true">&rarr;</span>
                     <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-secondaryBlack transition-transform duration-300 ease-out group-hover:scale-x-100" />
@@ -181,7 +181,7 @@ export default function SolutionsWorkedOn() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-xl mb-6">
                   <Image src="/assets/solutions/CarbonEye Map Graphic.svg" alt="Carbon Eye Graphic" fill className="object-cover" />
                 </div>
-                <Link href="#" className="group relative inline-flex items-center gap-1 rounded text-sm font-bold text-white">
+                <Link href="/solutions/carboneye" className="group relative inline-flex items-center gap-1 rounded text-sm font-bold text-white">
                   <span className="relative">
                     View Carbon Eye Case study <span aria-hidden="true">&rarr;</span>
                     <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100" />

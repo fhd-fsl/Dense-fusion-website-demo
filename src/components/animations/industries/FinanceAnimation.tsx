@@ -28,6 +28,7 @@ export default function FinanceAnimation() {
     const render = () => {
       if (!isVisible) return;
       const width = canvas.width = canvas.offsetWidth;
+      const dpr = Math.min(window.devicePixelRatio || 1, width < 768 ? 1.5 : 2);
       const height = canvas.height = canvas.offsetHeight;
       
       ctx.clearRect(0, 0, width, height);

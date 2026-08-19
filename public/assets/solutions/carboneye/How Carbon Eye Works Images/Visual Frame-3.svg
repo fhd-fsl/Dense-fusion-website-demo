@@ -1,0 +1,34 @@
+<svg width="227" height="160" viewBox="0 0 227 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_656_2059)">
+<rect width="227" height="160" rx="8" fill="#090909"/>
+<g clip-path="url(#clip1_656_2059)">
+<rect x="24" y="25" width="180" height="110" rx="12" fill="white" fill-opacity="0.0705882"/>
+<rect width="180" height="110" transform="translate(24 25)" fill="url(#paint0_linear_656_2059)"/>
+<line x1="24" y1="60.5" x2="204" y2="60.5" stroke="white" stroke-opacity="0.0705882"/>
+<line x1="24" y1="96.5" x2="204" y2="96.5" stroke="white" stroke-opacity="0.0705882"/>
+<line x1="24" y1="134.5" x2="204" y2="134.5" stroke="white" stroke-opacity="0.0705882"/>
+<line x1="24.5" y1="25" x2="24.5" y2="135" stroke="white" stroke-opacity="0.0705882"/>
+<line x1="84.5" y1="25" x2="84.5" y2="135" stroke="white" stroke-opacity="0.0705882"/>
+<line x1="144.5" y1="25" x2="144.5" y2="135" stroke="white" stroke-opacity="0.0705882"/>
+<circle cx="56" cy="51" r="4" fill="white"/>
+<circle cx="116" cy="87" r="4" fill="white"/>
+<circle cx="176" cy="63" r="4" fill="#6DC27F"/>
+<circle cx="86" cy="117" r="4" fill="#6DC27F"/>
+<circle cx="146" cy="107" r="4" fill="#6DC27F"/>
+</g>
+<rect x="24.5" y="25.5" width="179" height="109" rx="11.5" stroke="#6DC27F"/>
+</g>
+<rect x="0.5" y="0.5" width="226" height="159" rx="7.5" stroke="#E5E5EA"/>
+<defs>
+<linearGradient id="paint0_linear_656_2059" x1="90" y1="0" x2="90" y2="110" gradientUnits="userSpaceOnUse">
+<stop stop-color="#006D40" stop-opacity="0.101961"/>
+<stop offset="1" stop-color="#006D40" stop-opacity="0.25098"/>
+</linearGradient>
+<clipPath id="clip0_656_2059">
+<rect width="227" height="160" rx="8" fill="white"/>
+</clipPath>
+<clipPath id="clip1_656_2059">
+<rect x="24" y="25" width="180" height="110" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

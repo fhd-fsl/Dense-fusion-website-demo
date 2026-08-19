@@ -12,21 +12,21 @@ const solutionsData = [
     title: 'PlantX',
     icon: '/assets/home-page/solutions/earth-refresh.svg',
     description: 'PlantX is an advanced geospatial platform that analyzes high-resolution satellite imagery to track and visualize urban land cover changes. Using Islamabad as a case study, it uncovers a 20-year increase in built-up areas and loss of green spaces, providing critical insights for sustainable urban planning.',
-    link: '#'
+    link: '/solutions/plantx'
   },
   {
     id: 'serena-green',
     title: 'Serena Green',
     icon: '/assets/home-page/solutions/farm-spout.svg',
     description: 'Serena Green is a digital platform developed by Serena Hotels in partnership with WWF and AKRSP to monitor, visualize, and verify large-scale afforestation for carbon offsetting and environmental restoration. Its pilot initiative plants over 600,000 trees across Gilgit-Baltistan, Balochistan, Chitral, Punjab, and Khyber Pakhtunkhwa, advancing the hospitality industry toward net-zero emissions.',
-    link: '#'
+    link: '/solutions/serenagreen'
   },
   {
     id: 'carbon-eye',
     title: 'Carbon Eye',
     icon: '/assets/home-page/solutions/eye-streamline.svg',
     description: "Carbon Eye is a web-based platform that leverages remote sensing, GIS, GeoServer, and advanced deep learning to analyze a decade of NDVI and carbon emission trends in six of the world's most climate-vulnerable cities, delivering critical insights for sustainable urban planning and environmental management.",
-    link: '#'
+    link: '/solutions/carboneye'
   }
 ];
 
@@ -75,8 +75,8 @@ export default function Solutions() {
                   onClick={() => setActiveIndex(index)}
                   className={`group relative flex overflow-hidden rounded-[4px] cursor-pointer transition-all duration-500 ease-out shadow-lg bg-white ${
                     isActive
-                      ? "md:flex-[3] lg:flex-[4] flex-1 min-h-[350px] md:min-h-0"
-                      : "md:flex-[0_0_96px] lg:flex-[0_0_128px] flex-[0_0_auto] min-h-[80px] md:min-h-0"
+                      ? "md:flex-[3] lg:flex-[4] flex-1 min-h-[400px] md:min-h-0"
+                      : "md:flex-[0_0_96px] lg:flex-[0_0_128px] flex-[0_0_auto] min-h-[72px] md:min-h-0"
                   }`}
                 >
                   {/* Background Gradient Layer for active state */}
@@ -92,7 +92,7 @@ export default function Solutions() {
                   <div className="relative z-10 w-full h-full">
                     {/* Expanded Content */}
                     <div 
-                      className={`absolute inset-0 flex flex-col h-full justify-between p-8 lg:p-12 transition-opacity duration-500 w-[260px] sm:w-[350px] md:w-[400px] lg:w-[600px] xl:w-[750px] shrink-0 ${
+                      className={`absolute inset-0 flex flex-col h-full justify-between p-6 sm:p-8 lg:p-12 transition-opacity duration-500 w-full md:w-[400px] lg:w-[600px] xl:w-[750px] shrink-0 ${
                         isActive ? "opacity-100 pointer-events-auto delay-100" : "opacity-0 pointer-events-none"
                       }`}
                     >
@@ -120,10 +120,10 @@ export default function Solutions() {
                           {solution.description}
                         </p>
                         
-                        <button className="inline-flex items-center gap-2 text-sm font-semibold hover:gap-3 transition-all duration-300 text-white">
+                        <Link href={solution.link} className="inline-flex items-center gap-2 text-sm font-semibold hover:gap-3 transition-all duration-300 text-white">
                           View Case Study
                           <ArrowRight className="w-4 h-4" />
-                        </button>
+                        </Link>
                       </div>
                     </div>
 

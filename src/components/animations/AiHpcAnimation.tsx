@@ -32,7 +32,7 @@ export default function AiHpcAnimation() {
     function resize() {
       const rect = wrapper!.getBoundingClientRect();
       if (rect.width === 0 || rect.height === 0) return;
-      dpr = window.devicePixelRatio || 1;
+      dpr = Math.min(window.devicePixelRatio || 1, rect.width < 768 ? 1.5 : 2);
       W = rect.width;
       H = rect.height;
       canvas!.width = W * dpr;

@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12 relative z-10">
         <div className="w-full md:w-3/5 lg:w-1/2">
           <ScrollReveal>
-            <h1 className="text-[42px] md:text-[60px] lg:text-[72px] font-medium text-white mb-6 leading-[1.1] tracking-tight">
+            <h1 className="text-[42px] sm:text-[48px] md:text-[60px] lg:text-[72px] font-medium text-white mb-6 leading-[1.1] tracking-tight">
               Powering Innovation Across Industries
             </h1>
 

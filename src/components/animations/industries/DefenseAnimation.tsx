@@ -24,6 +24,7 @@ export default function DefenseAnimation() {
     const render = () => {
       if (!isVisible) return;
       const width = canvas.width = canvas.offsetWidth;
+      const dpr = Math.min(window.devicePixelRatio || 1, width < 768 ? 1.5 : 2);
       const height = canvas.height = canvas.offsetHeight;
       const cx = width / 2;
       const cy = height / 2;

@@ -13,7 +13,8 @@ export default function ClimateAnimation() {
 
     let frame: number;
     let isVisible = false;
-    const particles = Array.from({ length: 300 }, () => ({
+    const isMobile = (canvas.offsetWidth || window.innerWidth) < 768;
+    const particles = Array.from({ length: isMobile ? 150 : 300 }, () => ({
       angle: Math.random() * Math.PI * 2,
       // Distribute particles with a hole in the middle (eye of storm)
       radius: 40 + Math.random() * 150,

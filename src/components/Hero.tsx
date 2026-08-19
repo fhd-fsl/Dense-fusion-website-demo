@@ -6,9 +6,9 @@ import HeroParticleAnimation from "./animations/HeroParticleAnimation";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden bg-white min-h-[100svh] md:min-h-0 flex flex-col justify-center">
       <HeroParticleAnimation />
-      <div className="relative z-10 mx-auto max-w-[1300px] w-full px-6 py-20 text-center">
+      <div className="relative z-10 mx-auto max-w-[1300px] w-full px-6 py-20 md:py-24 text-center">
         <ScrollReveal delay={0.1}>
           <p className="inline-block rounded-full px-4 py-2 text-md font-semibold text-secondaryBlack border border-borderGray shadow-sm">
             Applied Supercomputing For Industry Transformation
@@ -16,13 +16,13 @@ export default function Hero() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.2}>
-          <h2 className="mt-5 text-6xl font-bold leading-tight tracking-tight">
+          <h2 className="mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
             <span className="bg-gradient-to-r from-darkGreen to-lightGreen bg-clip-text text-transparent">
               Supercomputing
             </span>
             <span className="text-secondaryBlack">,</span>
           </h2>
-          <h1 className="mt-2 text-6xl font-bold text-secondaryBlack leading-tight tracking-tight">
+          <h1 className="mt-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondaryBlack leading-tight tracking-tight">
             Tailored for Your Industries
           </h1>
         </ScrollReveal>
@@ -35,7 +35,7 @@ export default function Hero() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.4}>
-          <div className="mt-8 flex items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
               className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-6 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"

@@ -23,6 +23,7 @@ export default function GovernmentAnimation() {
       ctx.clearRect(0, 0, width, height);
       time += 0.003;
 
+      const dpr = Math.min(window.devicePixelRatio || 1, width < 768 ? 1.5 : 2);
       const cx = width / 2;
       const cy = height / 2;
       const radius = Math.min(width, height) * 0.4;

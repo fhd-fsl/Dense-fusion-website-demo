@@ -14,9 +14,10 @@ export default function WaveParticles() {
     let time = 0;
     let isVisible = false;
 
-    const SEPARATION = 30;
-    const AMOUNTX = 70;
-    const AMOUNTY = 30;
+    const isMobile = (canvas.offsetWidth || window.innerWidth) < 768;
+    const SEPARATION = isMobile ? 40 : 30;
+    const AMOUNTX = isMobile ? 40 : 70;
+    const AMOUNTY = isMobile ? 18 : 30;
 
     const render = () => {
       if (!isVisible) return;

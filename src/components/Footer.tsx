@@ -13,7 +13,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
         
         {/* Connect CTA (Green Banner) */}
         <ScrollReveal>
-          <div className="bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 rounded-t-[4px] rounded-b-none p-12 md:p-20 flex flex-col items-center justify-center text-center relative z-20 mx-auto w-full">
+          <div className="bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 rounded-t-[4px] rounded-b-none p-8 sm:p-12 md:p-20 flex flex-col items-center justify-center text-center relative z-20 mx-auto w-full">
             <Link href="/contact" className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-secondaryBlack px-5 text-md font-bold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen mb-8">
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
@@ -44,10 +44,10 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
         <div className="mx-auto max-w-[1300px] px-6 md:px-12">
           <ScrollReveal delay={0.2}>
             {/* Top Grid - Links */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8 pb-16">
               
               {/* Brand Logo & Contact */}
-              <div className="lg:col-span-1 flex flex-col gap-8">
+              <div className="col-span-2 md:col-span-2 lg:col-span-1 flex flex-col gap-8">
                 <div className="flex items-center gap-3">
                   <Link href="/">
                     <Image src="/assets/home-page/footer/logo.svg" alt="Dense Fusion" width={128} height={128} />
@@ -70,41 +70,41 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               {/* Quick Links */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Quick Links</h4>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">About</Link>
-                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Services</Link>
-                <Link href="/industries" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Industries</Link>
-                <Link href="/solutions" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Solutions</Link>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Contact us</Link>
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">About</Link>
+                <Link href="/services" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Services</Link>
+                <Link href="/industries" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Industries</Link>
+                <Link href="/solutions" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Solutions</Link>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Contact us</Link>
               </div>
 
               {/* Our Services */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Our Services</h4>
-                <Link href="/services/supercomputing-consulting" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Supercomputing Consulting</Link>
-                <Link href="/services/hpc-infrastructure-design" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">HPC Infrastructure Design & Deployment</Link>
-                <Link href="/services/ai-hpc-integration" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">AI + HPC Integration</Link>
-                <Link href="/services/software-stack-optimization" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Software Stack Installation & Optimization</Link>
-                <Link href="/services/domain-specific-solutions" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Domain-Specific Solutions</Link>
-                <Link href="/services/training-and-enablement" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Training & Enablement</Link>
+                <Link href="/services/supercomputing-consulting" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Supercomputing Consulting</Link>
+                <Link href="/services/hpc-infrastructure-design" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">HPC Infrastructure Design & Deployment</Link>
+                <Link href="/services/ai-hpc-integration" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">AI + HPC Integration</Link>
+                <Link href="/services/software-stack-optimization" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Software Stack Installation & Optimization</Link>
+                <Link href="/services/domain-specific-solutions" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Domain-Specific Solutions</Link>
+                <Link href="/services/training-and-enablement" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Training & Enablement</Link>
               </div>
 
               {/* Industries */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Industries</h4>
-                <Link href="/industries/defense" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Defense</Link>
-                <Link href="/industries/government" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Government</Link>
-                <Link href="/industries/agriculture" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Agriculture</Link>
-                <Link href="/industries/climate" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Climate</Link>
-                <Link href="/industries/finance" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Banking & Finance</Link>
-                <Link href="/industries/education" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Education & Research</Link>
+                <Link href="/industries/defense" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Defense</Link>
+                <Link href="/industries/government" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Government</Link>
+                <Link href="/industries/agriculture" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Agriculture</Link>
+                <Link href="/industries/climate" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Climate</Link>
+                <Link href="/industries/finance" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Banking & Finance</Link>
+                <Link href="/industries/education" className="text-gray-400 hover:text-white transition-colors text-sm md:text-xs font-medium py-1">Education & Research</Link>
               </div>
 
               {/* Solutions */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Solutions</h4>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">PlantX</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Serena Green</Link>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Carbon Eye</Link>
+                <Link href="/solutions/plantx" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">PlantX</Link>
+                <Link href="/solutions/serenagreen" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Serena Green</Link>
+                <Link href="/solutions/carboneye" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Carbon Eye</Link>
               </div>
             </div>
 
@@ -113,12 +113,12 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               <div className="flex flex-col gap-2">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Address</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-32">
-                  <p className="text-gray-400 text-[11px] leading-relaxed max-w-xs uppercase">
-                    REGIONAL OFFICE USA: DENSEFUSION<br/>
-                    LLC, 7901 4TH ST N STE 24436 ST<br/>
+                  <p className="text-gray-400 text-[11px] leading-relaxed max-w-xs uppercase break-words">
+                    REGIONAL OFFICE USA: DENSEFUSION
+                    LLC, 7901 4TH ST N STE 24436 ST
                     PETERSBURG, FL 33702, USA
                   </p>
-                  <p className="text-gray-400 text-[11px] leading-relaxed max-w-xs uppercase">
+                  <p className="text-gray-400 text-[11px] leading-relaxed max-w-xs uppercase break-words">
                     HEAD OFFICE: Office No. 1C4-K, Building 01,<br/>
                     National Science and Technology Park(NSTP),<br/>
                     NUST Campus, Sector H-12, Islamabad
