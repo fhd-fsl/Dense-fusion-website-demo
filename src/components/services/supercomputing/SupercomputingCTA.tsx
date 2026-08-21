@@ -38,7 +38,7 @@ export default function SupercomputingCTA() {
               href="/contact"
               className="group inline-flex h-12 items-center justify-center rounded-[4px] border border-white px-8 text-lg font-semibold text-white transition-all duration-300 hover:bg-white hover:text-[#1b8e44]"
             >
-              Talk to an Expert
+              Request a demo
             </Link>
           </div>
         </ScrollReveal>

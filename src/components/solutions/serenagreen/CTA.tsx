@@ -19,10 +19,10 @@ export default function CTA() {
           >
             <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
               <span className="flex h-12 shrink-0 items-center justify-center">
-                Talk to Our Experts
+                Request a demo
               </span>
               <span className="flex h-12 shrink-0 items-center justify-center">
-                Talk to Our Experts
+                Request a demo
               </span>
             </span>
           </Link>

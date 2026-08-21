@@ -66,27 +66,29 @@ export default function AboutUs() {
         </ScrollReveal>
 
         {/* Bottom Section */}
-        <div className="flex flex-col gap-12 max-w-3xl">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-16 w-full">
           {/* Item 1 */}
-          <ScrollReveal delay={0.55}>
-            <div className="flex flex-col gap-5">
-              <div 
-                className="w-11 h-11 bg-gradient-to-br from-lightGreen to-gradientGreen1" 
-                style={{ 
-                  WebkitMaskImage: 'url(/assets/home-page/union.svg)', 
-                  WebkitMaskSize: 'contain', 
-                  WebkitMaskRepeat: 'no-repeat', 
-                  WebkitMaskPosition: 'left center',
-                  maskImage: 'url(/assets/home-page/union.svg)',
-                  maskSize: 'contain',
-                  maskRepeat: 'no-repeat',
-                  maskPosition: 'left center'
-                }} 
-              />
-              <h3 className="text-2xl md:text-[28px] font-bold text-white tracking-tight">
-                Innovating for Impact
-              </h3>
-              <p className="text-lg text-gray-400 leading-relaxed font-medium">
+          <ScrollReveal delay={0.55} className="flex-1">
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-4">
+                <div 
+                  className="w-9 h-9 shrink-0 bg-gradient-to-br from-lightGreen to-gradientGreen1" 
+                  style={{ 
+                    WebkitMaskImage: 'url(/assets/home-page/union.svg)', 
+                    WebkitMaskSize: 'contain', 
+                    WebkitMaskRepeat: 'no-repeat', 
+                    WebkitMaskPosition: 'center',
+                    maskImage: 'url(/assets/home-page/union.svg)',
+                    maskSize: 'contain',
+                    maskRepeat: 'no-repeat',
+                    maskPosition: 'center'
+                  }} 
+                />
+                <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                  Innovating for Impact
+                </h3>
+              </div>
+              <p className="text-base md:text-lg text-gray-400 leading-relaxed font-medium">
                 DenseFusion harnesses cutting-edge AI to solve real-world problems, transforming
                 industries and improving lives through smart, client-focused solutions.
               </p>
@@ -94,25 +96,27 @@ export default function AboutUs() {
           </ScrollReveal>
 
           {/* Item 2 */}
-          <ScrollReveal delay={0.65}>
-            <div className="flex flex-col gap-5 mt-2">
-              <div 
-                className="w-11 h-11 bg-gradient-to-br from-lightGreen to-gradientGreen1" 
-                style={{ 
-                  WebkitMaskImage: 'url(/assets/home-page/mission.svg)', 
-                  WebkitMaskSize: 'contain', 
-                  WebkitMaskRepeat: 'no-repeat', 
-                  WebkitMaskPosition: 'left center',
-                  maskImage: 'url(/assets/home-page/mission.svg)',
-                  maskSize: 'contain',
-                  maskRepeat: 'no-repeat',
-                  maskPosition: 'left center'
-                }} 
-              />
-              <h3 className="text-2xl md:text-[28px] font-bold text-white tracking-tight">
-                Our Mission
-              </h3>
-              <p className="text-lg text-gray-400 leading-relaxed font-medium">
+          <ScrollReveal delay={0.65} className="flex-1">
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-4">
+                <div 
+                  className="w-9 h-9 shrink-0 bg-gradient-to-br from-lightGreen to-gradientGreen1" 
+                  style={{ 
+                    WebkitMaskImage: 'url(/assets/home-page/mission.svg)', 
+                    WebkitMaskSize: 'contain', 
+                    WebkitMaskRepeat: 'no-repeat', 
+                    WebkitMaskPosition: 'center',
+                    maskImage: 'url(/assets/home-page/mission.svg)',
+                    maskSize: 'contain',
+                    maskRepeat: 'no-repeat',
+                    maskPosition: 'center'
+                  }} 
+                />
+                <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
+                  Our Mission
+                </h3>
+              </div>
+              <p className="text-base md:text-lg text-gray-400 leading-relaxed font-medium">
                 To deliver tailor-made solutions with integrity and collaboration, creating value,
                 opportunity, and exceeding expectations for global partners.
               </p>

@@ -55,17 +55,6 @@ export default function ContactPage() {
                         </div>
                       </div>
 
-                      {/* Phone */}
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-[4px] bg-[#f4fbf6] flex items-center justify-center shrink-0 mt-1">
-                           <Phone className="w-5 h-5 text-[#006D40]" />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-secondaryBlack mb-1 text-base">Phone</h4>
-                          <p className="text-gray-500 text-sm font-medium">+92 302 8671230</p>
-                        </div>
-                      </div>
-
                       {/* Address */}
                       <div className="flex items-start gap-4">
                         <div className="w-10 h-10 rounded-[4px] bg-[#f4fbf6] flex items-center justify-center shrink-0 mt-1">
@@ -81,7 +70,7 @@ export default function ContactPage() {
                           
                           <div>
                             <p className="text-secondaryBlack text-xs uppercase tracking-widest mb-1.5 font-medium">HEAD OFFICE</p>
-                            <p className="text-gray-500 text-sm max-w-[350px] font-medium leading-relaxed">Office No. 1C4-K, Building 01, National Science and Technology Park(NSTP), NUST Campus, Sector H-12, Islamabad</p>
+                            <p className="text-gray-500 text-sm max-w-[350px] font-medium leading-relaxed">Office 1A , Wing A , third floor , School of interdisciplinary engineering and sciences , NUST H-12</p>
                           </div>
                         </div>
                       </div>

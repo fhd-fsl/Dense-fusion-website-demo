@@ -50,7 +50,7 @@ export default function ServicesHero() {
               className="group relative inline-flex items-center rounded px-4 py-3 text-lg font-bold text-lightGray"
             >
               <span className="relative">
-                Talk to an Expert
+                Request a demo
                 <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-lightGray transition-transform duration-300 ease-out group-hover:scale-x-100" />
               </span>
             </Link>

@@ -41,7 +41,7 @@ export default function GovernmentCTA() {
               href="/contact"
               className="group inline-flex h-11 items-center justify-center rounded-[4px] border border-white px-8 text-lg font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-[#006D40]"
             >
-              Talk to Our Experts
+              Request a demo
             </Link>
           </div>
         </ScrollReveal>
