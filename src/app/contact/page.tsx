@@ -5,6 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export default function ContactPage() {
   return (
@@ -92,31 +93,7 @@ export default function ContactPage() {
                 <div className="w-full lg:w-1/2">
                   <ScrollReveal delay={0.2}>
                     <div className="bg-[#f9f9f9] rounded-xl p-8 md:p-10 lg:p-12">
-                      <form className="flex flex-col gap-8">
-                        <div>
-                          <label className="block text-[11px] font-bold text-secondaryBlack mb-2 uppercase tracking-widest">Full Name</label>
-                          <input type="text" placeholder="Your name" className="w-full bg-transparent border-b border-gray-300 py-3 text-sm text-secondaryBlack font-medium focus:outline-none focus:border-[#006D40] transition-colors placeholder:text-gray-400 placeholder:font-normal" />
-                        </div>
-                        <div>
-                          <label className="block text-[11px] font-bold text-secondaryBlack mb-2 uppercase tracking-widest">Email Address</label>
-                          <input type="email" placeholder="Your email address" className="w-full bg-transparent border-b border-gray-300 py-3 text-sm text-secondaryBlack font-medium focus:outline-none focus:border-[#006D40] transition-colors placeholder:text-gray-400 placeholder:font-normal" />
-                        </div>
-                        <div>
-                          <label className="block text-[11px] font-bold text-secondaryBlack mb-2 uppercase tracking-widest">Message</label>
-                          <textarea placeholder="Write something..." rows={4} className="w-full bg-transparent border-b border-gray-300 py-3 text-sm text-secondaryBlack font-medium focus:outline-none focus:border-[#006D40] transition-colors placeholder:text-gray-400 placeholder:font-normal resize-none"></textarea>
-                        </div>
-                        
-                        <button type="submit" className="group w-full h-11 inline-flex items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-5 text-base font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90 mt-2">
-                          <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
-                            <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                              Send Message
-                            </span>
-                            <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                              Send Message
-                            </span>
-                          </span>
-                        </button>
-                      </form>
+                      <ContactForm />
                     </div>
                   </ScrollReveal>
                 </div>
