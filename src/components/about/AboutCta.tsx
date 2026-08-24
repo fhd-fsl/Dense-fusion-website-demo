@@ -20,15 +20,15 @@ export default function AboutCta() {
           <div className="mt-10 md:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
             {/* Primary Black Button */}
             <Link
-              href="/contact"
+              href="/services"
               className="group inline-flex h-12 items-start justify-center overflow-hidden rounded-[4px] bg-[#050505] px-8 text-lg font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen"
             >
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
                 <span className="flex h-12 shrink-0 items-center justify-center text-white">
-                  Start a Conversation
+                  Explore our services
                 </span>
                 <span className="flex h-12 shrink-0 items-center justify-center text-white">
-                  Start a Conversation
+                  Explore our services
                 </span>
               </span>
             </Link>

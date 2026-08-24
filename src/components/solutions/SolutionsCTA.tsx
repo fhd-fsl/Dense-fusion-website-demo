@@ -14,29 +14,13 @@ export default function SolutionsCTA() {
               Whether you need to monitor environmental change, analyze satellite imagery, or optimize geospatial infrastructure, our experts are here to help.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              {/* Primary Black Button */}
-              <Link
-                href="/contact"
-                className="group inline-flex h-12 items-start justify-center overflow-hidden rounded-[4px] bg-[#050505] px-8 text-lg font-semibold text-white shadow-sm transition-colors duration-300 hover:bg-lightGreen"
-              >
-                <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
-                  <span className="flex h-12 shrink-0 items-center justify-center text-white">
-                    Start a Conversation
-                  </span>
-                  <span className="flex h-12 shrink-0 items-center justify-center text-white">
-                    Start a Conversation
-                  </span>
-                </span>
-              </Link>
-
-              {/* Secondary Outline Button */}
-              <Link
-                href="/contact"
-                className="inline-flex h-12 items-center justify-center rounded-[4px] border-2 border-white px-8 text-lg font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-[#006D40]"
-              >
-                Schedule a Consultation
-              </Link>
-            </div>
+            <Link
+              href="/contact"
+              className="inline-flex h-12 items-center justify-center rounded-[4px] border-2 border-white px-8 text-lg font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-[#006D40]"
+            >
+              Request a Demo
+            </Link>
+          </div>
           </ScrollReveal>
         </div>
       </div>
