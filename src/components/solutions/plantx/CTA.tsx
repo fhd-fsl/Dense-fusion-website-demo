@@ -16,16 +16,9 @@ export default function CTA() {
           
           <Link
             href="/contact"
-            className="group inline-flex h-12 items-start justify-center overflow-hidden rounded-[4px] bg-[#050505] px-8 text-lg font-bold text-white shadow-sm transition-colors duration-300 hover:bg-[#6DC27F]"
+            className="inline-flex h-12 items-center justify-center rounded-[4px] border-2 border-white px-8 text-lg font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-[#006D40]"
           >
-            <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
-              <span className="flex h-12 shrink-0 items-center justify-center text-white">
-                Request a demo
-              </span>
-              <span className="flex h-12 shrink-0 items-center justify-center text-white">
-                Request a demo
-              </span>
-            </span>
+            Request a Demo
           </Link>
         </ScrollReveal>
       </div>
