@@ -34,7 +34,7 @@ export default function DefenseUseCases() {
   return (
     <section className="bg-black py-24 md:py-32 relative overflow-hidden">
       {/* Custom SVG Background */}
-      <div 
+      <div
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: "url('/assets/industries/defense/Section 3_ Our Expertise.svg')",
@@ -48,7 +48,7 @@ export default function DefenseUseCases() {
         <ScrollReveal>
           <div className="mb-16">
             <h2 className="text-[36px] md:text-[48px] font-semibold text-white mb-4 tracking-tight">
-              Defense Use Cases
+              Use Cases
             </h2>
             <p className="text-gray-400 text-lg md:text-xl">
               Computing Power That Supports Mission Success
@@ -62,7 +62,7 @@ export default function DefenseUseCases() {
               <ScrollReveal key={index} delay={0.1 * index}>
                 <div className="relative w-full h-auto lg:h-[200px] cursor-pointer group lg:[perspective:1000px]">
                   <div className="w-full h-full transition-transform duration-500 lg:[transform-style:preserve-3d] lg:group-hover:[transform:rotateY(180deg)]">
-                    
+
                     {/* Front Face (Always visible on mobile, front of card on desktop) */}
                     <div className="lg:absolute lg:inset-0 lg:[backface-visibility:hidden] bg-[#141414] flex flex-col items-center justify-center p-6 lg:p-6 rounded-[4px] border border-gray-800 transition-colors group-hover:bg-[#1a1a1a]">
                       <h3 className="text-[#6DC27F] text-[22px] md:text-[24px] font-medium text-center tracking-tight lg:mb-0">
