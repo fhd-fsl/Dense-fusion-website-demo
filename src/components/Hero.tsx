@@ -76,10 +76,9 @@ export default function Hero() {
 
             <ScrollReveal delay={0.25}>
               <div className="interactive-hover h-full rounded-xl border border-borderGray2 bg-transparent p-6 transition hover:bg-white">
-                <h3 className="text-left text-xl font-semibold text-secondaryBlack tracking-tight">AI Consultation</h3>
+                <h3 className="text-left text-xl font-semibold text-secondaryBlack tracking-tight">AI Trainings</h3>
                 <p className="mt-3 text-left text-base text-secondaryBlack opacity-80">
-                  Transform ideas into intelligent solutions with our specialized AI roadmap and
-                  architectural consultation.
+                  Corporate trainings delivered to companies covering AI, HPC, DevOps, and machine learning topics.
                 </p>
               </div>
             </ScrollReveal>

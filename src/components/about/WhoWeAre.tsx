@@ -23,7 +23,7 @@ export default function WhoWeAre() {
             <ScrollReveal delay={0.3}>
               <div className="flex flex-col gap-5 text-base md:text-lg leading-relaxed text-[#5D5D5D]">
                 <p>
-                  DenseFusion is a technology company specializing in <span className="font-semibold text-gray-700">High-Performance Computing (HPC), Applied Artificial Intelligence, Geospatial AI</span>, and intelligent software solutions
+                  DenseFusion is a technology company founded in 2023 specializing in <span className="font-semibold text-gray-700">High-Performance Computing (HPC), Applied Artificial Intelligence, Geospatial AI</span>, and intelligent software solutions
                 </p>
                 <p>
                   We help enterprises, research institutions, and government organizations harness advanced computing technologies to solve computationally intensive challenges and accelerate innovation.

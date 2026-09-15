@@ -128,17 +128,8 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
 
               {/* Social Icons */}
               <div className="flex items-center gap-4 mt-6 md:mt-0">
-                <Link href="#" className="w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
+                <Link href="https://www.linkedin.com/company/densefusion/posts/?feedView=all" className="w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110" target="_blank" rel="noopener noreferrer">
                   <Image src="/assets/home-page/footer/linkedin.svg" alt="LinkedIn" width={32} height={32} />
-                </Link>
-                <Link href="#" className="w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
-                  <Image src="/assets/home-page/footer/github.svg" alt="Github" width={32} height={32} />
-                </Link>
-                <Link href="#" className="w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
-                  <Image src="/assets/home-page/footer/facebook.svg" alt="Facebook" width={32} height={32} />
-                </Link>
-                <Link href="#" className="w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110">
-                  <Image src="/assets/home-page/footer/instagram.svg" alt="Instagram" width={32} height={32} />
                 </Link>
               </div>
             </div>
@@ -150,8 +141,7 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               </p>
               
               <div className="flex items-center gap-6">
-                <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-                <Link href="#" className="hover:text-white transition-colors">Terms & Condition</Link>
+                {/* No Privacy Policy or Terms & Conditions available as of now */}
               </div>
             </div>
           </ScrollReveal>

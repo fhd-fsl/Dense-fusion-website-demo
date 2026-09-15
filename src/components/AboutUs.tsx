@@ -117,8 +117,8 @@ export default function AboutUs() {
                 </h3>
               </div>
               <p className="text-base md:text-lg text-gray-400 leading-relaxed font-medium">
-                To deliver tailor-made solutions with integrity and collaboration, creating value,
-                opportunity, and exceeding expectations for global partners.
+                To be a premier solution provider that seamlessly fuses multiple high-information, 
+                high-throughput systems together to empower our global partners.
               </p>
             </div>
           </ScrollReveal>
