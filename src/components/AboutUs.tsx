@@ -20,9 +20,8 @@ export default function AboutUs() {
 
             <ScrollReveal delay={0.25}>
               <p className="mt-8 text-2xl md:text-3xl lg:text-[34px] font-normal leading-[1.4] tracking-tight">
-                <span className="font-bold">DenseFusion</span> is an AI-driven technology
-                company dedicated to building intelligent solutions that solve complex challenges, accelerate
-                innovation and empower businesses to grow with confidence.
+                <span className="font-bold">DenseFusion</span> is an AI and high-performance computing technology
+                company focused on solving complex challenges through intelligent systems, advanced infrastructure, and software solutions.
               </p>
             </ScrollReveal>
 

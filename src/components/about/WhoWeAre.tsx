@@ -26,7 +26,7 @@ export default function WhoWeAre() {
                   DenseFusion is a technology company founded in 2023 specializing in <span className="font-semibold text-gray-700">High-Performance Computing (HPC), Applied Artificial Intelligence, Geospatial AI</span>, and intelligent software solutions
                 </p>
                 <p>
-                  We help enterprises, research institutions, and government organizations harness advanced computing technologies to solve computationally intensive challenges and accelerate innovation.
+                  We help organizations leverage advanced computing and software capabilities through HPC infrastructure, technical training, intelligent applications, GIS and MRV systems, and machine learning solutions for edge deployment.
                 </p>
               </div>
             </ScrollReveal>
