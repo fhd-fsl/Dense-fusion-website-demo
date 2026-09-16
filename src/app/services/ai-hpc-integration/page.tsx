@@ -19,7 +19,7 @@ export default function AIHPCIntegrationPage() {
         <AIHPCServices />
         <AIHPCProcess />
         <WhyChoose />
-        <Technologies />
+        <Technologies subtitle="Our technology approach supports GPU-accelerated computing, distributed AI workloads, cluster management, and high-performance model execution." />
         <CTA />
         <Footer hideConnectCta />
       </main>

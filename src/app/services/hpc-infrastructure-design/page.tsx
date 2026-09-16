@@ -19,7 +19,7 @@ export default function HPCInfrastructureDesignPage() {
         <InfrastructureServices />
         <InfrastructureProcess />
         <WhyChoose />
-        <Technologies />
+        <Technologies subtitle="We work with established HPC and cluster technologies to design and deploy high-performance computing environments." />
         <CTA />
         <Footer hideConnectCta />
       </main>

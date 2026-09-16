@@ -29,14 +29,23 @@ const logos = [
   },
 ];
 
-export default function Technologies() {
+type TechnologiesProps = {
+  subtitle?: string;
+};
+
+export default function Technologies({ subtitle }: TechnologiesProps) {
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12 text-center">
         <ScrollReveal>
-          <h2 className="text-[36px] md:text-[48px] font-bold text-black mb-12">
+          <h2 className={`text-[36px] md:text-[48px] font-bold text-black ${subtitle ? "mb-4" : "mb-12"}`}>
             Technologies We Work With
           </h2>
+          {subtitle && (
+            <p className="text-gray-500 text-base md:text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+              {subtitle}
+            </p>
+          )}
         </ScrollReveal>
 
         <ScrollReveal delay={0.2}>

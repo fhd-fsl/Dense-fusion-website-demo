@@ -19,7 +19,7 @@ export default function SupercomputingConsultingPage() {
         <ConsultingServices />
         <ConsultingProcess />
         <WhyChoose />
-        <Technologies />
+        <Technologies subtitle="Connect with our strategic consultants today to build a compute architecture that defines the future of your industry." />
         <SupercomputingCTA />
         <Footer hideConnectCta />
       </main>

@@ -19,7 +19,7 @@ export default function DomainSpecificSolutionsPage() {
         <DomainServices />
         <DomainProcess />
         <WhyChoose />
-        <Technologies />
+        <Technologies subtitle="DenseFusion applies AI, HPC, and specialized computing technologies to address the unique requirements of different industries." />
         <CTA />
         <Footer hideConnectCta />
       </main>
