@@ -17,7 +17,7 @@ const steps = [
   {
     title: "Deploy",
     label: "STEP 03",
-    desc: "Install, configure, and integrate the infrastructure for reliable, production-ready performance.",
+    desc: "Configure, and integrate the infrastructure for reliable, reliable AI workloads.",
   },
   {
     title: "Optimize",
