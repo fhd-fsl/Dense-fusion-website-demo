@@ -7,22 +7,22 @@ const steps = [
   {
     title: "Discover",
     label: "STEP 01",
-    desc: "Understand your goals, existing infrastructure, and workload requirements.",
+    desc: "Understand your industry requirements, objectives, and computational needs.",
   },
   {
-    title: "Assess",
+    title: "Design",
     label: "STEP 02",
-    desc: "Analyze system performance, identify bottlenecks, and evaluate future needs.",
+    desc: "Evaluate existing infrastructure, workloads, and technical requirements.",
   },
   {
     title: "Recommend",
     label: "STEP 03",
-    desc: "Develop a customized HPC strategy with clear implementation recommendations.",
+    desc: "Develop a tailored AI and HPC solution aligned with your specific needs.",
   },
   {
     title: "Support",
     label: "STEP 04",
-    desc: "Provide ongoing guidance throughout planning, deployment, and optimization.",
+    desc: "Provide ongoing guidance to support implementation, optimization, and future requirements.",
   },
 ];
 
@@ -60,8 +60,7 @@ export default function ConsultingProcess() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              A structured process that transforms your requirements into
-              scalable, high-performance solutions.
+              A structured, collaborative process that transforms complex industry challenges into scalable AI and HPC solutions built for long-term success.
             </p>
           </div>
         </ScrollReveal>

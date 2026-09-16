@@ -2,12 +2,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const reasons = [
-  "Customized industry solutions",
-  "Scalable architecture",
+  "Industry-focused solutions",
+  "Tailored architectures",
   "AI & HPC specialists",
-  "Secure deployments",
-  "Research-driven innovation",
-  "Long-term technology partnership",
+  "Scalable computing",
+  "Specialized technical capabilities",
+  "Long-term technology support",
 ];
 
 export default function WhyChoose() {
@@ -33,7 +33,7 @@ export default function WhyChoose() {
               Industry Expertise Meets Advanced Computing
             </h3>
             <p className="text-gray-500 text-base md:text-[17px] leading-relaxed mb-12 max-w-4xl">
-              By combining industry expertise with advanced computing, we help organizations solve complex problems faster, smarter, and more efficiently.
+              We combine AI and high-performance computing capabilities to develop specialized solutions aligned with industry-specific requirements.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-16 lg:gap-x-24">

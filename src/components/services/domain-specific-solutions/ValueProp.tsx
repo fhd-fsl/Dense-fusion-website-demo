@@ -2,12 +2,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const achievements = [
-  "Industry-focused innovation",
-  "Intelligent automation",
-  "Advanced data insights",
-  "Faster decision-making",
-  "Scalable digital transformation",
-  "Operational efficiency",
+  "Industry-specific solutions",
+  "Specialized AI applications",
+  "High-performance computing",
+  "Scalable solutions",
+  "Complex workload support",
+  "Technology-driven innovation",
 ];
 
 export default function ValueProp() {

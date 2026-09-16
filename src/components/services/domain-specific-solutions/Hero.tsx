@@ -24,7 +24,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Deliver intelligent, industry-focused solutions that solve complex scientific, engineering, and enterprise challenges.
+              Deliver specialized computing and AI solutions tailored to the unique challenges of your industry.
             </p>
 
             <Link
@@ -33,10 +33,10 @@ export default function Hero() {
             >
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                  Schedule a Consultation
+                  Explore Our Services
                 </span>
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                  Schedule a Consultation
+                  Explore Our Services
                 </span>
               </span>
             </Link>
