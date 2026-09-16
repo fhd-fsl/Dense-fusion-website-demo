@@ -5,24 +5,24 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const steps = [
   {
-    title: "Discover",
+    title: "Assess",
     label: "STEP 01",
-    desc: "Analyze your industry challenges, business goals, and technical requirements.",
+    desc: "Understand your team's training needs, technical background, and objectives.",
   },
   {
-    title: "Design",
+    title: "Train",
     label: "STEP 02",
-    desc: "Develop a customized AI and HPC solution tailored to your specific needs.",
+    desc: "Deliver focused corporate training across AI, HPC, DevOps, and machine learning.",
   },
   {
-    title: "Deploy",
+    title: "Apply",
     label: "STEP 03",
-    desc: "Implement and integrate production-ready solutions into your existing environment.",
+    desc: "Connect learning with practical applications and real-world technical requirements.",
   },
   {
-    title: "Optimize",
+    title: "Enable",
     label: "STEP 04",
-    desc: "Continuously monitor, refine, and optimize performance for lasting business impact.",
+    desc: "Help teams build knowledge they can apply within their organization.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function TrainingProcess() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl">
-              A structured, collaborative process that transforms complex industry challenges into scalable AI and HPC solutions built for long-term success.
+              A Practical Path from Learning to Real-World Expertise
             </p>
           </div>
         </ScrollReveal>

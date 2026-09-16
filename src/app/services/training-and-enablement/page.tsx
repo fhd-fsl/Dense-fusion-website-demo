@@ -6,7 +6,7 @@ import ValueProp from "@/components/services/training-and-enablement/ValueProp";
 import TrainingServices from "@/components/services/training-and-enablement/TrainingServices";
 import TrainingProcess from "@/components/services/training-and-enablement/TrainingProcess";
 import WhyChoose from "@/components/services/training-and-enablement/WhyChoose";
-import Technologies from "@/components/services/supercomputing/Technologies";
+
 import CTA from "@/components/services/training-and-enablement/CTA";
 
 export default function TrainingAndEnablementPage() {
@@ -19,7 +19,7 @@ export default function TrainingAndEnablementPage() {
         <TrainingServices />
         <TrainingProcess />
         <WhyChoose />
-        <Technologies />
+
         <CTA />
         <Footer hideConnectCta />
       </main>

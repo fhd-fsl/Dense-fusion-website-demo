@@ -2,12 +2,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const achievements = [
-  "Industry-focused innovation",
-  "Intelligent automation",
-  "Advanced data insights",
-  "Faster decision-making",
-  "Scalable digital transformation",
-  "Operational efficiency",
+  "Strengthen technical capabilities",
+  "Build AI expertise",
+  "Develop HPC knowledge",
+  "Improve machine learning skills",
+  "Enhance DevOps capabilities",
+  "Upskill technical teams",
 ];
 
 export default function ValueProp() {
@@ -17,7 +17,17 @@ export default function ValueProp() {
         {/* Animated inline text */}
         <ScrollReveal>
           <h2 className="text-[32px] md:text-[48px] font-semibold text-black leading-[1.25] mb-16 max-w-4xl mx-auto">
-            Technology delivers more value{" "}
+            Technology evolves{" "}
+            <span className="inline-flex align-middle mx-1 -translate-y-1 w-9 h-9 md:w-11 md:h-11 bg-[#0a0a0a] rotate-6 rounded-lg items-center justify-center shadow-md">
+              <Image
+                src="/assets/services/supercomputing/graph.svg"
+                alt="Icon"
+                width={22}
+                height={22}
+                className="w-5 h-5 md:w-6 md:h-6"
+              />
+            </span>{" "}
+            quickly. DenseFusion provides corporate training designed to help companies build technical{" "}
             <span className="inline-flex align-middle mx-1 -translate-y-1 w-9 h-9 md:w-11 md:h-11 bg-[#2f9250] -rotate-6 rounded-lg items-center justify-center shadow-md">
               <Image
                 src="/assets/services/supercomputing/brush.svg"
@@ -27,18 +37,8 @@ export default function ValueProp() {
                 className="w-5 h-5 md:w-6 md:h-6"
               />
             </span>{" "}
-            when your team knows how to use it. DenseFusion provides hands-on HPC and AI training to build practical{" "}
-            <span className="inline-flex align-middle mx-1 -translate-y-1 w-9 h-9 md:w-11 md:h-11 bg-black rotate-6 rounded-lg items-center justify-center shadow-md">
-              <Image
-                src="/assets/services/supercomputing/graph.svg"
-                alt="Icon"
-                width={22}
-                height={22}
-                className="w-5 h-5 md:w-6 md:h-6"
-              />
-            </span>{" "}
-            skills, adopt new technologies, and confidently manage high-performance{" "}
-            <span className="inline-flex align-middle mx-1 -translate-y-1 w-9 h-9 md:w-11 md:h-11 bg-[#6fcb80] -rotate-6 rounded-lg items-center justify-center shadow-md">
+            capabilities and strengthen their teams' understanding of AI and advanced computing{" "}
+            <span className="inline-flex align-middle mx-1 -translate-y-1 w-9 h-9 md:w-11 md:h-11 bg-[#6fcb80] rotate-6 rounded-lg items-center justify-center shadow-md">
               <Image
                 src="/assets/services/supercomputing/rocket.svg"
                 alt="Icon"
@@ -47,7 +47,7 @@ export default function ValueProp() {
                 className="w-5 h-5 md:w-6 md:h-6"
               />
             </span>{" "}
-            environments.
+            technologies.
           </h2>
         </ScrollReveal>
 

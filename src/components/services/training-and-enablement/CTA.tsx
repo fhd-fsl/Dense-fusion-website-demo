@@ -12,10 +12,10 @@ export default function SupercomputingCTA() {
       <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12 relative z-10 text-center">
         <ScrollReveal>
           <h2 className="text-[32px] md:text-[48px] font-bold text-white mb-6">
-            Transform Industry Challenges into Intelligent Solutions
+            Empower Your Team with Advanced Technology Skills
           </h2>
           <p className="text-green-50 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-            Optimize every layer of your HPC software environment to improve application performance, maximize efficiency, and support long-term scalability.
+            Equip your organization with the knowledge and skills to work confidently with AI, HPC, DevOps, and machine learning.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
