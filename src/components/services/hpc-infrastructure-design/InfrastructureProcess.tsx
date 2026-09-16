@@ -7,22 +7,22 @@ const steps = [
   {
     title: "Assess",
     label: "STEP 01",
-    desc: "Understand workload requirements, evaluate current storage and hardware architectures, and identify computational constraints.",
+    desc: "Understand workload requirements and infrastructure needs.",
   },
   {
     title: "Design",
     label: "STEP 02",
-    desc: "Create the optimal infrastructure architecture focusing on parallel file systems, cluster topologies, and GPU accelerations.",
+    desc: "Develop a customized cluster or supercomputer architecture.",
   },
   {
     title: "Deploy",
     label: "STEP 03",
-    desc: "Complete installation and system integration, including physical racking, storage provisioning, and network orchestration.",
+    desc: "Build, configure, and integrate the HPC infrastructure.",
   },
   {
-    title: "Optimize",
+    title: "Validate",
     label: "STEP 04",
-    desc: "Monitor performance, identify bottlenecks, and fine-tune the environment for long-term efficiency.",
+    desc: "Test the environment to ensure it is configured and ready for use.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function ConsultingProcess() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl">
-              A proven process for designing, deploying, and optimizing scalable HPC infrastructure.
+              A structured process for designing and deploying reliable HPC infrastructure.
             </p>
           </div>
         </ScrollReveal>

@@ -3,9 +3,9 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const achievements = [
   "High-performance compute environments",
-  "Faster data processing",
-  "Hybrid cloud readiness",
   "Scalable cluster architecture",
+  "Scalable HPC infrastructure",
+  "Fully configured cluster systems",
   "Optimized resource utilization",
   "Reliable infrastructure deployment",
 ];

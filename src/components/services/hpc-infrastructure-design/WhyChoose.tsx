@@ -2,12 +2,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const reasons = [
-  "Custom-built architectures",
-  "Scalable deployments",
-  "AI-ready infrastructure",
-  "High availability",
-  "Vendor-neutral solutions",
-  "Long-term technical support",
+  "Custom HPC architectures",
+  "On-premises deployment",
+  "Cluster configuration",
+  "Scalable infrastructure",
+  "End-to-end deployment",
+  "Workload-focused design",
 ];
 
 export default function WhyChoose() {
@@ -30,10 +30,10 @@ export default function WhyChoose() {
               Why Choose DenseFusion
             </h2>
             <h3 className="text-[#40A865] text-lg md:text-xl font-medium mb-6">
-              Infrastructure Expertise Built for High-Performance Computing
+              HPC Infrastructure Built Around Your Requirements
             </h3>
             <p className="text-gray-500 text-base md:text-[17px] leading-relaxed mb-12 max-w-4xl">
-              We help organizations build secure, scalable, and future-ready HPC infrastructure optimized for today's most demanding computational workloads.
+              We design and deploy custom on-premises HPC environments tailored to specific workloads and computational needs.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-16 lg:gap-x-24">

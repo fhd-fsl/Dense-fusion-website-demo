@@ -10,8 +10,7 @@ export default function ConsultingServices() {
               Our Infrastructure Services
             </h2>
             <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
-              Comprehensive HPC design services tailored to optimize
-              performance, scalability, and long-term value.
+              Comprehensive HPC infrastructure design and deployment tailored to your computing requirements.
             </p>
           </div>
         </ScrollReveal>
@@ -22,20 +21,20 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.1}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  GPU & CPU Cluster Design
+                  Compute Cluster Design
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Custom compute architecture tailored to demanding workloads.
+                  Custom on-premises compute clusters designed around your workloads and performance requirements.
                 </p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  Hybrid Cloud Integration
+                  Supercomputer Deployment
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Extend computing resources across cloud and on-premises.
+                  Design and deployment of high-performance supercomputing environments.
                 </p>
               </div>
             </ScrollReveal>
@@ -46,10 +45,10 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.3} className="h-full">
               <div className="bg-gradient-to-br from-[#006D40] to-[#6DC27F] p-8 md:p-10 rounded-xl shadow-lg h-full flex flex-col justify-between min-h-[220px] md:min-h-[464px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-white leading-tight">
-                  High-Speed Networking
+                  Cluster Configuration
                 </h3>
                 <p className="text-green-50 text-base md:text-lg mt-8">
-                  Low-latency networking for seamless communication.
+                  Fully configure and integrate cluster infrastructure for reliable operation.
                 </p>
               </div>
             </ScrollReveal>
@@ -60,10 +59,10 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.4}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  Parallel Storage Systems
+                  Infrastructure Integration
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  High-throughput storage optimized for HPC workloads.
+                  Bring compute, networking, storage, and system components together into a functional HPC environment.
                 </p>
               </div>
             </ScrollReveal>
