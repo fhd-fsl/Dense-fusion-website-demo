@@ -21,13 +21,13 @@ export default function Hero() {
 
             <h1 className="text-[40px] md:text-[54px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.15]">
               Strategic HPC Consulting for
-              <br className="hidden md:block" /> High-Performance Innovation
+              <br className="hidden md:block" /> High-Performance Computing
             </h1>
 
             <p className="text-[#5D5D5D] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Design, optimize, and scale your high-performance computing
-              environment with expert guidance tailored to your research,
-              engineering, and business objectives.
+              Design and plan your high-performance computing environment
+              with expert advisory and architectural guidance tailored to your
+              workloads and infrastructure needs.
             </p>
 
             <Link
@@ -36,10 +36,10 @@ export default function Hero() {
             >
               <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                  Schedule a Consultation
+                  Explore Our Services
                 </span>
                 <span className="flex h-11 shrink-0 items-center justify-center text-white">
-                  Schedule a Consultation
+                  Explore Our Services
                 </span>
               </span>
             </Link>

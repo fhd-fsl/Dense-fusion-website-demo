@@ -7,22 +7,22 @@ const steps = [
   {
     title: "Discover",
     label: "STEP 01",
-    desc: "Understand your goals, existing infrastructure, and workload requirements.",
+    desc: "Understand your workloads, requirements, and objectives.",
   },
   {
     title: "Assess",
     label: "STEP 02",
-    desc: "Analyze system performance, identify bottlenecks, and evaluate future needs.",
+    desc: "Evaluate feasibility, infrastructure needs, and sizing requirements.",
   },
   {
     title: "Recommend",
     label: "STEP 03",
-    desc: "Develop a customized HPC strategy with clear implementation recommendations.",
+    desc: "Develop tailored HPC architecture recommendations.",
   },
   {
     title: "Support",
     label: "STEP 04",
-    desc: "Provide ongoing guidance throughout planning, deployment, and optimization.",
+    desc: "Provide guidance throughout the planning process.",
   },
 ];
 
@@ -60,8 +60,7 @@ export default function ConsultingProcess() {
               Our Approach
             </h2>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              A structured process that transforms your requirements into
-              scalable, high-performance solutions.
+              A structured process that turns your HPC requirements into practical architecture recommendations.
             </p>
           </div>
         </ScrollReveal>

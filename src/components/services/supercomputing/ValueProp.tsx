@@ -2,12 +2,12 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const achievements = [
-  "Develop a scalable HPC strategy",
-  "Improve workload efficiency",
-  "Optimize infrastructure performance",
-  "Maximize return on investment",
-  "Reduce operational costs",
-  "Future-proof your computing environment",
+  "Plan scalable HPC environments",
+  "Evaluate infrastructure feasibility",
+  "Optimize workload requirements",
+  "Determine appropriate system sizing",
+  "On-premises or cloud deployment",
+  "Build workload-focused architectures",
 ];
 
 export default function ValueProp() {

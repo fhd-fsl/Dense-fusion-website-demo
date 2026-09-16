@@ -10,8 +10,8 @@ export default function ConsultingServices() {
               Our Consulting Services
             </h2>
             <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
-              Comprehensive HPC consulting services tailored to optimize
-              performance, scalability, and long-term value.
+              Expert guidance to help organizations plan efficient, scalable HPC
+              environments aligned with their computing requirements.
             </p>
           </div>
         </ScrollReveal>
@@ -22,22 +22,20 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.1}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  HPC Strategy
+                  HPC Advisory
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Holistic multi-year roadmaps aligning compute power with
-                  business objectives.
+                  Strategic guidance for evaluating HPC requirements and infrastructure options.
                 </p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  ROI Analysis
+                  Architecture Planning
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Deep-dive financial modeling for on-prem vs. cloud HPC
-                  infrastructure.
+                  Design HPC environments around your workloads, performance needs, and scalability goals.
                 </p>
               </div>
             </ScrollReveal>
@@ -48,11 +46,10 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.3} className="h-full">
               <div className="bg-gradient-to-br from-[#006D40] to-[#6DC27F] p-8 md:p-10 rounded-xl shadow-lg h-full flex flex-col justify-between min-h-[220px] md:min-h-[464px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-white leading-tight">
-                  Workload Audit
+                  Feasibility Assessment
                 </h3>
                 <p className="text-green-50 text-base md:text-lg mt-8">
-                  Identifying bottlenecks in data movement and interconnect
-                  latency.
+                  Evaluate the feasibility of HPC solutions based on technical and infrastructure requirements.
                 </p>
               </div>
             </ScrollReveal>
@@ -63,11 +60,10 @@ export default function ConsultingServices() {
             <ScrollReveal delay={0.4}>
               <div className="bg-white p-8 md:p-10 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] h-full flex flex-col justify-between min-h-[220px] md:min-h-[260px]">
                 <h3 className="text-[28px] md:text-[34px] font-semibold text-black leading-tight">
-                  Risk Mitigation
+                  Infrastructure Sizing
                 </h3>
                 <p className="text-gray-600 text-base md:text-lg mt-8">
-                  Proactive security frameworks for high-sensitivity research
-                  data environments.
+                  Provide sizing guidance to determine the appropriate computing resources for your workloads.
                 </p>
               </div>
             </ScrollReveal>
