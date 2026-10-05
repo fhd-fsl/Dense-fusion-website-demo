@@ -13,15 +13,13 @@ export default function SolutionsHero() {
             </h1>
 
             <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
-              DenseFusion develops intelligent solutions that combine GIS, satellite imagery, 
-              AI, and advanced analytics to help organizations understand complex 
-              environments, monitor change, and make data-driven decisions.
+              We combine geospatial, satellite, AI, and data for smarter environmental, agricultural, and tech solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               {/* Primary Button */}
-              <Link
-                href="#plantx"
+              <a
+                href="#serenagreen"
                 className="group inline-flex h-11 items-start justify-center overflow-hidden rounded-[4px] bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 px-5 text-lg font-semibold text-white shadow-sm transition-opacity duration-300 hover:opacity-90"
               >
                 <span className="flex flex-col transition-transform duration-300 group-hover:-translate-y-1/2">
@@ -32,7 +30,7 @@ export default function SolutionsHero() {
                     Explore Our Solutions
                   </span>
                 </span>
-              </Link>
+              </a>
 
               {/* Secondary Button */}
               <Link
@@ -40,7 +38,7 @@ export default function SolutionsHero() {
                 className="group relative inline-flex items-center rounded px-4 py-3 text-lg font-bold text-white"
               >
                 <span className="relative">
-                  Request a demo
+                  Request a Demo
                   <span className="absolute -bottom-1 left-0 h-[2px] w-full origin-left scale-x-0 bg-white transition-transform duration-300 ease-out group-hover:scale-x-100" />
                 </span>
               </Link>

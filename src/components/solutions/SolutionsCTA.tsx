@@ -8,10 +8,10 @@ export default function SolutionsCTA() {
         <div className="max-w-4xl mx-auto text-center">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
-              Have a Complex Data Challenge?
+              Have a Complex Challenge?
             </h2>
             <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-              Whether you need to monitor environmental change, analyze satellite imagery, or optimize geospatial infrastructure, our experts are here to help.
+              DenseFusion transforms environmental, geospatial, agricultural, and HPC challenges into practical, intelligent solutions.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

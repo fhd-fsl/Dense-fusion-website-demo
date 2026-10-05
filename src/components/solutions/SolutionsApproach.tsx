@@ -4,22 +4,22 @@ const steps = [
   {
     num: "01",
     title: "Understand",
-    description: "Identify the challenge, data sources, objectives, and expected outcomes.",
+    description: "Identify users, data, and objectives, then define expected outcomes.",
   },
   {
     num: "02",
     title: "Analyze",
-    description: "Process and analyze complex datasets using GIS, AI, and advanced analytics.",
+    description: "Analyze datasets with AI, GIS, and advanced computing technologies.",
   },
   {
     num: "03",
-    title: "Visualize",
-    description: "Transform results into intuitive maps, dashboards, and actionable insights.",
+    title: "Build",
+    description: "Build intelligent platforms and workflows for specific needs.",
   },
   {
     num: "04",
-    title: "Evolve",
-    description: "Continuously improve the solution as new data, technologies, and requirements emerge.",
+    title: "Validate",
+    description: "Validate data and refine results against real-world conditions.",
   }
 ];
 
@@ -41,7 +41,7 @@ export default function SolutionsApproach() {
             </div>
             <div className="lg:w-1/3 lg:pt-4">
               <p className="text-gray-400 text-base leading-relaxed">
-                We combine domain understanding, advanced technology, and continuous optimization to turn complex challenges into practical solutions.
+                We combine domain understanding, advanced technology, and continuous optimization to transform complex challenges into practical digital solutions.
               </p>
             </div>
           </div>

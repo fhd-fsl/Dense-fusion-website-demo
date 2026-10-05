@@ -3,28 +3,28 @@ import Image from "next/image";
 
 const deliverables = [
   {
-    title: "Real-Time Intelligence",
-    description: "Access timely insights from complex geospatial and environmental data."
+    title: "Intelligent Monitoring",
+    description: "Continuously monitor complex environments, assets, and processes."
   },
   {
-    title: "Long-Term Monitoring",
-    description: "Track changes across landscapes and environments over extended periods."
+    title: "Automated Intelligence",
+    description: "Use AI and machine learning to accelerate analysis and identify meaningful patterns."
   },
   {
     title: "Data-Driven Decisions",
-    description: "Turn complex datasets into information that supports better planning."
-  },
-  {
-    title: "Scalable Analysis",
-    description: "Process large geographic areas and growing datasets efficiently."
+    description: "Turn complex datasets into information that supports better planning and decision-making."
   },
   {
     title: "Visual Intelligence",
-    description: "Make complex spatial information easier to understand through intuitive visualization."
+    description: "Make complex information easier to understand through interactive maps, dashboards, and visualizations."
   },
   {
-    title: "Actionable Insights",
-    description: "Move from simply observing change to understanding what it means."
+    title: "Large-Scale Analysis",
+    description: "Process extensive geographic, environmental, agricultural, and technical datasets efficiently."
+  },
+  {
+    title: "Scalable Solutions",
+    description: "Build systems that can adapt to growing datasets, users, geographic areas, and operational requirements."
   }
 ];
 
@@ -36,7 +36,9 @@ const applications = [
   "Urban Planning",
   "Forestry & Conservation",
   "Research & Academia",
-  "Sustainability"
+  "Sustainability",
+  "Geospatial Intelligence",
+  "High-Performance Computing"
 ];
 
 export default function SolutionsDeliverables() {
