@@ -102,9 +102,12 @@ export default function Footer({ hideConnectCta = false }: { hideConnectCta?: bo
               {/* Solutions */}
               <div className="flex flex-col gap-3">
                 <h4 className="text-[#45b76b] font-bold text-xs uppercase tracking-widest mb-2">Solutions</h4>
-                <Link href="/solutions/plantx" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">PlantX</Link>
                 <Link href="/solutions/serenagreen" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Serena Green</Link>
-                <Link href="/solutions/carboneye" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Carbon Eye</Link>
+                <Link href="/solutions/verisat" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">VERISAT</Link>
+                <Link href="/solutions/supercomputers" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">Supercomputers</Link>
+                <Link href="/solutions/agrovia" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">AGROVIA</Link>
+                <Link href="/solutions/ogdcl" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">OGDCL</Link>
+                <Link href="/solutions/nazar" className="text-gray-400 hover:text-white transition-colors text-xs font-medium">NAZAR</Link>
               </div>
             </div>
 
