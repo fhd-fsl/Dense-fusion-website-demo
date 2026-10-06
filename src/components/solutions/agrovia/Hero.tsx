@@ -44,12 +44,12 @@ export default function Hero() {
           {/* Image Content */}
           <div className="w-full lg:w-1/2">
             <ScrollReveal delay={0.2}>
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
-                <Image 
+              <div className="relative w-full ">
+                <img 
                   src="/assets/solutions/agrovia/hero-image.svg"
                   alt="Agrovia Hero Graphic"
-                  fill
-                  className="object-contain"
+                  
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </ScrollReveal>
