@@ -44,12 +44,12 @@ export default function Hero() {
           {/* Image Content */}
           <div className="w-full lg:w-1/2">
             <ScrollReveal delay={0.2}>
-              <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl">
                 <Image 
                   src="/assets/solutions/nazar/hero-image.svg"
                   alt="Nazar Hero Graphic"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </ScrollReveal>
