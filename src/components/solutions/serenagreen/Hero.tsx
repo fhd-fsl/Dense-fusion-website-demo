@@ -4,23 +4,23 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#f9f9f9] pt-32 pb-24 md:pt-40 md:pb-32">
+    <section className="relative overflow-hidden bg-white pt-32 pb-24 md:pt-40 md:pb-32">
       <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
             <ScrollReveal>
-              <div className="inline-flex items-center rounded-full border border-gray-200 bg-white px-5 py-2 mb-6 shadow-sm">
-                <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-[#006D40] to-[#6DC27F] bg-clip-text text-transparent tracking-wide">Serena Green</span>
+              <div className="inline-flex items-center rounded-full border border-gray-200 bg-white px-4 py-1.5 mb-6 shadow-sm">
+                <span className="text-sm font-semibold text-[#006D40]">Serena Green</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold text-secondaryBlack mb-6 tracking-tight leading-[1.1]">
-                Satellite-Powered Intelligence for Forest & Environmental Monitoring
+                Geospatial Intelligence for Forest & Environmental Monitoring
               </h1>
 
               <p className="text-gray-500 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-                Serena Green combines satellite imagery, GIS, and advanced analytics to monitor forests, afforestation, and environmental transformation over time.
+                Serena Green combines satellite Earth observation, GIS, and AI to monitor forests, afforestation, carbon, and environmental change through enterprise geospatial and ESG intelligence.
               </p>
 
               <div className="flex items-center gap-6">

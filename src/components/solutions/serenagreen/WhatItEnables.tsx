@@ -5,46 +5,46 @@ const capabilities = [
   {
     icon: "/assets/solutions/serenagreen/What Serena Green Enables icons/Overlay.svg",
     title: "Forest Monitoring",
-    description: "Track forest coverage and vegetation changes across geographic regions.",
+    description: "Track forest coverage, vegetation health, density, and land-cover changes across geographic regions.",
   },
   {
     icon: "/assets/solutions/serenagreen/What Serena Green Enables icons/Overlay-1.svg",
     title: "Afforestation Monitoring",
-    description: "Monitor reforestation and afforestation activities over time.",
+    description: "Monitor plantation and rehabilitation projects, including tree survival, species, planting activity, and site-level progress.",
   },
   {
     icon: "/assets/solutions/serenagreen/What Serena Green Enables icons/Overlay-2.svg",
     title: "Satellite-Based Analysis",
-    description: "Use satellite imagery to observe environmental changes across large areas.",
+    description: "Analyze multi-temporal satellite imagery to observe environmental changes across large geographic areas.",
   },
   {
     icon: "/assets/solutions/serenagreen/What Serena Green Enables icons/Overlay-3.svg",
-    title: "Change Detection",
-    description: "Identify and visualize differences between multiple time periods.",
+    title: "Carbon Analytics",
+    description: "Estimate biomass, carbon stocks, and sequestered CO2 using species data and IPCC-based carbon models.",
   },
   {
     icon: "/assets/solutions/serenagreen/What Serena Green Enables icons/Overlay-4.svg",
-    title: "Vegetation Analysis",
-    description: "Analyze vegetation patterns and changes using geospatial data.",
+    title: "Environmental Stewardship",
+    description: "Monitor sustainability indicators including solar generation, waste management, and treated water utilization.",
   },
   {
     icon: "/assets/solutions/serenagreen/What Serena Green Enables icons/Overlay-5.svg",
-    title: "Environmental Intelligence",
-    description: "Transform environmental datasets into insights that support planning and conservation.",
+    title: "ESG Intelligence",
+    description: "Bring environmental metrics and spatial information together for sustainability reporting and decision-making.",
   },
 ];
 
 export default function WhatItEnables() {
   return (
-    <section className="bg-gradient-to-br from-[#004024] to-[#6DC27F] py-24 md:py-32">
+    <section className="bg-[#1b7948] py-24 md:py-32">
       <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12">
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
               What Serena Green Enables
             </h2>
-            <p className="text-lightGreen text-lg md:text-xl max-w-2xl mx-auto font-medium">
-              Intelligent Monitoring for a Changing Environment
+            <p className="text-white text-lg md:text-xl max-w-2xl mx-auto font-medium">
+              Intelligent Monitoring For A Changing Environment
             </p>
           </div>
         </ScrollReveal>

@@ -2,20 +2,20 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const capabilities = [
   {
-    title: "Forest Change Detection",
-    description: "Identify changes in forest coverage and vegetation.",
+    title: "Interactive GIS & Satellite Analysis",
+    description: "Explore properties and environmental sites through interactive maps, satellite imagery, boundaries, and time-based analysis.",
   },
   {
-    title: "Multi-Year Monitoring",
-    description: "Compare environmental conditions across multiple years.",
+    title: "Multi-Year Change Detection",
+    description: "Compare environmental conditions across multiple years to identify landscape and vegetation changes.",
   },
   {
-    title: "Satellite Analysis",
-    description: "Process satellite imagery to monitor large geographic areas.",
+    title: "Land-Cover Classification",
+    description: "Classify areas into vegetation, water, built-up infrastructure, and bare soil to measure changes at site level.",
   },
   {
-    title: "Geospatial Visualization",
-    description: "Visualize environmental changes through interactive maps and spatial data.",
+    title: "Carbon Stock Estimation",
+    description: "Calculate above-ground biomass, below-ground biomass, and estimated CO2 equivalents.",
   },
 ];
 
@@ -32,7 +32,7 @@ export default function KeyCapabilities() {
                 Key Capabilities
               </h2>
               <p className="text-gray-500 text-lg md:text-xl leading-relaxed">
-                Monitor. Compare. Understand.
+                Monitor. Measure. Verify.
               </p>
             </ScrollReveal>
           </div>
@@ -42,7 +42,7 @@ export default function KeyCapabilities() {
             {capabilities.map((cap, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div className="group bg-[#f9f9f9] p-8 md:p-10 rounded-xl hover:bg-gray-100 transition-colors duration-300">
-                  <h3 className="text-xl md:text-2xl font-bold text-secondaryBlack mb-3 group-hover:bg-gradient-to-r group-hover:from-[#006D40] group-hover:to-[#6DC27F] group-hover:bg-clip-text group-hover:text-transparent">
+                  <h3 className="text-xl md:text-2xl font-bold text-secondaryBlack mb-3 group-hover:text-[#006D40] transition-colors duration-300">
                     {cap.title}
                   </h3>
                   <p className="text-gray-500 text-base md:text-lg leading-relaxed">

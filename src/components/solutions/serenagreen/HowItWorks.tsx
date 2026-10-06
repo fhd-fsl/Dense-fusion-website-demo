@@ -5,31 +5,31 @@ const steps = [
   {
     step: "STEP 01",
     title: "Capture",
-    description: "Collect satellite imagery and environmental datasets.",
+    description: "Collect satellite imagery and environmental records.",
     image: "/assets/solutions/serenagreen/How Serena Green Works Images/illustration-frame.svg"
   },
   {
     step: "STEP 02",
     title: "Process",
-    description: "Analyze imagery and extract relevant environmental information.",
+    description: "Process imagery with GIS and machine-learning tools.",
     image: "/assets/solutions/serenagreen/How Serena Green Works Images/process-ill.svg"
   },
   {
     step: "STEP 03",
-    title: "Detect",
-    description: "Identify changes in vegetation, forests, and landscapes.",
+    title: "Analyze",
+    description: "Classify land cover and measure environmental change.",
     image: "/assets/solutions/serenagreen/How Serena Green Works Images/illustration-frame-1.svg"
   },
   {
     step: "STEP 04",
-    title: "Compare",
-    description: "Track transformation across different time periods.",
+    title: "Verify",
+    description: "Verify analysis with records and ground-level evidence.",
     image: "/assets/solutions/serenagreen/How Serena Green Works Images/illustration-frame-2.svg"
   },
   {
     step: "STEP 05",
     title: "Visualize",
-    description: "Present environmental changes through clear maps and visual insights.",
+    description: "Present insights with maps, dashboards, and ESG summaries.",
     image: "/assets/solutions/serenagreen/How Serena Green Works Images/illustration-frame-3.svg"
   },
 ];
@@ -57,7 +57,7 @@ export default function HowItWorks() {
                   <Image src={item.image} alt={item.title} width={400} height={300} className="w-full h-auto" />
                 </div>
                 
-                <span className="text-[#006D40] font-bold text-sm tracking-widest mb-2">
+                <span className="text-gray-500 font-bold text-sm mb-2 block">
                   {item.step}
                 </span>
                 <h3 className="text-2xl font-bold text-secondaryBlack mb-3">

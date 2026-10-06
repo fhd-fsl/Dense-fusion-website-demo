@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const cases = [
   {
     title: "Forest Monitoring",
-    desc: "Track forest conditions and changes over time."
+    desc: "Track forest coverage, vegetation density, and environmental changes over time."
   },
   {
     title: "Afforestation Tracking",

@@ -1,33 +1,35 @@
 import ScrollReveal from "@/components/ScrollReveal";
 
+import Image from "next/image";
+
 const technologies = [
-  "GIS & Geospatial",
-  "Satellite Imagery",
-  "Remote Sensing",
-  "AI & ML",
-  "Image Processing",
+  { name: "Next.js", icon: "/assets/solutions/serenagreen/techstack/nextjs card.svg" },
+  { name: "Node.js", icon: "/assets/solutions/serenagreen/techstack/js card.svg" },
+  { name: "Express", icon: "/assets/solutions/serenagreen/techstack/express card.svg" },
+  { name: "Next.js", icon: "/assets/solutions/serenagreen/techstack/nextjs card.svg" },
+  { name: "PostGIS", icon: "/assets/solutions/serenagreen/techstack/PostGIS card.svg" },
+  { name: "FastAPI", icon: "/assets/solutions/serenagreen/techstack/FastAPI cloud card.svg" },
+  { name: "Python", icon: "/assets/solutions/serenagreen/techstack/Python Card.svg" },
+  { name: "Minio", icon: "/assets/solutions/serenagreen/techstack/Mino card.svg" },
+  { name: "Leaflet", icon: "/assets/solutions/serenagreen/techstack/Leaflet card.svg" },
+  { name: "Redis", icon: "/assets/solutions/serenagreen/techstack/redis card.svg" },
 ];
 
 export default function Technology() {
   return (
-    <section className="bg-[#f9f9f9] py-24 md:py-32">
-      <div className="mx-auto max-w-[1300px] w-full px-6 md:px-12 text-left">
+    <section className="bg-white py-24 md:py-32">
+      <div className="mx-auto max-w-5xl w-full px-6 md:px-12 text-center">
         <ScrollReveal>
-          <p className="text-[#006D40] font-bold text-sm md:text-base mb-4 tracking-widest uppercase">
-            Technology Behind Serena Green
-          </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-secondaryBlack mb-12 tracking-tight">
-            Built for Large-Scale Environmental Intelligence
+          <h2 className="text-3xl md:text-5xl font-bold text-secondaryBlack mb-16 tracking-tight">
+            Tech Behind the Solution
           </h2>
         </ScrollReveal>
 
-        <div className="flex flex-wrap justify-start gap-4 md:gap-6">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {technologies.map((tech, index) => (
             <ScrollReveal key={index} delay={index * 0.1}>
-              <div className="bg-white px-6 py-4 rounded-[4px] shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex items-center justify-center">
-                <span className="text-sm md:text-base font-bold text-secondaryBlack">
-                  {tech}
-                </span>
+              <div className="hover:-translate-y-1 transition-transform duration-300 flex items-center justify-center w-36 h-20 md:w-40 md:h-24">
+                <Image src={tech.icon} alt={tech.name} width={100} height={40} className="object-contain w-full h-full" />
               </div>
             </ScrollReveal>
           ))}

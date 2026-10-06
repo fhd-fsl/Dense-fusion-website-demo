@@ -26,8 +26,8 @@ export default function SerenaGreenPage() {
           <HowItWorks />
           <UseCases />
           <KeyOutcomes />
-          <Technology />
           <WhySerena />
+          <Technology />
           <CTA />
         </div>
         <Footer hideConnectCta={true} />
