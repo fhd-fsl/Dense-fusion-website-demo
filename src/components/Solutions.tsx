@@ -55,7 +55,26 @@ export default function Solutions() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-[#080808] py-24 text-white">
+    <>
+      <style>{`
+        @media (min-width: 768px) {
+          .custom-collapsed-padding {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+          }
+          .custom-title-container {
+            flex: none !important;
+            margin-top: auto !important;
+            justify-content: center !important;
+          }
+        }
+        @media (min-width: 1024px) {
+          .custom-collapsed-padding {
+            padding-top: 3rem !important;
+          }
+        }
+      `}</style>
+      <section className="bg-[#080808] py-24 text-white">
       <div className="mx-auto max-w-[1300px] px-6 md:px-12">
         {/* Header */}
         <ScrollReveal>
@@ -95,10 +114,9 @@ export default function Solutions() {
                   key={solution.id}
                   onClick={() => setActiveIndex(index)}
                   className={`group relative flex overflow-hidden rounded-[4px] cursor-pointer transition-all duration-500 ease-out shadow-lg bg-white ${
-                    isActive
-                      ? "md:flex-[3] lg:flex-[4] flex-1 min-h-[400px] md:min-h-0"
-                      : "md:flex-[0_0_72px] lg:flex-[0_0_96px] flex-[0_0_auto] min-h-[72px] md:min-h-0"
+                    isActive ? "md:flex-[3] lg:flex-[4] flex-1 min-h-[400px] md:min-h-0" : ""
                   }`}
+                  style={isActive ? undefined : { flex: "0 0 80px" }}
                 >
                   {/* Background Gradient Layer for active state */}
                   <div 
@@ -113,7 +131,7 @@ export default function Solutions() {
                   <div className="relative z-10 w-full h-full">
                     {/* Expanded Content */}
                     <div 
-                      className={`absolute inset-0 flex flex-col h-full justify-between p-6 sm:p-8 lg:p-10 transition-opacity duration-500 w-full md:w-[350px] lg:w-[500px] xl:w-[650px] shrink-0 ${
+                      className={`absolute inset-0 flex flex-col h-full justify-between p-6 sm:p-8 lg:p-10 transition-opacity duration-500 w-full md:max-w-sm lg:max-w-md xl:max-w-lg shrink-0 ${
                         isActive ? "opacity-100 pointer-events-auto delay-100" : "opacity-0 pointer-events-none"
                       }`}
                     >
@@ -122,8 +140,8 @@ export default function Solutions() {
                           <span
                             className="inline-block bg-white w-12 h-12"
                             style={{
-                              maskImage: `url(${solution.icon})`,
-                              WebkitMaskImage: `url(${solution.icon})`,
+                              maskImage: `url('${solution.icon}')`,
+                              WebkitMaskImage: `url('${solution.icon}')`,
                               maskSize: "contain",
                               WebkitMaskSize: "contain",
                               maskRepeat: "no-repeat",
@@ -137,7 +155,7 @@ export default function Solutions() {
                       </div>
                       
                       <div className="mt-8 md:mt-0">
-                        <p className="text-white/90 text-sm md:text-base leading-relaxed mb-8">
+                        <p className="text-white/90 text-base md:text-lg lg:text-xl leading-relaxed mb-8 max-w-xl font-medium">
                           {solution.description}
                         </p>
                         
@@ -150,17 +168,17 @@ export default function Solutions() {
 
                     {/* Collapsed Content */}
                     <div 
-                      className={`absolute inset-0 flex h-full flex-row md:flex-col items-center md:items-start justify-between p-4 md:p-6 lg:p-8 transition-opacity duration-500 ${
+                      className={`custom-collapsed-padding absolute inset-0 flex h-full flex-row md:flex-col items-center justify-between p-4 md:px-2 lg:px-4 xl:px-6 transition-opacity duration-500 ${
                         isActive ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto delay-100"
                       }`}
                     >
                       {/* Icon */}
-                      <div className="flex-shrink-0">
+                      <div className="flex-shrink-0 flex items-center justify-center w-full">
                         <span
-                          className="inline-block bg-gradient-to-br from-lightGreen from-15% via-gradientGreen2 via-55% to-gradientGreen1 w-8 h-8 md:w-10 md:h-10"
+                          className="inline-block bg-gradient-to-br from-[#006D40] to-[#6DC27F] w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10"
                           style={{
-                            maskImage: `url(${solution.icon})`,
-                            WebkitMaskImage: `url(${solution.icon})`,
+                            maskImage: `url('${solution.icon}')`,
+                            WebkitMaskImage: `url('${solution.icon}')`,
                             maskSize: "contain",
                             WebkitMaskSize: "contain",
                             maskRepeat: "no-repeat",
@@ -172,14 +190,14 @@ export default function Solutions() {
                       </div>
                       
                       {/* Title (Mobile: Horizontal, Desktop: Vertical) */}
-                      <div className="flex-1 flex items-center md:items-end justify-start md:justify-start md:pb-8 ml-6 md:ml-0">
+                      <div className="custom-title-container flex flex-row items-center justify-start md:justify-center w-full ml-6 md:ml-0">
                         <span 
-                          className="text-black font-bold text-xl md:text-2xl whitespace-nowrap hidden md:block"
-                          style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
+                          className="text-gray-500 font-bold text-xl md:text-2xl lg:text-3xl whitespace-nowrap hidden md:block tracking-wide rotate-180"
+                          style={{ writingMode: 'vertical-rl' }}
                         >
                           {solution.title}
                         </span>
-                        <span className="text-black font-bold text-xl whitespace-nowrap md:hidden">
+                        <span className="text-gray-500 font-bold text-xl whitespace-nowrap md:hidden">
                           {solution.title}
                         </span>
                       </div>
@@ -192,5 +210,6 @@ export default function Solutions() {
         </ScrollReveal>
       </div>
     </section>
+    </>
   );
 }
