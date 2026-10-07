@@ -12,8 +12,8 @@ import EducationFAQ from "@/components/industries/education/EducationFAQ";
 import EducationCTA from "@/components/industries/education/EducationCTA";
 
 export const metadata = {
-  title: "Education Industry | DenseFusion",
-  description: "DenseFusion combines AI and high-performance computing to help education organizations process complex data and accelerate intelligence.",
+  title: "Education Industry | Dense Fusion",
+  description: "Dense Fusion combines AI and high-performance computing to help education organizations process complex data and accelerate intelligence.",
 };
 
 export default function EducationIndustryPage() {

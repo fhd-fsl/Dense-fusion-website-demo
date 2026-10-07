@@ -12,8 +12,8 @@ import DefenseFAQ from "@/components/industries/defense/DefenseFAQ";
 import DefenseCTA from "@/components/industries/defense/DefenseCTA";
 
 export const metadata = {
-  title: "Defense Industry | DenseFusion",
-  description: "DenseFusion combines AI and high-performance computing to help defense organizations process complex data and accelerate intelligence.",
+  title: "Defense Industry | Dense Fusion",
+  description: "Dense Fusion combines AI and high-performance computing to help defense organizations process complex data and accelerate intelligence.",
 };
 
 export default function DefenseIndustryPage() {

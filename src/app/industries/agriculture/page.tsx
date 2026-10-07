@@ -12,8 +12,8 @@ import AgricultureFAQ from "@/components/industries/agriculture/AgricultureFAQ";
 import AgricultureCTA from "@/components/industries/agriculture/AgricultureCTA";
 
 export const metadata = {
-  title: "Agriculture Industry | DenseFusion",
-  description: "DenseFusion combines AI and high-performance computing to help agriculture organizations process complex data and accelerate intelligence.",
+  title: "Agriculture Industry | Dense Fusion",
+  description: "Dense Fusion combines AI and high-performance computing to help agriculture organizations process complex data and accelerate intelligence.",
 };
 
 export default function AgricultureIndustryPage() {

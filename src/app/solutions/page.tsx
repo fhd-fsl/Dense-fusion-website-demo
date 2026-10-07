@@ -10,8 +10,8 @@ import SolutionsDeliverables from "@/components/solutions/SolutionsDeliverables"
 import SolutionsCTA from "@/components/solutions/SolutionsCTA";
 
 export const metadata = {
-  title: "Solutions | DenseFusion",
-  description: "DenseFusion develops intelligent solutions that combine GIS, satellite imagery, AI, and advanced analytics to help organizations understand complex environments.",
+  title: "Solutions | Dense Fusion",
+  description: "Dense Fusion develops intelligent solutions that combine GIS, satellite imagery, AI, and advanced analytics to help organizations understand complex environments.",
 };
 
 export default function SolutionsPage() {

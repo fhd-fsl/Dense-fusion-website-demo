@@ -8,6 +8,10 @@ import FAQ from "@/components/services/FAQ";
 import CTA from "@/components/services/CTA";
 import LenisProvider from "@/components/LenisProvider";
 
+export const metadata = {
+  title: 'Services | Dense Fusion',
+};
+
 export default function ServicesPage() {
   return (
     <LenisProvider>

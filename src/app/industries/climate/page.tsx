@@ -12,8 +12,8 @@ import ClimateFAQ from "@/components/industries/climate/ClimateFAQ";
 import ClimateCTA from "@/components/industries/climate/ClimateCTA";
 
 export const metadata = {
-  title: "Climate Industry | DenseFusion",
-  description: "DenseFusion combines AI and high-performance computing to help climate organizations process complex data and accelerate intelligence.",
+  title: "Climate Industry | Dense Fusion",
+  description: "Dense Fusion combines AI and high-performance computing to help climate organizations process complex data and accelerate intelligence.",
 };
 
 export default function ClimateIndustryPage() {

@@ -12,8 +12,8 @@ import GovernmentFAQ from "@/components/industries/government/GovernmentFAQ";
 import GovernmentCTA from "@/components/industries/government/GovernmentCTA";
 
 export const metadata = {
-  title: "Government Industry | DenseFusion",
-  description: "DenseFusion combines AI and high-performance computing to help government organizations process complex data and accelerate intelligence.",
+  title: "Government Industry | Dense Fusion",
+  description: "Dense Fusion combines AI and high-performance computing to help government organizations process complex data and accelerate intelligence.",
 };
 
 export default function GovernmentIndustryPage() {

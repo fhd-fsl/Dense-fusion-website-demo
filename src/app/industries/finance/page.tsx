@@ -12,8 +12,8 @@ import FinanceFAQ from "@/components/industries/finance/FinanceFAQ";
 import FinanceCTA from "@/components/industries/finance/FinanceCTA";
 
 export const metadata = {
-  title: "Finance Industry | DenseFusion",
-  description: "DenseFusion combines AI and high-performance computing to help finance organizations process complex data and accelerate intelligence.",
+  title: "Finance Industry | Dense Fusion",
+  description: "Dense Fusion combines AI and high-performance computing to help finance organizations process complex data and accelerate intelligence.",
 };
 
 export default function FinanceIndustryPage() {

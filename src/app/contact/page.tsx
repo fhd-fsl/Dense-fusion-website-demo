@@ -7,6 +7,10 @@ import Link from "next/link";
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
+export const metadata = {
+  title: 'Contact Us | Dense Fusion',
+};
+
 export default function ContactPage() {
   return (
     <>

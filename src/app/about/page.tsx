@@ -11,6 +11,10 @@ import AboutCta from "@/components/about/AboutCta";
 import AboutUs from "@/components/AboutUs";
 import LenisProvider from "@/components/LenisProvider";
 
+export const metadata = {
+  title: 'About Us | Dense Fusion',
+};
+
 export default function AboutPage() {
   return (
     <LenisProvider>
