@@ -8,25 +8,46 @@ import { ArrowRight } from "lucide-react";
 
 const solutionsData = [
   {
-    id: 'plantx',
-    title: 'PlantX',
-    icon: '/assets/home-page/solutions/earth-refresh.svg',
-    description: 'PlantX is an advanced geospatial platform that analyzes high-resolution satellite imagery to track and visualize urban land cover changes. Using Islamabad as a case study, it uncovers a 20-year increase in built-up areas and loss of green spaces, providing critical insights for sustainable urban planning.',
-    link: '/solutions/plantx'
-  },
-  {
-    id: 'serena-green',
+    id: 'serenagreen',
     title: 'Serena Green',
-    icon: '/assets/home-page/solutions/farm-spout.svg',
-    description: 'Serena Green is a digital platform developed by Serena Hotels in partnership with WWF and AKRSP to monitor, visualize, and verify large-scale afforestation for carbon offsetting and environmental restoration. Its pilot initiative plants over 600,000 trees across Gilgit-Baltistan, Balochistan, Chitral, Punjab, and Khyber Pakhtunkhwa, advancing the hospitality industry toward net-zero emissions.',
+    icon: '/assets/solutions/ogdcl/tree.svg',
+    description: 'Serena Green combines satellite Earth observation, GIS, AI, and carbon modeling to monitor forests, afforestation, and environmental impact- bringing geospatial and ESG intelligence into one platform.',
     link: '/solutions/serenagreen'
   },
   {
-    id: 'carbon-eye',
-    title: 'Carbon Eye',
-    icon: '/assets/home-page/solutions/eye-streamline.svg',
-    description: "Carbon Eye is a web-based platform that leverages remote sensing, GIS, GeoServer, and advanced deep learning to analyze a decade of NDVI and carbon emission trends in six of the world's most climate-vulnerable cities, delivering critical insights for sustainable urban planning and environmental management.",
-    link: '/solutions/carboneye'
+    id: 'ogdcl',
+    title: 'OGDCL',
+    icon: '/assets/solutions/verisat/Seedling-Fill Streamline Remix-Fill.svg',
+    description: 'OGDCL’s platform manages plantation and reforestation. It combines geospatial mapping and satellite imagery with plantation analytics and carbon monitoring.',
+    link: '/solutions/ogdcl'
+  },
+  {
+    id: 'verisat',
+    title: 'VERISAT',
+    icon: '/assets/solutions/agrovia/Network-Pin Streamline Ultimate.svg',
+    description: 'VERISAT is a tree-plantation monitoring and carbon-stock reporting platform that combines satellite and drone imagery, multi-temporal analysis, carbon estimation, and MRV capabilities to provide verifiable insights into plantation outcomes.',
+    link: '/solutions/verisat'
+  },
+  {
+    id: 'supercomputers',
+    title: 'Supercomputers',
+    icon: '/assets/solutions/supercomputers/Database-Server-2 Streamline Core.svg',
+    description: 'Teraforge is an enterprise storefront, 3D configurator, and quotation platform for refurbished high-performance computing hardware, including AI workstations, GPU servers, and clusters.',
+    link: '/solutions/supercomputers'
+  },
+  {
+    id: 'agrovia',
+    title: 'AGROVIA',
+    icon: '/assets/home-page/solutions/farm-spout.svg',
+    description: 'AGROVIA/FAMS connects AI crop intelligence, agronomists, managers, field agents, and farmers through an edge-capable advisory and service platform.',
+    link: '/solutions/agrovia'
+  },
+  {
+    id: 'nazar',
+    title: 'Nazar',
+    icon: '/assets/solutions/nazar/Drone-2 Streamline Micro.svg',
+    description: 'Nazar is a real-time tactical command, control, and aerial reconnaissance platform for autonomous UAV fleets, with live telemetry, geospatial visualization, sensor data, and edge alerts.',
+    link: '/solutions/nazar'
   }
 ];
 
@@ -40,7 +61,7 @@ export default function Solutions() {
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">
-              Solutions We worked on
+              Solutions We Worked On
             </h2>
             <p className="text-gray-400 max-w-3xl text-sm md:text-base leading-relaxed mb-8">
               Our products harness advanced GIS technologies to provide accurate, real-time
@@ -76,7 +97,7 @@ export default function Solutions() {
                   className={`group relative flex overflow-hidden rounded-[4px] cursor-pointer transition-all duration-500 ease-out shadow-lg bg-white ${
                     isActive
                       ? "md:flex-[3] lg:flex-[4] flex-1 min-h-[400px] md:min-h-0"
-                      : "md:flex-[0_0_96px] lg:flex-[0_0_128px] flex-[0_0_auto] min-h-[72px] md:min-h-0"
+                      : "md:flex-[0_0_72px] lg:flex-[0_0_96px] flex-[0_0_auto] min-h-[72px] md:min-h-0"
                   }`}
                 >
                   {/* Background Gradient Layer for active state */}
@@ -92,7 +113,7 @@ export default function Solutions() {
                   <div className="relative z-10 w-full h-full">
                     {/* Expanded Content */}
                     <div 
-                      className={`absolute inset-0 flex flex-col h-full justify-between p-6 sm:p-8 lg:p-12 transition-opacity duration-500 w-full md:w-[400px] lg:w-[600px] xl:w-[750px] shrink-0 ${
+                      className={`absolute inset-0 flex flex-col h-full justify-between p-6 sm:p-8 lg:p-10 transition-opacity duration-500 w-full md:w-[350px] lg:w-[500px] xl:w-[650px] shrink-0 ${
                         isActive ? "opacity-100 pointer-events-auto delay-100" : "opacity-0 pointer-events-none"
                       }`}
                     >
@@ -121,7 +142,7 @@ export default function Solutions() {
                         </p>
                         
                         <Link href={solution.link} className="inline-flex items-center gap-2 text-sm font-semibold hover:gap-3 transition-all duration-300 text-white">
-                          View Case Study
+                          View Solution
                           <ArrowRight className="w-4 h-4" />
                         </Link>
                       </div>
@@ -129,7 +150,7 @@ export default function Solutions() {
 
                     {/* Collapsed Content */}
                     <div 
-                      className={`absolute inset-0 flex h-full flex-row md:flex-col items-center md:items-start justify-between p-8 lg:p-12 transition-opacity duration-500 ${
+                      className={`absolute inset-0 flex h-full flex-row md:flex-col items-center md:items-start justify-between p-4 md:p-6 lg:p-8 transition-opacity duration-500 ${
                         isActive ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto delay-100"
                       }`}
                     >
