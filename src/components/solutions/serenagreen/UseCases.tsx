@@ -6,16 +6,16 @@ const cases = [
     desc: "Track forest coverage, vegetation density, and environmental changes over time."
   },
   {
-    title: "Afforestation Tracking",
-    desc: "Monitor and evaluate the progress of new tree planting initiatives and restoration projects."
+    title: "Afforestation & Reforestation",
+    desc: "Monitor plantation progress, tree survival, and restoration activities across designated sites."
   },
   {
-    title: "Conservation",
-    desc: "Support wildlife and habitat protection by analyzing ecological changes across large geographic areas."
+    title: "Carbon Accounting",
+    desc: "Estimate biomass and carbon sequestration to support sustainability reporting."
   },
   {
-    title: "Environmental Research",
-    desc: "Provide researchers with the geospatial data needed to study long-term environmental trends."
+    title: "ESG Monitoring",
+    desc: "Bring environmental indicators into a centralized platform for continuous monitoring and reporting."
   }
 ];
 

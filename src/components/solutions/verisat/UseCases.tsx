@@ -3,19 +3,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 const cases = [
   {
     title: "Tree Plantation Monitoring",
-    desc: "Track plantation progress and survival; verify reforestation through imagery."
+    desc: "Track plantation progress and survival across large geographic programs."
   },
   {
     title: "Reforestation Verification",
-    desc: "Monitor and verify reforestation initiatives using high-resolution spatial data."
+    desc: "Compare imagery over time to verify changes in vegetation and planted areas."
   },
   {
     title: "Carbon Accounting",
-    desc: "Estimate carbon stocks and measure sequestered CO2 to support carbon offset programs."
+    desc: "Estimate carbon stock by site, species, and plantation age."
   },
   {
-    title: "MRV & Sustainability Reporting",
-    desc: "Generate structured MRV reports and provide evidence for sustainability claims."
+    title: "MRV Programs",
+    desc: "Maintain evidence and verification records for transparent environmental reporting."
   }
 ];
 

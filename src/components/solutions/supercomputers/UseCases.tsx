@@ -3,19 +3,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 const cases = [
   {
     title: "AI Workstations",
-    desc: "Configure AI hardware and assess physical, thermal, and electrical needs."
+    desc: "Configure hardware for demanding AI and machine learning workloads."
   },
   {
-    title: "Custom Configurations",
-    desc: "Build and visualize hardware configurations using real-world component dimensions."
+    title: "GPU Servers",
+    desc: "Build and validate GPU-based systems based on real hardware specifications."
   },
   {
-    title: "GPU Servers & HPC Clusters",
-    desc: "Design and validate multi-node environments for demanding computing workloads."
+    title: "HPC Clusters",
+    desc: "Support planning and configuration of larger high-performance computing environments."
   },
   {
     title: "Enterprise Procurement",
-    desc: "Generate automated quotations to streamline B2B hardware procurement workflows."
+    desc: "Simplify technical hardware selection and quotation for B2B buyers."
   }
 ];
 
@@ -29,7 +29,7 @@ export default function UseCases() {
               Use Cases
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
-              Supporting HPC Infrastructure
+              Supporting High-Performance Computing Infrastructure
             </h2>
           </div>
         </ScrollReveal>

@@ -3,19 +3,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 const cases = [
   {
     title: "UAV Fleet Monitoring",
-    desc: "Track aircraft, telemetry, sensors, and alerts in one command interface."
+    desc: "Track multiple autonomous aircraft through a centralized command interface."
   },
   {
-    title: "Edge Alert Management",
-    desc: "Identify low battery conditions, sensor faults, and other edge-level alerts."
+    title: "Aerial Reconnaissance",
+    desc: "Monitor flight paths, telemetry, and sensor information during reconnaissance operations."
   },
   {
-    title: "Reconnaissance & Tactical Ops",
-    desc: "Maintain situational awareness and respond rapidly during critical missions."
+    title: "Tactical Operations",
+    desc: "Provide teams with real-time geographic and operational awareness across aerial assets."
   },
   {
-    title: "Simulation & Edge Monitoring",
-    desc: "Test flight paths with SITL simulations and monitor remote edge devices."
+    title: "Autonomous Systems Testing",
+    desc: "Simulate multi-drone environments without requiring physical UAV hardware."
   }
 ];
 

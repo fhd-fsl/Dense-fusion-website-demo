@@ -3,19 +3,19 @@ import ScrollReveal from "@/components/ScrollReveal";
 const cases = [
   {
     title: "Reforestation Monitoring",
-    desc: "Track tree planting and rehabilitation progress across regions."
+    desc: "Track large-scale reforestation initiatives and plantation progress."
   },
   {
-    title: "Plantation Monitoring",
+    title: "Tree Survival Analysis",
     desc: "Monitor survival rates and species performance across individual sites."
   },
   {
     title: "Environmental Planning",
-    desc: "Evaluate site suitability and track progress for large-scale planning."
+    desc: "Use spatial and historical information to understand plantation performance."
   },
   {
     title: "Sustainability Programs",
-    desc: "Support corporate sustainability initiatives with verifiable environmental data."
+    desc: "Centralize plantation data to support long-term organizational sustainability initiatives."
   }
 ];
 

@@ -2,20 +2,20 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const cases = [
   {
-    title: "Crop Monitoring & Field Advisory",
-    desc: "Connect crop intelligence to field expertise and track agent performance."
+    title: "Crop Monitoring",
+    desc: "Identify and monitor potential crop health issues using satellite intelligence."
   },
   {
-    title: "Performance Analytics",
-    desc: "Track agent response times, verification accuracy, and field operation metrics."
+    title: "Field Advisory",
+    desc: "Connect remote crop intelligence with on-ground agricultural expertise."
   },
   {
     title: "Farmer Services",
-    desc: "Manage requests for machinery, agricultural services, seeds, and fertilizers."
+    desc: "Manage machinery, agricultural input, and service requests from a unified platform."
   },
   {
     title: "Offline Field Operations",
-    desc: "Continue critical workflows and data collection with intermittent or unavailable internet connectivity."
+    desc: "Support agricultural teams working in areas with limited or unreliable connectivity."
   }
 ];
 
