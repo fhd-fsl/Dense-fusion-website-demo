@@ -13,6 +13,11 @@ import Technology from "@/components/solutions/serenagreen/Technology";
 import WhySerena from "@/components/solutions/serenagreen/WhySerena";
 import CTA from "@/components/solutions/serenagreen/CTA";
 
+export const metadata = {
+  title: 'Serena Green Solution | Dense Fusion',
+  description: 'AI-powered environmental monitoring and mapping.'
+};
+
 export default function SerenaGreenPage() {
   return (
     <LenisProvider>
