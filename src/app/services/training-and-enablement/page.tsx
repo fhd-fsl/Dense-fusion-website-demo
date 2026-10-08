@@ -9,6 +9,11 @@ import WhyChoose from "@/components/services/training-and-enablement/WhyChoose";
 
 import CTA from "@/components/services/training-and-enablement/CTA";
 
+export const metadata = {
+  title: 'Training and Enablement Service | Dense Fusion',
+};
+
+
 export default function TrainingAndEnablementPage() {
   return (
     <LenisProvider>

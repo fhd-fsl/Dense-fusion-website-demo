@@ -9,6 +9,11 @@ import WhyChoose from "@/components/services/domain-specific-solutions/WhyChoose
 import Technologies from "@/components/services/supercomputing/Technologies";
 import CTA from "@/components/services/domain-specific-solutions/CTA";
 
+export const metadata = {
+  title: 'Domain Specific Solutions Service | Dense Fusion',
+};
+
+
 export default function DomainSpecificSolutionsPage() {
   return (
     <LenisProvider>

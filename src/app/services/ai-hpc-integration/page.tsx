@@ -9,6 +9,11 @@ import WhyChoose from "@/components/services/ai-hpc-integration/WhyChoose";
 import Technologies from "@/components/services/supercomputing/Technologies";
 import CTA from "@/components/services/ai-hpc-integration/CTA";
 
+export const metadata = {
+  title: 'AI & HPC Integration Service | Dense Fusion',
+};
+
+
 export default function AIHPCIntegrationPage() {
   return (
     <LenisProvider>

@@ -9,6 +9,11 @@ import WhyChoose from "@/components/services/hpc-infrastructure-design/WhyChoose
 import Technologies from "@/components/services/supercomputing/Technologies";
 import CTA from "@/components/services/hpc-infrastructure-design/CTA";
 
+export const metadata = {
+  title: 'HPC Infrastructure Design Service | Dense Fusion',
+};
+
+
 export default function HPCInfrastructureDesignPage() {
   return (
     <LenisProvider>

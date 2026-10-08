@@ -9,6 +9,11 @@ import WhyChoose from "@/components/services/supercomputing/WhyChoose";
 import Technologies from "@/components/services/supercomputing/Technologies";
 import SupercomputingCTA from "@/components/services/supercomputing/SupercomputingCTA";
 
+export const metadata = {
+  title: 'Supercomputing Consulting Service | Dense Fusion',
+};
+
+
 export default function SupercomputingConsultingPage() {
   return (
     <LenisProvider>

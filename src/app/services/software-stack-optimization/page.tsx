@@ -9,6 +9,11 @@ import WhyChoose from "@/components/services/software-stack-optimization/WhyChoo
 import Technologies from "@/components/services/supercomputing/Technologies";
 import CTA from "@/components/services/software-stack-optimization/CTA";
 
+export const metadata = {
+  title: 'Software Stack Optimization Service | Dense Fusion',
+};
+
+
 export default function SoftwareStackOptimizationPage() {
   return (
     <LenisProvider>
