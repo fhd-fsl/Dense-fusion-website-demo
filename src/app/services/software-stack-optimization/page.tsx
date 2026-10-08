@@ -6,7 +6,7 @@ import ValueProp from "@/components/services/software-stack-optimization/ValuePr
 import SoftwareServices from "@/components/services/software-stack-optimization/SoftwareServices";
 import SoftwareProcess from "@/components/services/software-stack-optimization/SoftwareProcess";
 import WhyChoose from "@/components/services/software-stack-optimization/WhyChoose";
-import Technologies from "@/components/services/supercomputing/Technologies";
+import Technologies from "@/components/services/software-stack-optimization/Technologies";
 import CTA from "@/components/services/software-stack-optimization/CTA";
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function SoftwareStackOptimizationPage() {
         <SoftwareServices />
         <SoftwareProcess />
         <WhyChoose />
-        <Technologies subtitle="Dense Fusion applies AI, HPC, and specialized computing technologies to address the unique requirements of different industries." />
+        <Technologies subtitle="We work across the software and workload layers to create stable, optimized environments for HPC, scientific computing, and AI applications." />
         <CTA />
         <Footer hideConnectCta />
       </main>

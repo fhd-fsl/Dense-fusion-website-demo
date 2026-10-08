@@ -6,7 +6,7 @@ import ValueProp from "@/components/services/hpc-infrastructure-design/ValueProp
 import InfrastructureServices from "@/components/services/hpc-infrastructure-design/InfrastructureServices";
 import InfrastructureProcess from "@/components/services/hpc-infrastructure-design/InfrastructureProcess";
 import WhyChoose from "@/components/services/hpc-infrastructure-design/WhyChoose";
-import Technologies from "@/components/services/supercomputing/Technologies";
+import Technologies from "@/components/services/hpc-infrastructure-design/Technologies";
 import CTA from "@/components/services/hpc-infrastructure-design/CTA";
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function HPCInfrastructureDesignPage() {
         <InfrastructureServices />
         <InfrastructureProcess />
         <WhyChoose />
-        <Technologies subtitle="We work with established HPC and cluster technologies to design and deploy high-performance computing environments." />
+        <Technologies subtitle="We design and deploy reliable HPC infrastructure using modern provisioning, private cloud, and GPU technologies—from bare metal to production-ready environments." />
         <CTA />
         <Footer hideConnectCta />
       </main>

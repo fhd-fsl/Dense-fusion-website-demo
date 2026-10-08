@@ -6,7 +6,7 @@ import ValueProp from "@/components/services/training-and-enablement/ValueProp";
 import TrainingServices from "@/components/services/training-and-enablement/TrainingServices";
 import TrainingProcess from "@/components/services/training-and-enablement/TrainingProcess";
 import WhyChoose from "@/components/services/training-and-enablement/WhyChoose";
-
+import Technologies from "@/components/services/training-and-enablement/Technologies";
 import CTA from "@/components/services/training-and-enablement/CTA";
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function TrainingAndEnablementPage() {
         <TrainingServices />
         <TrainingProcess />
         <WhyChoose />
-
+        <Technologies subtitle="Gain practical experience with the tools, platforms, and computing environments used to build and run AI workloads at scale." />
         <CTA />
         <Footer hideConnectCta />
       </main>

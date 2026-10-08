@@ -6,7 +6,7 @@ import ValueProp from "@/components/services/domain-specific-solutions/ValueProp
 import DomainServices from "@/components/services/domain-specific-solutions/DomainServices";
 import DomainProcess from "@/components/services/domain-specific-solutions/DomainProcess";
 import WhyChoose from "@/components/services/domain-specific-solutions/WhyChoose";
-import Technologies from "@/components/services/supercomputing/Technologies";
+import Technologies from "@/components/services/domain-specific-solutions/Technologies";
 import CTA from "@/components/services/domain-specific-solutions/CTA";
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function DomainSpecificSolutionsPage() {
         <DomainServices />
         <DomainProcess />
         <WhyChoose />
-        <Technologies subtitle="Dense Fusion applies AI, HPC, and specialized computing technologies to address the unique requirements of different industries." />
+        <Technologies subtitle="Support demanding engineering and scientific workloads through HPC, GPU, and advanced computing technologies." />
         <CTA />
         <Footer hideConnectCta />
       </main>

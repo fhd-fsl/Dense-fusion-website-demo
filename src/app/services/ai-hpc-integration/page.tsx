@@ -6,7 +6,7 @@ import ValueProp from "@/components/services/ai-hpc-integration/ValueProp";
 import AIHPCServices from "@/components/services/ai-hpc-integration/AIHPCServices";
 import AIHPCProcess from "@/components/services/ai-hpc-integration/AIHPCProcess";
 import WhyChoose from "@/components/services/ai-hpc-integration/WhyChoose";
-import Technologies from "@/components/services/supercomputing/Technologies";
+import Technologies from "@/components/services/ai-hpc-integration/Technologies";
 import CTA from "@/components/services/ai-hpc-integration/CTA";
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function AIHPCIntegrationPage() {
         <AIHPCServices />
         <AIHPCProcess />
         <WhyChoose />
-        <Technologies subtitle="Our technology approach supports GPU-accelerated computing, distributed AI workloads, cluster management, and high-performance model execution." />
+        <Technologies subtitle="Connect AI workloads with high-performance computing infrastructure to accelerate GPU-intensive processing, model workloads, and large-scale computation." />
         <CTA />
         <Footer hideConnectCta />
       </main>

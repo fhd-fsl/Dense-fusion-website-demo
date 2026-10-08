@@ -2,13 +2,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 import Image from "next/image";
 
 const technologies = [
-  { name: "Tech 1", icon: "/assets/services/supercomputing-consulting/techstack/Background+Border(.svg" },
-  { name: "Tech 2", icon: "/assets/services/supercomputing-consulting/techstack/Background+Border-1(.svg" },
-  { name: "Tech 3", icon: "/assets/services/supercomputing-consulting/techstack/Background+Border-1.svg" },
-  { name: "Tech 4", icon: "/assets/services/supercomputing-consulting/techstack/Background+Border-2.svg" },
-  { name: "Tech 5", icon: "/assets/services/supercomputing-consulting/techstack/Background+Border-3.svg" },
-  { name: "Tech 6", icon: "/assets/services/supercomputing-consulting/techstack/Background+Border-4.svg" },
-  { name: "Tech 7", icon: "/assets/services/supercomputing-consulting/techstack/Background+Border.svg" }
+  { name: "Tech 1", icon: "/assets/services/hpc-infrastructure-design/techstack/Background+Border(.svg" },
+  { name: "Tech 2", icon: "/assets/services/hpc-infrastructure-design/techstack/Background+Border-1.svg" },
+  { name: "Tech 3", icon: "/assets/services/hpc-infrastructure-design/techstack/Background+Border-2.svg" },
+  { name: "Tech 4", icon: "/assets/services/hpc-infrastructure-design/techstack/Background+Border-3.svg" },
+  { name: "Tech 5", icon: "/assets/services/hpc-infrastructure-design/techstack/Background+Border-4.svg" },
+  { name: "Tech 6", icon: "/assets/services/hpc-infrastructure-design/techstack/Background+Border-5.svg" },
+  { name: "Tech 7", icon: "/assets/services/hpc-infrastructure-design/techstack/Background+Border-6.svg" },
+  { name: "Tech 8", icon: "/assets/services/hpc-infrastructure-design/techstack/Frame 1171276556.svg" }
 ];
 
 type TechnologiesProps = {

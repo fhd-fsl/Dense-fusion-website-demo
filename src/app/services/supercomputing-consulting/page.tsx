@@ -24,7 +24,7 @@ export default function SupercomputingConsultingPage() {
         <ConsultingServices />
         <ConsultingProcess />
         <WhyChoose />
-        <Technologies subtitle="Connect with our strategic consultants today to build a compute architecture that defines the future of your industry." />
+        <Technologies subtitle="From cluster architecture to workload environments, we use proven HPC technologies to build and optimize high-performance computing systems." />
         <SupercomputingCTA />
         <Footer hideConnectCta />
       </main>
